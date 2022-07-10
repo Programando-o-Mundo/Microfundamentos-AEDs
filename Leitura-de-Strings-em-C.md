@@ -1,6 +1,6 @@
 # Leitura de Strings em C
 
-## Você irá aprender
+## Você vai aprender
 
 - Diferentes tipos de como ler uma String.
 - Como imprimir e manipular caracteres de uma String.
