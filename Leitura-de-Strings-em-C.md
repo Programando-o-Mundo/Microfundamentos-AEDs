@@ -1,11 +1,11 @@
 # Leitura de Strings em C
 
-# Você irá aprender
+## Você irá aprender
 
 - Diferentes tipos de como ler uma String.
 - Como imprimir e manipular caracteres de uma String.
 
-Pré-requisito
+##Pré-requisito
 
 - [Strings em C](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs2/blob/main/Strings-em-C.md)
 
@@ -114,6 +114,7 @@ int main() {
 ```
 
 Obs.: a função strlen retorna a quantidade de caracteres na String, mais detalhes serão vistos em aulas futuras.
+
 Você sabe porque colocar o null terminator no final da String?
 
 <details>
