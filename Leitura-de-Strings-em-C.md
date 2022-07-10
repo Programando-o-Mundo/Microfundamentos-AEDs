@@ -5,7 +5,7 @@
 - Diferentes tipos de como ler uma String.
 - Como imprimir e manipular caracteres de uma String.
 
-##Pré-requisito
+## Pré-requisito
 
 - [Strings em C](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs2/blob/main/Strings-em-C.md)
 
@@ -167,7 +167,9 @@ em caso de encontrar NULL.
 ### links úteis
 
 [Leia mais sobre o scanf](https://homepages.dcc.ufmg.br/~rodolfo/aedsi-2-10/printf_scanf/printfscanf.html)
+
 [Leia mais sobre o getline](https://man7.org/linux/man-pages/man3/getline.3.html)
+
 [Leia mais sobre o fgets](https://www.pucsp.br/~so-comp/cursoc/aulas/c970.html)
 
 
