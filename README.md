@@ -10,8 +10,8 @@ qualquer erro que for encontrado.
 
 ## C
 
-- Alocação de Memória
-- Strings em C
-- Leitura de Strings
-- GDB
-- Valgrind
+- Ponteiros e Alocação de Memória.
+- Strings em C.
+- Leitura de Strings.
+- GDB.
+- Valgrind.
