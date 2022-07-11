@@ -9,7 +9,7 @@
 
 ## Pré-Requisitos
 
-- [Introdução a ponteiros em C/C++](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs2/blob/main/Ponteiro-e-aloca%C3%A7%C3%A3o-de-mem%C3%B3ria.md)
+- [Introdução a ponteiros em C/C++](Ponteiro-e-aloca%C3%A7%C3%A3o-de-mem%C3%B3ria.md)
 
 ## O que é uma string?
 
