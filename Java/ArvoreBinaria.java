@@ -1,3 +1,8 @@
+/*
+* Exemplo de implementação de um ArvoreBinaria 
+* com metodo de "print" customizado para imprimir
+* a arvore em formato de uma arvore, usando ASCII.
+*/
 class ArvoreBinaria {
 	private No raiz; // Raiz da arvore.
 
