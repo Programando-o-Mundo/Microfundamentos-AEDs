@@ -12,6 +12,7 @@ class ArvoreBinaria {
 	public ArvoreBinaria() {
 		raiz = null;
 	}
+
 	/**
 	 * Metodo publico iterativo para exibir elementos.
 	 */
@@ -23,6 +24,7 @@ class ArvoreBinaria {
 
 	/**
 	 * Metodo privado recursivo para exibir elementos.
+	 * 
 	 * @param i No em analise.
 	 */
 	private void mostrarCentral(No i) {
@@ -35,6 +37,7 @@ class ArvoreBinaria {
 
 	/**
 	 * Metodo publico iterativo para inserir elemento.
+	 * 
 	 * @param x Elemento a ser inserido.
 	 * @throws Exception Se o elemento existir.
 	 */
@@ -44,6 +47,7 @@ class ArvoreBinaria {
 
 	/**
 	 * Metodo privado recursivo para inserir elemento.
+	 * 
 	 * @param x Elemento a ser inserido.
 	 * @param i No em analise.
 	 * @return No em analise, alterado ou nao.
@@ -51,17 +55,17 @@ class ArvoreBinaria {
 	 */
 	private No inserir(String x, No i) throws Exception {
 		if (i == null) {
-        	 i = new No(x);
+			i = new No(x);
 
-	      } else if (x.compareTo(i.elemento) < 0) {
-		 i.esq = inserir(x, i.esq);
+		} else if (x.compareTo(i.elemento) < 0) {
+			i.esq = inserir(x, i.esq);
 
-	      } else if (x.compareTo(i.elemento) > 0) {
-		 i.dir = inserir(x, i.dir);
+		} else if (x.compareTo(i.elemento) > 0) {
+			i.dir = inserir(x, i.dir);
 
-	      } else {
-		 throw new Exception("Erro ao inserir!");
-	      }
+		} else {
+			throw new Exception("Erro ao inserir!");
+		}
 
 		return i;
 	}
@@ -69,57 +73,59 @@ class ArvoreBinaria {
 	/**
 	 * Metodo publico iterativo para exibir elementos em formato de arvore.
 	 */
-	    public void print() {
-		printTree(this.raiz);
-	    }
+	public void mostrarASCII() {
+		mostrarRaizASCII(this.raiz);
+	}
 
 	/**
 	 * Metodo privado recursivo para exibir elementos em formato de arvore.
+	 * 
 	 * @param i No em analise.
 	 */
-	    private void printTree(No i) {
+	private void mostrarRaizASCII(No i) {
 		if (i.dir != null)
-		    printTree(i.dir, true, "");
+			mostrarFolhasASCII(i.dir, true, "");
 
-		printNo(i);
-		if (i.esq != null) 
-		    printTree(i.esq, false, "");
+		mostrarNoASCII(i);
+		if (i.esq != null)
+			mostrarFolhasASCII(i.esq, false, "");
 
-	    }
+	}
 
 	/**
 	 * Metodo privado iterativo para exibir o No atual da arvore.
+	 * 
 	 * @param i No em analise.
 	 */
-	    private void printNo(No i) {
-		if (i == null) 
-		    System.out.print("<null>");
-		else 
-		    System.out.print(i.elemento);
+	private void mostrarNoASCII(No i) {
+		if (i == null)
+			System.out.print("<null>");
+		else
+			System.out.print(i.elemento);
 
 		System.out.println("");
-	    }
+	}
 
-    
 	/**
 	 * Metodo privado recursivo para exibir elementos em formato de arvore.
+	 * 
 	 * @param i No em analise.
 	 */
-	    private void printTree(No i, boolean isRight, String indent)  {
-		if (i.dir != null) 
-		    printTree(i.dir, true, indent + (isRight ? "        " : " |      "));
+	private void mostrarFolhasASCII(No i, boolean isRight, String indent) {
+		if (i.dir != null)
+			mostrarFolhasASCII(i.dir, true, indent + (isRight ? "        " : " |      "));
 
 		System.out.print(indent);
-		if (isRight) 
-		    System.out.print(" ┌── ");
-		else 
-		    System.out.print(" └──");
+		if (isRight)
+			System.out.print(" ┌── ");
+		else
+			System.out.print(" └──");
 
 		System.out.print("-- ");
-		printNo(i);
-		if (i.esq != null) 
-		    printTree(i.esq, false, indent + (isRight ? " |      " : "        "));
+		mostrarNoASCII(i);
+		if (i.esq != null)
+			mostrarFolhasASCII(i.esq, false, indent + (isRight ? " |      " : "        "));
 
-	    }
+	}
 
 }
