@@ -61,11 +61,18 @@ class ArvoreBinaria {
 		return i;
 	}
 
+	/**
+	 * Metodo publico iterativo para exibir elementos em formato de arvore.
+	 */
     public void print() {
         printTree(this.raiz);
     }
 
-    public void printTree(No i) {
+	/**
+	 * Metodo privado recursivo para exibir elementos em formato de arvore.
+	 * @param i No em analise.
+	 */
+    private void printTree(No i) {
         if (i.dir != null)
             printTree(i.dir, true, "");
         
@@ -74,6 +81,11 @@ class ArvoreBinaria {
             printTree(i.esq, false, "");
         
     }
+
+	/**
+	 * Metodo privado iterativo para exibir o No atual da arvore.
+	 * @param i No em analise.
+	 */
     private void printNo(No i) {
         if (i == null) 
             System.out.print("<null>");
@@ -84,6 +96,10 @@ class ArvoreBinaria {
     }
 
     
+	/**
+	 * Metodo privado recursivo para exibir elementos em formato de arvore.
+	 * @param i No em analise.
+	 */
     private void printTree(No i, boolean isRight, String indent)  {
         if (i.dir != null) 
             printTree(i.dir, true, indent + (isRight ? "        " : " |      "));
