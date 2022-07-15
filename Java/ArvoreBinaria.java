@@ -153,6 +153,9 @@ class ArvoreBinaria {
 
 	}
 
+	/*
+	* Exemplo de como usar o metodo "mostrarASCII"
+	*/
 	public static void main(String[] args) throws Exception {
 
 		String[] palavras = {"cuidador","criticos","independentemente","abacate","modificar","metas","positivamente"};
