@@ -1,3 +1,28 @@
+class No {
+    public String elemento; // Conteudo do no.
+	public No esq, dir;  // Filhos da esq e dir.
+
+	/**
+	 * Construtor da classe.
+	 * @param elemento Conteudo do no.
+	 */
+	public No(String elemento) {
+		this(elemento, null, null);
+	}
+
+	/**
+	 * Construtor da classe.
+	 * @param elemento Conteudo do no.
+	 * @param esq No da esquerda.
+	 * @param dir No da direita.
+	 */
+	public No(String elemento, No esq, No dir) {
+		this.elemento = elemento;
+		this.esq = esq;
+		this.dir = dir;
+	}
+}
+
 /*
 * Exemplo de implementação de um ArvoreBinaria 
 * com metodo de "print" customizado para imprimir
@@ -111,12 +136,12 @@ class ArvoreBinaria {
 	 * 
 	 * @param i No em analise.
 	 */
-	private void mostrarFolhasASCII(No i, boolean isRight, String indent) {
+	private void mostrarFolhasASCII(No i, boolean indentarDir, String indentacao) {
 		if (i.dir != null)
-			mostrarFolhasASCII(i.dir, true, indent + (isRight ? "        " : " |      "));
+			mostrarFolhasASCII(i.dir, true, indentacao + (indentarDir ? "        " : " |      "));
 
-		System.out.print(indent);
-		if (isRight)
+		System.out.print(indentacao);
+		if (indentarDir)
 			System.out.print(" ┌── ");
 		else
 			System.out.print(" └──");
@@ -124,8 +149,21 @@ class ArvoreBinaria {
 		System.out.print("-- ");
 		mostrarNoASCII(i);
 		if (i.esq != null)
-			mostrarFolhasASCII(i.esq, false, indent + (isRight ? " |      " : "        "));
+			mostrarFolhasASCII(i.esq, false, indentacao + (indentarDir ? " |      " : "        "));
 
 	}
 
+	public static void main(String[] args) throws Exception {
+
+		String[] palavras = {"cuidador","criticos","independentemente","abacate","modificar","metas","positivamente"};
+	
+		ArvoreBinaria arvore = new ArvoreBinaria();
+
+		for( String s : palavras) {
+			arvore.inserir(s);
+		}
+
+		arvore.mostrarASCII();
+	
+	}
 }
