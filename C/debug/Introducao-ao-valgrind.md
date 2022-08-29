@@ -1,5 +1,7 @@
 # Introdução ao Valgrind
 
+# Gustavo Lopes Rodrigues
+
 ## Você vai aprender
 
 - O que é o Valgrind.
@@ -8,7 +10,7 @@
 
 ## Pré-requisitos
 
-- [Introdução a ponteiros em C/C++](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs2/blob/main/Ponteiro-e-aloca%C3%A7%C3%A3o-de-mem%C3%B3ria.md)
+- [Introdução a ponteiros em C/C++](../ponteiro/Ponteiro-e-aloca%C3%A7%C3%A3o-de-mem%C3%B3ria.md)
 - Ter uma máquina com o Linux.
 - Instalar o Valgrind.
 
@@ -23,8 +25,8 @@ Ele pode ser usado para encontrar erros de uso de memória igual o GDB, porém s
 ## Verificando vazamentos de memória
 
 Primeiramente, instale o valgrind na sua máquina. Você consegue instalar ele utilizando
-a maioria dos gerenciadores de pacotes do linux como o [apt](https://howtoinstall.co/pt/valgrind) das distros Debian ou o 
-[pacman](https://archlinux.org/packages/extra/x86_64/valgrind/) das distros Arch.
+a maioria dos gerenciadores de pacotes do linux como o [apt](https://howtoinstall.co/pt/valgrind) das distros Debian (Ubuntu, Mint, PopOs) ou o 
+[pacman](https://archlinux.org/packages/extra/x86_64/valgrind/) das distros Arch (Arch, Manjaro, Garuda).
 
 Com o programa instalado, podemos testar o seu uso.
 
@@ -201,8 +203,7 @@ int main() {
 }
 ```
 
-Considere a variável "vetor" como sendo um array de inteiros de tamanho cinco. Logo após isso, tentamos inserir no index, seis algo que deveria 
-ser impossível, mas que a linguagem permite. 
+Considere a variável "vetor" como sendo um array de inteiros de tamanho cinco. Logo após isso, tentamos inserir no index seis, algo que deveria ser impossível, mas que a linguagem permite. 
 
 Se tentarmos rodar esse código junto ao Valgrind, recebemos a seguinte mensagem de erro.
 

@@ -1,5 +1,4 @@
-class No {
-    public String elemento; // Conteudo do no.
+class No { public String elemento; // Conteudo do no.
 	public No esq, dir;  // Filhos da esq e dir.
 
 	/**
@@ -28,13 +27,13 @@ class No {
 * com metodo de "print" customizado para imprimir
 * a arvore em formato de uma arvore, usando ASCII.
 */
-class ArvoreBinaria {
+class ArvoreASCII {
 	private No raiz; // Raiz da arvore.
 
 	/**
 	 * Construtor da classe.
 	 */
-	public ArvoreBinaria() {
+	public ArvoreASCII() {
 		raiz = null;
 	}
 
@@ -160,7 +159,7 @@ class ArvoreBinaria {
 
 		String[] palavras = {"cuidador","criticos","independentemente","abacate","modificar","metas","positivamente"};
 	
-		ArvoreBinaria arvore = new ArvoreBinaria();
+		ArvoreASCII arvore = new ArvoreASCII();
 
 		for( String s : palavras) {
 			arvore.inserir(s);

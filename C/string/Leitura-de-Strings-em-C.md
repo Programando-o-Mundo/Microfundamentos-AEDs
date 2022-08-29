@@ -1,5 +1,7 @@
 # Leitura de Strings em C
 
+# Gustavo Lopes Rodrigues
+
 ## Você vai aprender
 
 - Diferentes tipos de como ler uma String.
@@ -7,7 +9,7 @@
 
 ## Pré-requisito
 
-- [Strings em C](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs2/blob/main/Strings-em-C.md)
+- [Strings em C](Strings-em-C.md)
 
 ## Lendo Strings a partir do teclado
 

@@ -1,5 +1,7 @@
 # Criando Strings em C
 
+# Gustavo Lopes Rodrigues 
+
 ## Você vai aprender
 
 - O que é uma String.
@@ -9,7 +11,7 @@
 
 ## Pré-Requisitos
 
-- [Introdução a ponteiros em C/C++](Ponteiro-e-aloca%C3%A7%C3%A3o-de-mem%C3%B3ria.md)
+- [Introdução a ponteiros em C/C++](../ponteiro/Ponteiro-e-aloca%C3%A7%C3%A3o-de-mem%C3%B3ria.md)
 
 ## O que é uma string?
 

@@ -1,5 +1,7 @@
 # Introdução ao GDB
 
+# Gustavo Lopes Rodrigues
+
 ## Você vai aprender
 
 - O que é o GDB.
@@ -8,7 +10,7 @@
 
 ## Pré-requisito
 
-- [Introdução a ponteiros em C/C++](Ponteiro-e-aloca%C3%A7%C3%A3o-de-mem%C3%B3ria.md)
+- [Introdução a ponteiros em C/C++](../ponteiro/Ponteiro-e-aloca%C3%A7%C3%A3o-de-mem%C3%B3ria.md)
 - Ter o GDB Instalado
 
 ## O que é o GDB?

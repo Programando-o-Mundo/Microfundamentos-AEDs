@@ -1,5 +1,7 @@
 # Introdução a ponteiros em C/C++
 
+# Gustavo Lopes Rodrigues
+
 ## Você vai aprender
 
 - O que é um ponteiro.
