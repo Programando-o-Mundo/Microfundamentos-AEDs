@@ -89,7 +89,7 @@ Além disso, a nossa classe que será chamada diretamente, precisa ter uma funç
 
 Por agora, não iremos explicar o que cada palavra significa nessa declaração da main, apenas entenda que essa é a maneira de declara essa função essencial para a execução do código.
 
-Por fim, estamos usando o IO da classe System.out, para imprimir (print) "Hello world!";
+Por fim, estamos usando a classe System.out, para imprimir (print) "Hello world!";
 ```java
     System.out.println("Hello world");
 ```
