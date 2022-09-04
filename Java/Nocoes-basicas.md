@@ -1,10 +1,10 @@
-# Seja bem vindo ao Java
+# Seja bem vindo ao ![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
 # Gustavo Lopes Rodrigues
 
 ## Você vai aprender
 
-- Conhecendo a linguagem Java
+- O que a linguagem Java e como ela funciona
 - Como criar sua primeira aplicação java básica
 
 ## Pré-Requisitos
@@ -107,14 +107,20 @@ $ file Main.java
 Main.class: compiled Java class data, version 62.0
 ``` 
 
-Como pode perceber, o arquivo gerado não foi do tipo ELF, e como esperado, tentar executar esse código apenas irá resultar em erros. Mas eai fica a pergunta, como podemos rodar esse código então? 
+Como pode perceber, o arquivo gerado não foi do tipo ELF, e se você tentar executar esse código apenas irá resultar em erros. 
+Mas eai fica a pergunta, como podemos rodar esse código então? 
 
 ### Linguagens interpretadas
 
-Uma linguagem interpretada é aquela que usa de um interpretador para transformar código fonte e converte-lo em código executável. Exemplos famosos de linguagens interpretadas é Python e o Java, que é tanto compilado e interpretado. 
+Uma linguagem interpretada é aquela que usa de um interpretador para transformar código fonte e converte-lo em código executável. Algumas vantagens incluem possuirem tipagem dinâmica, mais fácil de fazer debug e possuirem coletador automático de memória.
+
+Exemplos famosos de linguagens interpretadas é Python e o Java, que é tanto compilado e interpretado. 
 
 No primeiro passo para rodarmos nosso código, nós compilamos o arquivo "Main.java" para um "Main.class" que contém na verdade um código intermediário chamado Bytecode. O objetivo de fazer 
 esse processo é para que o nosso código possa ser otimizado e colocado em um formato que a Java Virtual Machine (JVM) possa compreender.
+
+![jvm](https://user-images.githubusercontent.com/9157977/188319155-1da685b9-5e51-413c-9f1e-feeefb90e627.png)
+Fonte: https://www.stechies.com/java-programing-works/
 
 Essa é a grande ideia do Java, pois o Bytecode gerado pelo **javac** sempre será o mesmo, porém, a JVM será responsável em traduzir esse código intermediário em código de máquina, independente da máquina (desde que a mesma tenha a JVM instalada).
 
@@ -124,4 +130,9 @@ então, se usarmos o comando **java** podemos chamar a JVM para interpretar o no
 $ java Main.java
 Hello world!
 ``` 
+E com isso, você agora teve uma iniciação básica em como a linguagem funciona :-)
+
+## links úteis
+
+[Java em 100 segundos](https://youtu.be/l9AzO1FMgM8)
 
