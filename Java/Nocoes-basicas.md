@@ -15,7 +15,7 @@
 
 Java é uma linguagem de alto nível, baseada em classes, orientada a objetos de propósito geral, desenvolvida originalmente por James Gosling na Sun Microsystems, com a primeira versão sendo lançada em 1995.
 
-Uma das grandes sacadas da linguagem quando foi criada, foi a capacidade de criar aplicações multiplataforma com apenas uma base de código, mas então fica a pergunta: como isso é possível
+Uma das grandes sacadas da linguagem quando foi criada, foi a capacidade de criar aplicações multiplataforma com apenas uma base de código, mas então fica a pergunta: como isso é possível?
 
 ## Compilado Vs Interpretado
 
