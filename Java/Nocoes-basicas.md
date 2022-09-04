@@ -54,7 +54,7 @@ $ gcc hello.c -o hello
 
 Se rodarmos o **file** nesse arquivo compilado, teremos o seguinte resultado:
 ``` 
-$ file hello.c
+$ file hello
 hello: hello: ELF 64-bit LSB pie executable, x86-64...
 ``` 
 
