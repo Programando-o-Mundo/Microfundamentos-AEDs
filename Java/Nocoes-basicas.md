@@ -114,7 +114,7 @@ Como pode perceber, o arquivo gerado não foi do tipo ELF, e como esperado, tent
 Uma linguagem interpretada é aquela que usa de um interpretador para transformar código fonte e converte-lo em código executável. Exemplos famosos de linguagens interpretadas é Python e o Java, que é tanto compilado e interpretado. 
 
 No primeiro passo para rodarmos nosso código, nós compilamos o arquivo "Main.java" para um "Main.class" que contém na verdade um código intermediário chamado Bytecode. O objetivo de fazer 
-esse processo é para que o nosso código possa ser otimizado e coloca-lo em um formato que a Java Virtual Machine (JVM) possa compreender.
+esse processo é para que o nosso código possa ser otimizado e colocado em um formato que a Java Virtual Machine (JVM) possa compreender.
 
 Essa é a grande ideia do Java, pois o Bytecode gerado pelo **javac** sempre será o mesmo, porém, a JVM será responsável em traduzir esse código intermediário em código de máquina, independente da máquina (desde que a mesma tenha a JVM instalada).
 
