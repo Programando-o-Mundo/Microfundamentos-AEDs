@@ -25,6 +25,9 @@ Para entendermos como o Java funciona, é preciso antes entender o que significa
 
 Quando uma linguagem é compilada, significa que o texto fonte que produzimos, será traduzido diretamente para código que a máquina consegue entender.
 
+Linguagens puramente compiladas tem a vantagem de serem mais rápidas e eficientes para executar, além de darem maior controle do hardware e da 
+memória para o usuário, do que linguagens interpretadas.
+
 Um exemplo bem famoso de linguagem compilada é a linguagem C, confira só esse trecho de código abaixo.
 
 ```c
