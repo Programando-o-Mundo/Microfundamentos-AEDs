@@ -108,6 +108,11 @@ public class Main {
 
 Importante notar, que essa função retornar o tamanho igual a unidades de unicode, o que evita a maior parte dos problemas com Charset.
 
+Neste caso, o nosso código irá retornar 11, que a quantidade caractéres presentes na String "Hello world".
+``` 
+11
+```
+
 ### links úteis
 
 [Documentação-oficial-sobre-a-String](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
