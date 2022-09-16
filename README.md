@@ -13,8 +13,9 @@ qualquer erro que for encontrado.
 - Ponteiros e Alocação de Memória.
 - Strings em C.
 - Leitura de Strings.
-- GDB.
-- Valgrind.
+- Debug
+  - GDB.
+  - Valgrind.
 
 ## Java
 
