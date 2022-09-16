@@ -94,6 +94,267 @@ a outra problemática: "Como podemos tratar múltiplas exceções?"
 
 ## Multiplas exceções
 
-Fazer exemplo de tratamento de randomaccessfile e parse de int.
+Considere o seguinte programa.
+```java
+import java.io.RandomAccessFile;
+import java.util.ArrayList;
 
+public class Main {
+
+    public static Integer[] lerNumerosDeArquivo(String arqNome) {
+
+        ArrayList<Integer> numeros = new ArrayList<>();
+
+        RandomAccessFile arq = new RandomAccessFile(arqNome, "r");
+
+        String linha = new String();
+        int numero = -1;
+        while ((linha = arq.readLine()) != null) {
+
+            numero = Integer.parseInt(linha);
+            numeros.add(numero);
+        }
+	
+	arq.close();
+
+        Integer[] array = new Integer[numeros.size()];
+        array = numeros.toArray(array);
+
+        return array;
+    }
+
+    public static void main(String[] args) {
+
+        Integer[] numeros = lerNumerosDeArquivo("arquivo.txt");
+
+        for (Integer num : numeros) {
+            System.out.println(num);
+        }
+    }
+}
+```
+
+Talvez nem tudo que você acabou de ler, mas o código chama a função **lerNumerosDeArquivo** para extrair das linhas de um arquivo.txt números válidos, que serão colocados 
+dentro de um arranjo de inteiros. Por fim, a função **main** irá imprimir cada número um por um.
+
+Se você tentar executar o código acima, você terá varios erros:
+```
+Unhandled Exception type FileNotFoundException java
+Unhandled Exception type IOException java
+Unhandled Exception type IOException java
+```
+
+Todos essas exceções o Java pede que você trate elas obrigatoriamente em código. Além disso, tem também o **NumberFormatException** que também pode acontecer no código acima
+se alguma linha for encontrada que contém um número inválido, porém o Java não obriga o programador a tratar esse problema.
+
+Um jeito de lidar esse problema, seria rodear toda a lógica do programa que pode dar algum erro de exceção, com um **try catch** e adicionar um bloco **catch** para cada exceção:
+```java
+public class Main {
+
+    public static Integer[] lerNumerosDeArquivo(String arqNome) {
+
+        ArrayList<Integer> numeros = new ArrayList<>();
+
+        try (RandomAccessFile arq = new RandomAccessFile(arqNome, "r")) {
+            String linha = new String();
+            int numero = -1;
+            while ((linha = arq.readLine()) != null) {
+
+                numero = Integer.parseInt(linha);
+                numeros.add(numero);
+            }
+
+            arq.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch(IOException ioe) {
+            ioe.printStackTrace();
+        } catch(NumberFormatException nf) {
+            nf.printStackTrace();
+        }
+
+        Integer[] array = new Integer[numeros.size()];
+        array = numeros.toArray(array);
+
+        return array;
+    }
+```
+Com isso, o nosso código agora está funcional e trata todos os possíveis erros, porém, agora a nossa função está muito bagunçada. Se quisermos podemos em vez de usar três blocos **catch** podemos colocar só um, e colocando como argumento o objeto Exception, que conseguirá encapsular todas as exceções ja que o mesmo é a classe pai de todas as exceções.
+
+```java
+    public static Integer[] lerNumerosDeArquivo(String arqNome) {
+
+        ArrayList<Integer> numeros = new ArrayList<>();
+
+        try (RandomAccessFile arq = new RandomAccessFile(arqNome, "r")) {
+            String linha = new String();
+            int numero = -1;
+            while ((linha = arq.readLine()) != null) {
+
+                numero = Integer.parseInt(linha);
+                numeros.add(numero);
+            }
+
+            arq.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } 
+
+        Integer[] array = new Integer[numeros.size()];
+        array = numeros.toArray(array);
+
+        return array;
+    }
+``` 
+Agora sim, a nossa lógica foi simplificada, porém, em troca, perdemos a flexibilidade de poder manejar cada exceção individualmente. Uma outra alternativa, seria fazer com que a função não trate a exceção, mas sim apenas retornar para função que chamou ela, as exceções para serem tratadas.
+
+Observe o exemplo abaixo
+```java
+public class Main {
+
+    public static Integer[] lerNumerosDeArquivo(String arqNome) throws FileNotFoundException, NumberFormatException, IOException {
+
+        ArrayList<Integer> numeros = new ArrayList<>();
+
+        RandomAccessFile arq = new RandomAccessFile(arqNome, "r");
+        String linha = new String();
+        int numero = -1;
+        while ((linha = arq.readLine()) != null) {
+
+            numero = Integer.parseInt(linha);
+            numeros.add(numero);
+        }
+
+        arq.close();
+
+        Integer[] array = new Integer[numeros.size()];
+        array = numeros.toArray(array);
+
+        return array;
+    }
+
+    public static void main(String[] args) {
+
+        Integer[] numeros = lerNumerosDeArquivo("arquivo.txt");
+
+        for (Integer num : numeros) {
+            System.out.println(num);
+        }
+    }
+}
+```
+
+Usando a palavra *throws* após a declaração da função, é possível jogar qualquer erro lançado pela função para outra. Desta forma, agora toda a lógica de tratamento de exceção foi colocada na função **main** que está chamado a função **lerNumerosArquivos**, aqui nós temos duas opções em como tratar esse problema na **main**, o primeiro seria fazer a função também usar o *throws*, porém desta forma não estaremos realmente tratando a exceção. A melhor forma aqui seria utilizar um **try catch**.
+
+```java
+public static void main(String[] args) {
+
+        Integer[] numeros = null;
+        try {
+            numeros = lerNumerosDeArquivo("arquivo.txt");
+        
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            System.exit(-1);
+        } catch(IOException ioe) {
+            ioe.printStackTrace();
+            System.exit(-1);
+        } catch(NumberFormatException nf) {
+            nf.printStackTrace();
+            System.exit(-1);
+        }
+
+        for (Integer num : numeros) {
+            System.out.println(num);
+        }
+    }
+```
+
+Pronto agora o nosso programa conseguiu tratar as exceções, e também caso dê algum erro, o nosso programa termina a execução, usando o **System.exit(-1);**.
+
+Para finalizar vamos simplificar mais uma vez o código e permitir uma maior flexibidade no nosso programa. Supondo que eu não queira parar a execução do programa caso eu leia um número impossível, em vez da própria main tratar esse problema, podemos jogar a responsabilidade disso para a nossa função **lerNumeroArquivos** uma vez que fazendo isso, irá nos permitir ainda executar o código e imprimir todos os números válidos no arquivo.
+
+```java
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.util.ArrayList;
+
+public class Main {
+
+    public static Integer[] lerNumerosDeArquivo(String arqNome)
+            throws FileNotFoundException, IOException {
+
+        ArrayList<Integer> numeros = new ArrayList<>();
+
+        RandomAccessFile arq = new RandomAccessFile(arqNome, "r");
+        String linha = new String();
+        int numero = -1;
+        while ((linha = arq.readLine()) != null) {
+
+            try {
+                numero = Integer.parseInt(linha);
+            } catch(NumberFormatException ne) {
+                System.err.println("[ERRO!]: " + linha + " não é um número válido!");
+                continue;
+            }
+            
+            numeros.add(numero);
+        }
+
+        arq.close();
+
+        Integer[] array = new Integer[numeros.size()];
+        array = numeros.toArray(array);
+
+        return array;
+    }
+
+    public static void main(String[] args) {
+
+        Integer[] numeros = null;
+        String nomeArquivo = "arquivo.txt";
+        try {
+            numeros = lerNumerosDeArquivo(nomeArquivo);
+        
+        } catch (FileNotFoundException e) {
+            System.err.println("[ERRO] " + nomeArquivo + "não existe!");
+            System.exit(-1);
+        } catch(IOException ioe) {
+            ioe.printStackTrace();
+            System.exit(-1);
+        }
+
+        for (Integer num : numeros) {
+            System.out.println(num);
+        }
+    }
+}
+```
+
+Pronto, acho que por agora está o suficiente ;-) . Agora tente rodar esse código, colocando os números abaixo em um "arquivo.txt"
+```
+15
+32
+66
+323
+Hello
+431
+6644
+832
+```
+
+O seu resultado tem que ser algo parecido com isso:
+```
+[ERRO!]: Hello não é um número válido!
+15
+32
+66
+323
+431
+6644
+832
+``` 
 ## Links úteis
+
+[Leia mais sobre Try Catch](https://www.devmedia.com.br/blocos-try-catch/7339)
