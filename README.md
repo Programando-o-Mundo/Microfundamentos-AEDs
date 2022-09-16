@@ -18,4 +18,7 @@ qualquer erro que for encontrado.
 
 ## Java
 
+- Noções básicas da linguagem
+- Strings
+- Tratamento de exceções
 - Arvore com método mostrar desenhando a Árvore em ASCII
