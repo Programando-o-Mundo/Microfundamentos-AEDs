@@ -1,4 +1,4 @@
-# Microfundamentos-AEDs2
+# Microfundamentos-AEDs
 
 Este repositório tem como o objetivo armazenar micro-aulas além de utilidades para a disciplina 
 de Algoritmos e Estruturas de Dados 2. 
