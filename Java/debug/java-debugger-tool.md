@@ -187,7 +187,7 @@ main[1] print test.substring(5)
 
 # step
 
-Mas enfim, voltando ao primeiro exemplo, se quisermos confirmar que o valor da variável, podemos ir para a próxima linha, usando o comando *step*.
+Mas enfim, voltando ao primeiro exemplo, se quisermos pular uma linha depois do breakpoint, e confirmar o valor da nossa variável "c", usamos o comando *step*.
 
 ``` 
 main[1] step
