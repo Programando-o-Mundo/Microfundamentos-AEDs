@@ -25,6 +25,6 @@ qualquer erro que for encontrado.
 - Tratamento de exceções
 - Debug
   - Java Debugger (JDB)
-  - VS Code Debugger (futuramente)
+  - VS Code Debugger (em breve)
 - Arvore com método mostrar desenhando a Árvore em ASCII
-- Argumentos de Entrada
+- Argumentos de Entrada (em breve)
