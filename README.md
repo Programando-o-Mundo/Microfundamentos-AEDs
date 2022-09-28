@@ -16,6 +16,7 @@ qualquer erro que for encontrado.
 - Debug
   - GDB.
   - Valgrind.
+- Argumentos de Entrada
 
 ## Java
 
@@ -26,3 +27,4 @@ qualquer erro que for encontrado.
   - Java Debugger (JDB)
   - VS Code Debugger (futuramente)
 - Arvore com método mostrar desenhando a Árvore em ASCII
+- Argumentos de Entrada
