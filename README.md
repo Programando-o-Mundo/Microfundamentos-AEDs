@@ -22,4 +22,7 @@ qualquer erro que for encontrado.
 - Noções básicas da linguagem
 - Strings
 - Tratamento de exceções
+- Debug
+  - Java Debugger (JDB)
+  - VS Code Debugger (futuramente)
 - Arvore com método mostrar desenhando a Árvore em ASCII
