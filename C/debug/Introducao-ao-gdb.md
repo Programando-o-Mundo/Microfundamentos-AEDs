@@ -123,7 +123,7 @@ Não se assuste, seja bem vindo ao GDB. Observe que abaixo de todo esse texto de
 Reading symbols from a.out...
 ```
 
-Isso mostra que o GDB conseguiu ler corretamente o nosso código, e estamos pronto para fazer debug.
+Isso mostra que o GDB conseguiu ler corretamente o nosso código compilado "a.out", e estamos pronto para fazer debug.
 Primeiramente vamos aprender a rodar nosso código, para isso utilizamos a palavra chave
 
 ```
@@ -208,14 +208,16 @@ Breakpoint 1, main () at main.c:7
 (gdb) 
 ```
 
-Agora o nosso programa (ainda em execução) está parado na linha que pedimos, em seguida, podemos agora pedir para o GDB
-imprimir o valor de uma variável nossa usando o comando
-  
-```
-print
-```
- 
-Acompanhado do nome da variável que queremos imprimir, ou seja:
+Com isso, temos o nosso código (ainda em execução) parado na linha que pedimos.
+
+<details>
+  <summary>Pílula</summary>
+    Em vez de colocar um <b>break</b> para cada linha, você pode usar os comandos <b>step</b> e <b>next</b> para pular
+    para a próxima linha de código, pesquise mais sobre estes comandos na documentação do GDB
+</details>
+    
+Nosso próximo passo será pedir para o GDB imprimir o valor de uma variável nossa usando o comando **print**
+acompanhado do nome da variável que queremos imprimir, ou seja:
   
 ```
 print a
@@ -231,9 +233,9 @@ $2 = -98693133
 ```
   
 Imprimindo o valor do ponteiro e da varíavel dentro do ponteiro, e encontramos que a mesma contem lixo de memória,
-indicando que a variável não foi iniciada corretamente, encontramos o nosso erro. 
+indicando que a variável não foi iniciada corretamente, e este é o erro do código. 
   
-Podemos agora sair do GDB, usando o comando.
+Podemos agora sair do GDB, usando o comando:
  
 ```
 quit
@@ -253,13 +255,7 @@ int main() {
 }
 ```
   
-Observação: dentro do GDB, podemos usar o comando
-
-```
-help
-```
-  
-acompanhado de outro comando para saber mais opções em como usar este dentro do GDB. Observe o exemplo abaixo:
+Observação: dentro do GDB, podemos usar o comando **help** acompanhado de outro comando para saber mais opções em como usar este dentro do GDB. Observe o exemplo abaixo onde temos instruções em como usar o comando **break**:
 
 ```
 (gdb) help break
@@ -284,6 +280,8 @@ CONDITION is a boolean expression.
 ### links úteis
 
 [Veja mais tutoriais do GDB](https://www.ic.unicamp.br/~rafael/materiais/gdb.html)
+
+[Documentação oficial do GDB](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_chapter/gdb_toc.html)
 
 [Tutorial mais avançado de GDB](https://www.cprogramming.com/gdb.html)
 
