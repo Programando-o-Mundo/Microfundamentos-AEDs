@@ -28,3 +28,7 @@ qualquer erro que for encontrado.
   - VS Code Debugger (em breve)
 - Arvore com método mostrar desenhando a Árvore em ASCII
 - Argumentos de Entrada (em breve)
+
+## AEDs3 
+
+- Intercalação balanceada
