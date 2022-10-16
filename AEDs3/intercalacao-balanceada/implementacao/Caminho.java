@@ -34,7 +34,6 @@ public class Caminho {
 
     public int lerProximoInteiro() throws IOException {
         this.ultimaPos = this.arquivo.getFilePointer();
-        long tamanhoArq = this.arquivo.length();
         return this.arquivo.readInt();
     }
 

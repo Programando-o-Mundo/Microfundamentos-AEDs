@@ -21,13 +21,13 @@ public class IntercalacaoBalanceada {
         this.caminhosOriginais = new Caminho[numCaminhos];
         this.caminhosTmp = new Caminho[numCaminhos];
 
-        this.caminhoFinal = new Caminho(NOME_CAMINHO_FINAL + "@" + hashCode() + ".data");
+        this.caminhoFinal = new Caminho(NOME_CAMINHO_FINAL + "@" + hashCode() + ".dat");
 
         for(int i = 0; i < numCaminhos; i++) 
-            this.caminhosOriginais[i] = new Caminho(NOME_CAMINHO_TEMP + i + "@" + hashCode()  + ".data");
+            this.caminhosOriginais[i] = new Caminho(NOME_CAMINHO_TEMP + i + "@" + hashCode()  + ".dat");
 
         for(int i = 0; i < numCaminhos; i++) 
-            this.caminhosTmp[i] = new Caminho(NOME_CAMINHO_TEMP + (i + numCaminhos) + "@" + hashCode()  + ".data");
+            this.caminhosTmp[i] = new Caminho(NOME_CAMINHO_TEMP + (i + numCaminhos) + "@" + hashCode()  + ".dat");
         
         this.registrosPorBloco = registrosPorBloco;
     }
@@ -36,7 +36,7 @@ public class IntercalacaoBalanceada {
      * Principal funcao, ordernar o array especificado
      * @throws IOException
      */
-    public void ordenar(int[] arr) throws IOException {
+    public void ordenar(Integer[] arr) throws IOException {
 
         inserirBlocosNosPrimeirosCaminhos(arr);
 
@@ -48,7 +48,7 @@ public class IntercalacaoBalanceada {
         inserirResultadoEmCaminhoFinal();
     }
 
-    private void inserirBlocosNosPrimeirosCaminhos(int[] arr) throws IOException {
+    private void inserirBlocosNosPrimeirosCaminhos(Integer[] arr) throws IOException {
         int tamArr = arr.length;
         int numCaminhos = caminhosOriginais.length;
 
@@ -118,7 +118,8 @@ public class IntercalacaoBalanceada {
         } 
 
         while(!blocoAtualFoiLido(numRegistroDoBlocoDoCaminhoAtual ,posEmBlocoDoCaminho)) {
-            int menor = 999999999;
+            int menor = Integer.MAX_VALUE;
+            int caminho_menor_numero = -1;
 
             for(int i = 0; i < numCaminhos; i++) {
 
@@ -128,6 +129,12 @@ public class IntercalacaoBalanceada {
 
                     if (num < menor) {
                         menor = num;
+                        if (caminho_menor_numero != -1) {
+                            this.caminhosOriginais[caminho_menor_numero].voltarParaUltimaPosicao();
+                            posEmBlocoDoCaminho[caminho_menor_numero]--;
+                        }
+                        caminho_menor_numero = i;
+
                     } else {
                         this.caminhosOriginais[i].voltarParaUltimaPosicao();
                         posEmBlocoDoCaminho[i]--;
@@ -194,13 +201,17 @@ public class IntercalacaoBalanceada {
         }        
     }
     
-    public void lerResultadoFinal() throws IOException {
+    public Integer[] lerResultadoFinal() throws IOException {
 
+        Integer[] arr;
         this.caminhoFinal.resetarPonteiro();
         int quant_numeros = this.caminhoFinal.lerProximoInteiro();
-        for(int i = 0; i < quant_numeros; i++) {
-            System.out.println(this.caminhoFinal.lerProximoInteiro());
-        }
+        arr = new Integer[quant_numeros];
+
+        for(int i = 0; i < quant_numeros; i++) 
+            arr[i] = this.caminhoFinal.lerProximoInteiro();
+        
+        return arr;
     }
 
     private void resetarPonteiroDosCaminhos(Caminho[] c) throws IOException {
@@ -210,13 +221,25 @@ public class IntercalacaoBalanceada {
 
     public static void main(String[] args) {
 
-        int[] arr = {5,3,2,16,356,323,43,32,693,7,10,1};
+        Integer[] arr = {5,3,2,16,356,323,43,32,693,7,10,1};
 
         IntercalacaoBalanceada ib;
         try {
             ib = new IntercalacaoBalanceada(2, 4);
             ib.ordenar(arr);
-            ib.lerResultadoFinal();
+            Integer[] arrOrdenado = ib.lerResultadoFinal();
+
+            System.out.println("Array original: ");
+            for(int i = 0 ; i < arr.length; i++) {
+                System.out.print(arr[i] + "\t");
+            }
+            System.out.println("\nArray ordenado: ");
+            for(int i = 0 ; i < arr.length; i++) {
+                System.out.print(arrOrdenado[i] + "\t");
+            }
+            Arrays.sort(arr);
+            System.out.println("\nForam ordenados corretamente?: " + (Arrays.equals(arr, arrOrdenado) ? "SIM" : "NÃO"));
+
             ib.fecharCaminhos();
         } catch (IOException e) {
             e.printStackTrace();
