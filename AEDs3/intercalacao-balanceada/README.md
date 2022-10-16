@@ -7,4 +7,4 @@ Aqui você irá encontrar um exemplo em como fazer uma implementação simples d
 queremos ordenar. Também recomendo bastante os vídeos do professor Marcos Kutova para a [explicação do algoritmo](https://youtu.be/CU_zh6Nunu8)
 além do [custo computacional](https://youtu.be/RVMnTHpzTdU) do mesmo.
 
-Bons estudos.
+Bons estudos!
