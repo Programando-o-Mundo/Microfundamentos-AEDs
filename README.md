@@ -32,3 +32,4 @@ qualquer erro que for encontrado.
 ## AEDs3 
 
 - Intercalação balanceada
+- CRUD
