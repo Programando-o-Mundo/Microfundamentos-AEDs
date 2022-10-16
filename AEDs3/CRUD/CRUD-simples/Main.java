@@ -12,6 +12,9 @@ public class Main {
     Library.create(meuLivro2);
     System.out.println(meuLivro2);
 
+    meuLivro2.setAuthor("Rodrigues");
+    Library.update(meuLivro2);
+
     Book m = Library.read(0);
     System.out.println(m);
 

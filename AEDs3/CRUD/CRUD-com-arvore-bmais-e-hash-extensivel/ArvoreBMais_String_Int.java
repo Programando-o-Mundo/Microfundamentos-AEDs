@@ -1,3 +1,11 @@
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+
 /*********
  * ARVORE B+ SI
  * String chave, int dado
@@ -13,7 +21,6 @@
  * Implementado pelo Prof. Marcos Kutova
  * v1.0 - 2018
  */
-import java.io.*;
 
 // Árvore B+ para ser usada como índice indireto de algum arquivo de entidades
 // CHAVE: String  (usado para algum atributo textual da entidade como Nome, Título, ...)

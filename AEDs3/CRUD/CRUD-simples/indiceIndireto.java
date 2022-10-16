@@ -131,16 +131,20 @@ public class indiceIndireto {
 
   }
 
-  public void print() {
+  @Override
+  public String toString() {
     
+    String s = "";
+
     Celula i = null;
     for(i = inicio.prox; i != null ; i = i.prox) {
 
       if(!i.deleted) {
 
-        System.out.println("Nome: " + i.nome + "\nid: " + i.id);
+        s += "Nome: " + i.nome + "\nid: " + i.id + "\n";
       }
     }
-  }
 
+    return s;
+  }
 }

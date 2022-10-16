@@ -142,15 +142,19 @@ public class indiceDireto {
   /*
   
   */
-  public void print() {
+  public String toSring() {
+    String s = "";
+
     Celula i = null;
     for(i = inicio.prox; i != null ; i = i.prox) {
 
       if(!i.deleted) {
 
-        System.out.println("id: " + i.id + "\npos: " + i.pos);
+        s += "id: " + i.id + "\npos: " + i.pos + "\n";
       }
     }
+
+    return s;
   }
 
 }

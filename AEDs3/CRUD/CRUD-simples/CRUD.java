@@ -95,10 +95,11 @@ public class CRUD<T extends Register> {
       arquive.seek(pos);
 
       arquive.writeChar(' ');               //Esse espaco vazio eh a lapide
+      pos = arquive.getFilePointer();
       arquive.writeInt(objectData.length);
       arquive.write(objectData);
 
-      ld.insert(id,pos+2);
+      ld.insert(id,pos);
       li.insert(object.getSecKey(),id);
 
       arquive.seek(0);
@@ -164,11 +165,11 @@ public class CRUD<T extends Register> {
   */
   public T read(String secKey) {
 
-    long pos = li.find(secKey);
+    int id = li.find(secKey);
     T object = null;
-    if ( pos >= 0 ) {
+    if ( id >= 0 ) {
 
-      object = read((int)pos);
+      object = read(id);
     }
     else {
 
@@ -205,15 +206,15 @@ public class CRUD<T extends Register> {
 
         objectData = object.toByteArray();  
 
-        arquive.seek(pos + 2);
+        arquive.seek(pos);
         tam = arquive.readInt();
-        if ( objectData.length == tam) {
 
+        if ( objectData.length <= tam) {
           arquive.write(objectData);
           resp = true;
-        }
-        else {
-
+        } else {
+          delete(object.getID());
+          create(object);
         }
 
       }
@@ -282,14 +283,12 @@ public class CRUD<T extends Register> {
   */
   public void printIndiceDireto() {
 
-    ld.print();
-    System.out.println("");
+    System.out.println(ld);
   }
 
   public void printIndiceIndireto() {
 
-    li.print();
-    System.out.println("");
+    System.out.println(li);
   }
 
 }
