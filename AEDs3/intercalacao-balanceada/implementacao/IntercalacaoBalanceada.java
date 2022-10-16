@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * IntercalacaoBalanceada
+ * Implementacao do Algoritmo da Intercalacao Balanceada em Java
+ * @author Gustavo Lopes Rodrigues
+ * @version 1.0
  */
 public class IntercalacaoBalanceada {
 

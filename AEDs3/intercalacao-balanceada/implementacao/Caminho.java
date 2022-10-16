@@ -1,6 +1,11 @@
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
+/**
+ * Classe auxiliar para realizar a Intercalacao Balanceada
+ * @author Gustavo Lopes Rodrigues
+ * @version 1.0
+ */
 public class Caminho {
     
     private RandomAccessFile arquivo;
