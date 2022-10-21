@@ -43,7 +43,7 @@ public class IntercalacaoBalanceada {
         inserirBlocosNosPrimeirosCaminhos(arr);
 
         int numBlocos = 0;
-        while (numBlocos != 2) {
+        while (numBlocos != caminhosOriginais.length) {
             numBlocos = inserirOrdenadoEmNovosCaminhos();
         }
         
