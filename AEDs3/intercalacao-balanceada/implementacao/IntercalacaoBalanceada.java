@@ -19,7 +19,12 @@ public class IntercalacaoBalanceada {
 
     private int registrosPorBloco;
 
-    public IntercalacaoBalanceada(int numCaminhos, int registrosPorBloco) throws IOException {
+    public IntercalacaoBalanceada(int numCaminhos, int registrosPorBloco) throws Exception {
+
+        if (numCaminhos <= 1 || registrosPorBloco < 1) 
+            throw new Exception("Numero de caminhos/registros inválidos!\nColoque pelo menos dois caminhos e pelo menos um registro por bloco");
+        
+
         this.caminhosOriginais = new Caminho[numCaminhos];
         this.caminhosTmp = new Caminho[numCaminhos];
 
@@ -40,9 +45,8 @@ public class IntercalacaoBalanceada {
      */
     public void ordenar(Integer[] arr) throws IOException {
 
-        inserirBlocosNosPrimeirosCaminhos(arr);
+        int numBlocos = inserirBlocosNosPrimeirosCaminhos(arr);
 
-        int numBlocos = 0;
         while (numBlocos >= caminhosOriginais.length) {
             numBlocos = inserirOrdenadoEmNovosCaminhos();
         }
@@ -50,7 +54,7 @@ public class IntercalacaoBalanceada {
         inserirResultadoEmCaminhoFinal();
     }
 
-    private void inserirBlocosNosPrimeirosCaminhos(Integer[] arr) throws IOException {
+    private int inserirBlocosNosPrimeirosCaminhos(Integer[] arr) throws IOException {
         int tamArr = arr.length;
         int numCaminhos = caminhosOriginais.length;
 
@@ -76,6 +80,8 @@ public class IntercalacaoBalanceada {
         for(int i = 0; i < caminhosOriginais.length; i++) {
             this.caminhosOriginais[i].resetarPonteiro();
         }
+
+        return numBlocos;
     }
 
     private int inserirOrdenadoEmNovosCaminhos() throws IOException {
@@ -228,7 +234,7 @@ public class IntercalacaoBalanceada {
 
         IntercalacaoBalanceada ib;
         try {
-            ib = new IntercalacaoBalanceada(10, 10);
+            ib = new IntercalacaoBalanceada(2, 10);
             ib.ordenar(arr);
             Integer[] arrOrdenado = ib.lerResultadoFinal();
 
@@ -244,7 +250,7 @@ public class IntercalacaoBalanceada {
             System.out.println("\nForam ordenados corretamente?: " + (Arrays.equals(arr, arrOrdenado) ? "SIM" : "NÃO"));
 
             ib.fecharCaminhos();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         
