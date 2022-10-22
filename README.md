@@ -8,7 +8,12 @@ qualquer erro que for encontrado.
 
 # Sumário
 
-## C
+<details>
+  <summary>
+  <h2>
+  C
+  </h2>
+  </summary>
 
 - Ponteiros e Alocação de Memória.
 - Strings em C.
@@ -18,7 +23,14 @@ qualquer erro que for encontrado.
   - Valgrind.
 - Argumentos de Entrada
 
-## Java
+</details>
+
+<details>
+  <summary>
+  <h2>
+  Java
+  </h2>
+  </summary>
 
 - Noções básicas da linguagem
 - Strings
@@ -26,10 +38,32 @@ qualquer erro que for encontrado.
 - Debug
   - Java Debugger (JDB)
   - VS Code Debugger (em breve)
-- Arvore com método mostrar desenhando a Árvore em ASCII
 - Argumentos de Entrada (em breve)
 
-## AEDs3 
+</details>
+
+<details>
+  <summary>
+  <h2>
+  AEDs2
+  </h2>
+  </summary>
+
+- Arvore Binaria
+  - Arvore com método "mostrar" desenhando a Árvore em ASCII
+
+</details>
+
+<details>
+  <summary>
+  <h2>
+  AEDs3
+  </h2>
+  </summary>
 
 - Intercalação balanceada
 - CRUD
+
+</details>
+
+</details>
