@@ -1,3 +1,8 @@
+/**
+ * Classe que representa o no da arvore
+ * @author Gustavo Lopes Rodrigues
+ * @version 1.0
+ */
 class No { public String elemento; // Conteudo do no.
 	public No esq, dir;  // Filhos da esq e dir.
 
@@ -22,10 +27,12 @@ class No { public String elemento; // Conteudo do no.
 	}
 }
 
-/*
+/**
 * Exemplo de implementação de um ArvoreBinaria 
 * com metodo de "print" customizado para imprimir
 * a arvore em formato de uma arvore, usando ASCII.
+* @author Gustavo Lopes Rodrigues
+* @version 1.0
 */
 class ArvoreASCII {
 	private No raiz; // Raiz da arvore.
