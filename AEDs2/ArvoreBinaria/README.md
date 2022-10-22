@@ -1,5 +1,8 @@
 # Árvore Binária
 
+<img src="https://user-images.githubusercontent.com/9157977/197351288-1706181a-89d1-46b2-bee3-d91328ce9d87.png" alt="drawing" width="500"/>
+Imagem Disponível em: https://pt.wikipedia.org/wiki/%C3%81rvore_bin%C3%A1ria#/media/Ficheiro:Binary_tree.svg
+<p></p>
 Com certeza, uma das mais importantes estruturas de dados na Computação é a Árvore, que para 
 ser mais específico, é uma estrutura que representa uma coleção de elementos que são armazenados
 igual uma árvore. Você inicialmente terá um elemento inicial que chamamos de **Nó raiz** que teram dois
