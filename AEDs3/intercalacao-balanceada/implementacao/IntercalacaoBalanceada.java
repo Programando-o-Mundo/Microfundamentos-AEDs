@@ -43,7 +43,7 @@ public class IntercalacaoBalanceada {
         inserirBlocosNosPrimeirosCaminhos(arr);
 
         int numBlocos = 0;
-        while (numBlocos != caminhosOriginais.length) {
+        while (numBlocos >= caminhosOriginais.length) {
             numBlocos = inserirOrdenadoEmNovosCaminhos();
         }
         
@@ -89,9 +89,10 @@ public class IntercalacaoBalanceada {
             Integer[] blocoEstatico = lerNovoBlocoDosCaminhosOriginais();
 
             this.caminhosTmp[caminhoTempAtual].escreverBloco(blocoEstatico);
-            caminhoTempAtual = (caminhoTempAtual == 0) ? 1 : 0;
 
             numBloco++;
+
+            caminhoTempAtual = numBloco % caminhosTmp.length;
         }
 
         resetarPonteiroDosCaminhos(caminhosTmp);
@@ -223,11 +224,11 @@ public class IntercalacaoBalanceada {
 
     public static void main(String[] args) {
 
-        Integer[] arr = {5,3,2,16,356,323,43,32,693,7,10,1};
+        Integer[] arr = {5,3,2,16,356,323,43,32,693,7,10,1,8,9,66,44,33,21,78,65,99,142,66432};
 
         IntercalacaoBalanceada ib;
         try {
-            ib = new IntercalacaoBalanceada(2, 4);
+            ib = new IntercalacaoBalanceada(10, 10);
             ib.ordenar(arr);
             Integer[] arrOrdenado = ib.lerResultadoFinal();
 
@@ -236,7 +237,7 @@ public class IntercalacaoBalanceada {
                 System.out.print(arr[i] + "\t");
             }
             System.out.println("\nArray ordenado: ");
-            for(int i = 0 ; i < arr.length; i++) {
+            for(int i = 0 ; i < arrOrdenado.length; i++) {
                 System.out.print(arrOrdenado[i] + "\t");
             }
             Arrays.sort(arr);
