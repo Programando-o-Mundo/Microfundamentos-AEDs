@@ -14,7 +14,7 @@
 
 ## Depuração de código
 
-Muitas vezes o programador não terá uma IDE (Integrated Development Environment) para fazer depuração de código. Entretanto, quando temos acesso a tais ferramentas, como a disponibilizada pelo Visual Studio Code, não devemos menosprezar sua capacidade de ajudar a entender mais rápido e mais fácil os problemas que está acontecendo com o código. Por conta disso, nesta aula irei explicar o básico para você entender em como usar a ferramenta de depuração do VSCode.
+Muitas vezes o programador não terá uma IDE (Integrated Development Environment) para fazer depuração de código. Entretanto, quando temos acesso a tais ferramentas, como a disponibilizada pelo Visual Studio Code, não devemos menosprezar sua capacidade de ajudar a entender mais rápido e mais fácil os problemas que estão acontecendo com o código. Por conta disso, nesta aula irei explicar o básico para você entender como usar a ferramenta de depuração do VSCode.
 
 Para iniciarmos a depuração, antes de termos um código, precisamos da extensão [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) da Microsoft, para permitir que o processo de debug possa acontecer.
 
@@ -49,7 +49,7 @@ Perceba que a cima da função **Main** tem um marcador dizendo *Debug* que é o
 
 Entretanto, se você clicar nele, o programa irá rodar e finalizar normalmente. Isso acontece pois para o processo de debug ser realmente efetivo, precisamos colocar um breakpoint ou um ponto de parada no código.
 
-Para colocar um breakpoint, apenas clique na bolinha vermelha no lado de cada número.
+Para colocar um breakpoint, apenas clique na bolinha vermelha ao lado de cada número.
 
 <img src = "https://user-images.githubusercontent.com/9157977/197355090-44f6f94f-9f94-4a52-83eb-813d2a27b588.png" alt = "img3" width = "800" />
 
@@ -57,7 +57,7 @@ Se clicarmos para rodar o Debug novamente, perceba que agora o nosso código est
 
 <img src = "https://user-images.githubusercontent.com/9157977/197355311-b4d900f9-ab9b-45e6-b945-6c02215de137.png" alt = "img3" width = "800" />
 
-Perceba que além de termos o nosso código, temos tambem outras áreas de trabalho que foram abertas pelo depurador, que permitem inspecionar elementos mais específicos do nosso código, vamos dar uma breve pincelada em cada um desses componentes.
+Perceba que além de termos o nosso código, temos também outras áreas de trabalho que foram abertas pelo depurador, que permitem inspecionar elementos mais específicos do nosso código, vamos dar uma breve pincelada em cada um desses componentes.
 
 ### Call Stack
 
@@ -69,15 +69,15 @@ Primeiramente temos a Pilha de Chamadas ou *Call Stack*, onde temos todas as Thr
 
 ![image](https://user-images.githubusercontent.com/9157977/197355820-39c57b52-a394-4d5b-8241-0a264a9e900d.png)
 
-Nesta aba conseguimos verificar todos os breakpoints presente no nosso código, além de que podemos ativar/desativar breakpoints pertence no nosso código, se julgarmos eles necessários ou desnecessários
+Nessa aba conseguimos verificar todos os breakpoints presente no nosso código, além de que podemos ativar/desativar breakpoints pertence no nosso código, se julgarmos eles necessários ou desnecessários
 
 ### Variables
 
 ![image](https://user-images.githubusercontent.com/9157977/197355852-1e376090-b320-4945-9d8b-29328331889f.png)
 
-Como o nome da aba sugere, podemos enxergar todas as variáveis presentes no escopo de uma função, ou seja, todas as variáveis que estejam visíveis dentro de uma função. Toda vez que mudamos de escopo (exemplo.: entramos dentro de uma função, de uma função de uma classe), as variáveis que aparecem nessa aba mmudam.
+Como o nome da aba sugere, podemos enxergar todas as variáveis presentes no escopo de uma função, ou seja, todas as variáveis que estejam visíveis dentro de uma função. Toda vez que mudamos de escopo (exemplo.: entramos dentro de uma função, ou de uma função de uma classe), as variáveis que aparecem nessa aba mudam.
 
-Uma coisa que podemos é clicar com o botão direito nessas variáveis e teremos um menu aberto com novas opções, uma delas é adicionar a variável para aba "Watch".
+Uma coisa que podemos fazer é clicar com o botão direito nessas variáveis e teremos um menu aberto com novas opções, uma delas é adicionar a variável para aba "Watch".
 
 ### Watch
 
@@ -95,13 +95,13 @@ Agora que estamos familiriazados com todas as abas do depurador, podemos agora r
 
 ![continue](https://user-images.githubusercontent.com/9157977/197887409-3fdc55fc-5b13-4341-a155-e6d4eef3d60a.png)
 
-Esse botão irar permitir que o código pule para o próximo breakpoint possível. Como não temos mais nenhum breakpoint nesse código, clicar nesse botão apenas resultará no processo de depuração parar.
+Esse botão irar permitir que o código pule para o próximo breakpoint possível. Como não temos mais nenhum breakpoint nesse código, clicar nesse botão apenas resultará no processo de depuração finalizar.
 
 ### Passar por cima (Step Over)
 
 ![step-over](https://user-images.githubusercontent.com/9157977/197887431-90f0acbc-0f90-429c-817c-d400ffe769dd.png)
 
-Esse botão irá ir para a próxima linha, pulando qualquer chamada de função que existir, na nossa situação atual, pular a linha atual significa passar por toda a execução da função **somar** e pular para a linha de print.
+Esse botão irá para a próxima linha, pulando qualquer chamada de função que existir, na nossa situação atual, pular a linha atual significa passar por toda a execução da função **somar** e pular para a linha de print.
 
 #### Antes 
 
@@ -115,7 +115,7 @@ Esse botão irá ir para a próxima linha, pulando qualquer chamada de função 
 
 ![step-into](https://user-images.githubusercontent.com/9157977/197887453-b090ed4e-bf91-47db-b3cf-6abb882b86d9.png)
 
-Esse botão, terá um comportamento bem parecido com o anterior, ele irá para a próxima linha, porém, a linha atual for a chamada de uma função, o código irá entrar dentro da chamada dessa função. Neste caso então, a depuração irá entrar na função **somar**, mostrando o passo-a-passo de sua execução.
+Esse botão, terá um comportamento bem parecido com o anterior, ele irá para a próxima linha, porém, se a linha atual for a chamada de uma função, o código irá entrar dentro da chamada dessa função. Neste caso então, a depuração irá entrar na função **somar**, mostrando o passo-a-passo de sua execução.
 
 #### Antes 
 
@@ -125,11 +125,11 @@ Esse botão, terá um comportamento bem parecido com o anterior, ele irá para a
 
 ![image](https://user-images.githubusercontent.com/9157977/197888922-9c870659-301f-4568-823b-ec65339a2d96.png)
 
-### Ir para fora (Step Out)
+### Sair (Step Out)
 
 ![step-out](https://user-images.githubusercontent.com/9157977/197887512-b57a2ae2-7805-4380-b670-579f2b6489d6.png)
 
-Vamos supor o seguinte cenário, você entra dentro de uma função, você verifica o que você queria verificar nela e agora quer sair dela e continuar a execução fora da função. Para isso que serve o botão **Step Out** ele termina a execução da função, e retorna para a linha onde essa função foi chamada.
+Vamos supor o seguinte cenário, você entra dentro de uma função, você verifica o que você queria verificar nela e agora quer sair dela e continuar a execução fora da função. Para isso que serve o botão **Step Out** ele termina a execução da função e retorna para a linha onde essa função foi chamada.
 
 ### Recarregar (Reload)
 
@@ -149,12 +149,12 @@ Como o nome sugere, o processo de depuração será encerrado de forma prematura
 
 ![hot-replace](https://user-images.githubusercontent.com/9157977/197887565-1b57f898-02d6-4fbe-8d99-a834cd2a3b47.png)
 
-Essa função especial do VSCode, permite o programador trocar o valor de variáveis em tempo de execução. Basta o programador escolher a variável e então clicar
-no botão "Hot replace" o depurador irá voltar para o momento da instância da variável e então continuar a depuração com o novo valor.
+Essa função especial do VSCode permite o programador trocar o valor de variáveis em tempo de execução. Basta o programador escolher a variável e então clicar
+no botão "Hot replace" o depurador irá voltar para o momento da instância da variável e, então, continuar a depuração com o novo valor.
 
 # Conclusão
 
-Isso conclui todos os básicos para a depuração de código dentro do Visual Studio Code, dessa forma vai ficar muito fácil visualizar os seus códigos assim como também encontrar qualquer erro que possa estar acontecendo que gere exceções ou problemas na lógica do código. Sugiro que para mais informações consulte a página oficial da extensão no site do Visual Studio Code.
+Isso conclui todos os conceitos básicos para a depuração de código dentro do Visual Studio Code, dessa forma vai ficar muito fácil visualizar os seus códigos assim como também encontrar qualquer erro que possa estar acontecendo que gere exceções ou problemas na lógica do código. Sugiro que para mais informações consulte a página oficial da extensão no site do Visual Studio Code.
 
 # Links úteis
 
