@@ -37,7 +37,7 @@ qualquer erro que for encontrado.
 - Tratamento de exceções
 - Debug
   - Java Debugger (JDB)
-  - VS Code Debugger (em breve)
+  - VS Code Debugger 
 - Argumentos de Entrada (em breve)
 
 </details>
