@@ -14,7 +14,7 @@
 
 ## Depuração de código
 
-Muitas vezes o programador não terá uma IDE (Integrated Development Environment) para fazer depuração de código. Entretanto, quando temos acesso a tais ferramentas, como a disponibilizada pelo Visual Studio Code, não devemos menosprezar sua capacidade de ajudar a entender mais rápido e mais fácil os problemas que está acontecendo com o código.
+Muitas vezes o programador não terá uma IDE (Integrated Development Environment) para fazer depuração de código. Entretanto, quando temos acesso a tais ferramentas, como a disponibilizada pelo Visual Studio Code, não devemos menosprezar sua capacidade de ajudar a entender mais rápido e mais fácil os problemas que está acontecendo com o código. Por conta disso, nesta aula irei explicar o básico para você entender em como usar a ferramenta de depuração do VSCode.
 
 Para iniciarmos a depuração, antes de termos um código, precisamos da extensão [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) da Microsoft, para permitir que o processo de debug possa acontecer.
 
@@ -41,23 +41,23 @@ public class Main {
 
 Ele é simples, mas será o bastante para começarmos a usar a ferramenta. Com agora a sua IDE aberta, você terá uma area de trabalho parecida com isso.
 
-![image](https://user-images.githubusercontent.com/9157977/196299120-bad11077-9bf9-446a-ac85-be49049ce4ce.png)
+<img src = "https://user-images.githubusercontent.com/9157977/196299120-bad11077-9bf9-446a-ac85-be49049ce4ce.png" alt = "img1" width = "800" />
 
 Perceba que a cima da função **Main** tem um marcador dizendo *Debug* que é onde podemos iniciar o processo de depuração (Obs.: você também pode iniciar a depuração clicando no botão ao lado do "play" e clicar em **Debug Java**).
 
-![1](https://user-images.githubusercontent.com/9157977/196300335-9209ba3e-63bd-4ce3-9b53-37d2f0613f41.jpg)
+<img src = "https://user-images.githubusercontent.com/9157977/196300335-9209ba3e-63bd-4ce3-9b53-37d2f0613f41.jpg" alt = "img2" width = "800" />
 
 Entretanto, se você clicar nele, o programa irá rodar e finalizar normalmente. Isso acontece pois para o processo de debug ser realmente efetivo, precisamos colocar um breakpoint ou um ponto de parada no código.
 
 Para colocar um breakpoint, apenas clique na bolinha vermelha no lado de cada número.
 
-![breakpoint](https://user-images.githubusercontent.com/9157977/197355090-44f6f94f-9f94-4a52-83eb-813d2a27b588.png)
+<img src = "https://user-images.githubusercontent.com/9157977/197355090-44f6f94f-9f94-4a52-83eb-813d2a27b588.png" alt = "img3" width = "800" />
 
-Se clicarmos para rodar o Debug novamente, perceba que agora o nosso código está parado na linha em que colocamos o breakpoint (a linha marcada em amarelo)  e podemos inspecionar o nosso código durante execução. Vamos dar uma olhada na nossa área de trabalho de depuração:
+Se clicarmos para rodar o Debug novamente, perceba que agora o nosso código está parado na linha em que colocamos o breakpoint (a linha marcada em amarelo)  e podemos inspecionar o nosso código durante execução.
 
-![area-de-trabalho](https://user-images.githubusercontent.com/9157977/197355311-b4d900f9-ab9b-45e6-b945-6c02215de137.png)
+<img src = "https://user-images.githubusercontent.com/9157977/197355311-b4d900f9-ab9b-45e6-b945-6c02215de137.png" alt = "img3" width = "800" />
 
-Perceba que além disso, temos tambem outras áreas de trabalho que foram abertas pelo depurador, que permitem inspecionar elementos mais específicos do nosso código, vamos dar uma breve pincelada em cada um desses componentes.
+Perceba que além de termos o nosso código, temos tambem outras áreas de trabalho que foram abertas pelo depurador, que permitem inspecionar elementos mais específicos do nosso código, vamos dar uma breve pincelada em cada um desses componentes.
 
 ### Call Stack
 
@@ -93,32 +93,61 @@ Agora que estamos familiriazados com todas as abas do depurador, podemos agora r
 
 ### Continuar (Continue)
 
+![continue](https://user-images.githubusercontent.com/9157977/197887409-3fdc55fc-5b13-4341-a155-e6d4eef3d60a.png)
+
 Esse botão irar permitir que o código pule para o próximo breakpoint possível. Como não temos mais nenhum breakpoint nesse código, clicar nesse botão apenas resultará no processo de depuração parar.
 
 ### Passar por cima (Step Over)
 
+![step-over](https://user-images.githubusercontent.com/9157977/197887431-90f0acbc-0f90-429c-817c-d400ffe769dd.png)
+
 Esse botão irá ir para a próxima linha, pulando qualquer chamada de função que existir, na nossa situação atual, pular a linha atual significa passar por toda a execução da função **somar** e pular para a linha de print.
+
+#### Antes 
+
+![image](https://user-images.githubusercontent.com/9157977/197888772-b0f9e83b-b2a1-4040-84bc-2ba3b8029699.png)
+
+#### Depois
+
+![image](https://user-images.githubusercontent.com/9157977/197888829-21f1a62e-c593-4860-a9c5-41880e560005.png)
 
 ### Entrar em (Step Into)
 
+![step-into](https://user-images.githubusercontent.com/9157977/197887453-b090ed4e-bf91-47db-b3cf-6abb882b86d9.png)
+
 Esse botão, terá um comportamento bem parecido com o anterior, ele irá para a próxima linha, porém, a linha atual for a chamada de uma função, o código irá entrar dentro da chamada dessa função. Neste caso então, a depuração irá entrar na função **somar**, mostrando o passo-a-passo de sua execução.
+
+#### Antes 
+
+![image](https://user-images.githubusercontent.com/9157977/197888772-b0f9e83b-b2a1-4040-84bc-2ba3b8029699.png)
+
+#### Depois
+
+![image](https://user-images.githubusercontent.com/9157977/197888922-9c870659-301f-4568-823b-ec65339a2d96.png)
 
 ### Ir para fora (Step Out)
 
-Vamos supor o seguinte cenário, você entra dentro de uma função, você verifica o que você queria verificar nela e agora quer sair dela e continuar a execução fora 
-da função. Para isso que serve o botão **Step Out** ele termina a execução da função, e retorna para depois da linha que essa função foi chamada.
+![step-out](https://user-images.githubusercontent.com/9157977/197887512-b57a2ae2-7805-4380-b670-579f2b6489d6.png)
+
+Vamos supor o seguinte cenário, você entra dentro de uma função, você verifica o que você queria verificar nela e agora quer sair dela e continuar a execução fora da função. Para isso que serve o botão **Step Out** ele termina a execução da função, e retorna para a linha onde essa função foi chamada.
 
 ### Recarregar (Reload)
+
+![reload](https://user-images.githubusercontent.com/9157977/197887532-2648f591-a5f6-4e71-9571-6941c5619789.png)
 
 Como o nome sugere, ele irá recarregar o processo de depuração, retornando para o primeiro breakpoint.
 
 ### Parar (Stop)
 
+![stop](https://user-images.githubusercontent.com/9157977/197887543-ea0bf1fd-f383-421a-9032-05b50f65955f.png)
+
 Como o nome sugere, o processo de depuração será encerrado de forma prematura. 
 
-**Obs.:** Você também pode interromper o processo de depuração, se você apertar Ctrl + C no terminal onde a depuração foi iniciada.
+**Obs.:** Você também pode interromper o processo de depuração, se você apertar **Ctrl + C** no terminal onde a depuração foi iniciada.
 
 ### Hot replace
+
+![hot-replace](https://user-images.githubusercontent.com/9157977/197887565-1b57f898-02d6-4fbe-8d99-a834cd2a3b47.png)
 
 Essa função especial do VSCode, permite o programador trocar o valor de variáveis em tempo de execução. Basta o programador escolher a variável e então clicar
 no botão "Hot replace" o depurador irá voltar para o momento da instância da variável e então continuar a depuração com o novo valor.
