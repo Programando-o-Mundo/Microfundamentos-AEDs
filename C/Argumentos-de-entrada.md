@@ -83,6 +83,8 @@ de
 roma
 ``` 
 
+Obs.: Perceba que a primeira string do nosso vetor de argumentos **argv** inclui o nosso /a.out, ou seja o nome do nosso executável.
+
 ### links úteis
 
 [Leia mais sobre o argc e argv](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)
