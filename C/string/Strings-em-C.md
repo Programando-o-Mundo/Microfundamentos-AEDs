@@ -59,14 +59,14 @@ armazenado de forma estática no Heap , e o char[] é um arranjo de caracteres o
 
 Fonte: https://i.stack.imgur.com/oew8U.png
 
-Importante notar que, como a memória no Heap é dinâmica e manejada pelo programador,  as chances de acontecer erros e
-leaks de memória são muitos maiores  do que se o programador usar a memória da Stack, que é gerenciada pelo compilador.
+Importante notar que, como a memória no Heap é dinâmica e manejada pelo programador, logo, as chances de acontecer erros e
+leaks de memória são muitos maiores do que se o programador usar a memória da Stack, que é gerenciada pelo compilador.
 
 Por esse motivo: use char[] quando você está trabalhando com dados onde o tamanho da maior String possível é conhecida. Você irá
 ter uma certa perda de memória, mas isto será compensado pelo fato de não ter que se preocupar com alocação de memória.
 
 Se você precisa de mexer com dados massivos e que possuem um tamanho máximo desconhecido, use char* lembrando de tomar
-cuidado na hora de alocar e desalocar memória. Mais tarde iremos trabalhar com os depuradores do C, o que irá permitir maior controle e
+cuidado na hora de alocar e desalocar memória. Mais tarde iremos trabalhar com depuração em C, o que irá permitir maior controle e
 visualização da memória que estamos manejando.
 
 Além disso, podemos usar ponteiros para fazer algumas operações a mais com as Strings, mas deixaremos esse tópico quando
@@ -89,8 +89,7 @@ int main() {
 
 Porque isso é importante? Quando o C foi criado, a tabela de caracteres padrão da época era a ASCII e ela apenas possui
 conversão para caracteres da língua inglesa, impossibilitando a utilização de caracteres de outras línguas. Anos depois veio a
-tabela Unicode que se tornou o novo padrão, e expandiu o número de caracteres, mas estes 
-precisam de maior espaço de armazenamento.
+tabela Unicode que se tornou o novo padrão, e expandiu o número de caracteres, mas estes precisam de maior espaço de armazenamento.
 
 Considere o código abaixo.
 ```c
