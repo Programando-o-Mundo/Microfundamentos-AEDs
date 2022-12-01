@@ -1,4 +1,4 @@
-# Introdução a ponteiros em C/C++
+# Introdução a ponteiros em C
 
 # Gustavo Lopes Rodrigues
 
