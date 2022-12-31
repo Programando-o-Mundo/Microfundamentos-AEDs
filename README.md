@@ -1,69 +1,90 @@
-# Microfundamentos-AEDs
+# Como contribuir para o Microfundamentos
 
-Este repositório tem como o objetivo armazenar micro-aulas além de utilidades para a disciplina 
-de Algoritmos e Estruturas de Dados 2. 
+# Gustavo Lopes Rodrigues.
 
-Fiquem a vontade para abrirem *Issues* com sugestões de aulas além de correções de 
-qualquer erro que for encontrado.
+Você já teve alguma ideia que pode contribuir para o repositório? Se sim, seja bem vindo, aqui eu irei mostrar para você como criar 
+um. 
 
-# Sumário
+# Dando início a sua aula
 
-<details>
-  <summary>
-  <h2>
-  C
-  </h2>
-  </summary>
+Primeiramente lembre-se que a aula precisa de um nome, e precisa que esse nome venha no nome do arquivo e na primeira linha do arquivo. E em sequêcia deve
+vir o nome do professor da aula (neste caso o seu). Para efeitos práticos, segue um exemplo, eu tenho uma aula de Quicksort então o 
+nome do arquivo será: ```Quicksort.md``` e no começo do arquivo a sua aula está assim:
 
-- Ponteiros e Alocação de Memória.
-- Strings em C.
-- Leitura de Strings.
-- Debug
-  - GDB.
-  - Valgrind.
-- Argumentos de Entrada
+```
+# Quicksort
 
-</details>
+# Fulano de Tal
+```
+Obs.: Se você quiser colocar o nome do arquivo uma coisa, e o nome da aula outro, você pode, desde que ambos contenham a mesma palavra chave, então
+por exemplo, o nome do arquivo pode ser ```Quicksort.md``` e a aula pode ter o nome:
 
-<details>
-  <summary>
-  <h2>
-  Java
-  </h2>
-  </summary>
+```
+# Entendendo o algoritmo Quicksort
 
-- Noções básicas da linguagem
-- Strings
-- Tratamento de exceções
-- Debug
-  - Java Debugger (JDB)
-  - VS Code Debugger 
-- Argumentos de Entrada (em breve)
+# Fulano de Tal
 
-</details>
+```
 
-<details>
-  <summary>
-  <h2>
-  AEDs2
-  </h2>
-  </summary>
+# A aula em si
 
-- Arvore Binaria
-  - Arvore com método "mostrar" desenhando a Árvore em ASCII
+Agora você irá montar o conteúdo da aula, aqui você terá uma maior liberdade em como seguir o seu roteiro, mas em geral, algumas coisas eu recomendo para 
+todos.
 
-</details>
+# Primeiro, coloque o conteúdo da aula e seus pré-requisitos no começo
 
-<details>
-  <summary>
-  <h2>
-  AEDs3
-  </h2>
-  </summary>
+É importante que toda aula mantenha o aluno informado no que ele vai aprender, além dos pré-requisitos necessários para acompanhar a aula, até porque
+se você, por exemplo, fizer uma aula sobre o algoritmo Quicksort, você precisa assumir que o aluno vai entender conceitos básicos como: Complexidade e 
+o que significa ser um Algoritmo de Ordenação Interna. Neste caso é importante você coloque isso acompanhado do título:
 
-- Intercalação balanceada
-- CRUD
+```
+# O que você vai aprender
 
-</details>
+- O que é o Quicksort
+- Entender o funcionamento do algoritmo 
+- Complexidade de tempo e espaço do algoritmo
 
-</details>
+# Pré-requisitos
+- Noções básicas sobre Complexidade de Algoritmo
+- Noções básicas de Ordenação interna
+```
+
+# Segundo, separe cada parte do aprendizado em seções
+
+Para cada parte da aula separe a apresentação de cada ideia em seção, então por exemplo nessa nossa aula de quicksort, coloque cada um tópicos para
+aprendizado em seções diferentes para que você possa deixar ainda mais claro o fluxo da aula para o aluno.
+
+Então por exemplo.
+
+
+```
+# O que é o Quicksort
+
+O quicksort é um algoritmo de ordenação interna criado por ....
+
+
+# Entender o funcionamento do algoritmo
+
+Agora que você entende o que é o algoritmo, vamos agora mostrar um exemplo prático de como um conteúdo de dados será organizado, considere o arranjo 
+de números abaixo
+
+``` 
+
+# Terceiro, finalize a aula com links de referência
+
+Toda informação tem uma origem, então não se esqueça de colocar de onde tirou essas informações, além de links para que o aluno possa continuar
+o aprendizado daquele tópico.
+
+```
+# Links
+
+- Leia mais sobre o Quicksort (link aqui)
+- Implementando o Quicksort em C (link aqui)
+
+``` 
+
+# Conclusão
+
+Então é isso, estes são os elementos que vocês precisam levar em consideração na hora de criar uma aula, espero que isso tenha esclarecido suas dúvidas,
+e que dessa forma vocês consigam criar novas aulas que possam inspirar a próxima geração de programadores. Caso tenham mais dúvidas, podem entrar em contato
+comigo. Muito obrigado e bom dia :-)
