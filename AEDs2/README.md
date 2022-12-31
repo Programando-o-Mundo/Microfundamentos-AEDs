@@ -1,1 +1,1 @@
-# Algoritmo e Estrutura de Dados 2
+# Algoritmos e Estruturas de Dados 2
