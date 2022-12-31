@@ -1,6 +1,5 @@
-# Table of contents
+# Sumário
 
-* [COMO-CONTRIBUIR](README.md)
 * [Introdução](<README (1).md>)
 * [Algoritmos e Estruturas de Dados 2](AEDs2/README.md)
   * [Árvore Binária](AEDs2/ArvoreBinaria/README.md)
@@ -27,3 +26,4 @@
     * [String-em-Java](Java/string/String-em-Java.md)
   * [Tratamento de Exceções em Java](Java/tratamento-de-excacao/README.md)
     * [try-catch-e-o-throws](Java/tratamento-de-excacao/try-catch-e-o-throws.md)
+* [COMO-CONTRIBUIR](README.md)
