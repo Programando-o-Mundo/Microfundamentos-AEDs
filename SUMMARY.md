@@ -1,7 +1,6 @@
-# Table of contents
+# Sumário
 
-* [README](README.md)
-* [Introdução](introducao.md)
+* [Introdução](README.md)
 * [Algoritmos e Estruturas de Dados 2](AEDs2/README.md)
   * [Árvore Binária](AEDs2/ArvoreBinaria/README.md)
 * [Algoritmos e Estruturas de Dados 3](AEDs3/README.md)
