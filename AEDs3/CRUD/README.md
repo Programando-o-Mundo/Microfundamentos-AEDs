@@ -14,4 +14,7 @@ As operações CRUD são uma parte fundamental de muitos sistemas de software e 
 
 Felizmente temos daqui dois exemplos de apoio para ajudar você a criar o seu próprio CRUD, a primeira versão **CRUD-simples** possui as implementações básicas do CRUD e além do uso de um índice direto e indireto para melhor atravessia das operações do CRUD. Por fim temos uma segunda implementação que usa de Arvore B+ e Hash Extensível que foi feita por mim, mas as implementações das estruturas de Arvore e Hash foram feitos pelo [Professor Marcos Kutova](https://www.kutova.com/)
 
+- [Crud Simples](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/tree/main/AEDs3/CRUD/CRUD-simples)
+- [Crud Avançado](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/tree/main/AEDs3/CRUD/CRUD-com-arvore-bmais-e-hash-extensivel)
+
 Bons estudos!
