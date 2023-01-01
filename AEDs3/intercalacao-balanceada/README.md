@@ -11,8 +11,10 @@ Aqui está um exemplo de como o algoritmo de intercalação balanceada funciona:
 **Obs.:** Para exemplos temos cinco registros por bloco e dois caminhos.
 
 **Entrada**: Lista com vários números fora de ordem.
-| 1 | 5 | 3 | 2 | 7 | 13 | 23 | 235 | 3 | 9 | 34 | 55 | 1634 | 29 |
+
+| | | | | | | | | | | | | | |
 |---|---|---|---|---|----|----|-----|---|---|----|----|------|----|
+| 1 | 5 | 3 | 2 | 7 | 13 | 23 | 235 | 3 | 9 | 34 | 55 | 1634 | 29 |
 
 1 - Separe a lista de números em blocos
 
@@ -22,11 +24,13 @@ Aqui está um exemplo de como o algoritmo de intercalação balanceada funciona:
 
 **Obs.:** O espaço branco é a separação entre um bloco e outro.
 
-| 1 | 2 | 3 | 5 | 7 |    | 34 | 55 | 1634 | 29 |
+| | | | | | | | | | |
 |---|---|---|---|---|----|----|------|----|----|
+| 1 | 2 | 3 | 5 | 7 |    | 34 | 55 | 1634 | 29 |
 
-| 13 | 23  | 235 | 3 | 9 |
+| | | | | |
 |----|-----|-----|---|---|
+| 13 | 23  | 235 | 3 | 9 |
 
 4 - Faça leitura dos blocos dos caminhos, até o ponteiro do caminho chegar no final. Você irá ler os blocos em grupos, e irá colocar os registros dentro dos blocos de forma ordenada em um novo caminho.
 
@@ -34,25 +38,30 @@ Neste caso temos dois grupos: o primeiro que é formado pelo primeiro bloco do p
 
 ### Antes
 
-| 1 | 2 | 3 | 5 | 7 |    | 34 | 55 | 1634 | 29 |
+| | | | | | | | | | |
 |---|---|---|---|---|----|----|------|----|----|
+| 1 | 2 | 3 | 5 | 7 |    | 34 | 55 | 1634 | 29 |
 
-| 13 | 23  | 235 | 3 | 9 |
+| | | | | |
 |----|-----|-----|---|---|
+| 13 | 23  | 235 | 3 | 9 |
 
 ### Depois
 
-| 1 | 2 | 3 | 3 | 5 | 7  | 9  | 13| 23 | 253 |
+| | | | | | | | | | |
 |---|---|---|---|---|----|----|---|----|-----|
+| 1 | 2 | 3 | 3 | 5 | 7  | 9  | 13| 23 | 253 |
 
-| 29 | 34 | 55 | 1634 |
+| | | | | 
 |----|----|----|------|
+| 29 | 34 | 55 | 1634 |
 
 5 - Repita o passo quatro, até que o número de blocos seja igual ou menor do que o número de caminhos, dessa forma só um caminho novo será gerado e esta será a sua lista ordenada.
 
 **Saída**: Lista com vários números ordenados.
-| 1 | 2 | 3 | 3 | 5 | 7 | 9 | 13 | 23 | 29 | 34 | 55 | 235 | 1634 |
+| | | | | | | | | | | | | | |
 |---|---|---|---|---|----|----|-----|---|---|----|----|------|----|
+| 1 | 2 | 3 | 3 | 5 | 7 | 9 | 13 | 23 | 29 | 34 | 55 | 235 | 1634 |
 
 Nesta seção, você irá encontrar um exemplo em como fazer uma implementação simples do algoritmo usando números como o registro que
 queremos ordenar. Também recomendo bastante os vídeos do professor Marcos Kutova para a [explicação do algoritmo](https://youtu.be/CU_zh6Nunu8)
