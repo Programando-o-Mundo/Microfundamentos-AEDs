@@ -26,9 +26,14 @@ Dentro da computação, utilizamos algoritmos para resolver um problema do mundo
 O primeiro passo e mais simples seria identificar o problema que queremos resolver, por exemplo, vamos supor que estamos fazendo um jogo, e o nosso problema atual é que queremos criar um sistema que possa perseguir o jogador, apenas passando por cima do caminho e não das paredes. Este é o nosso problema, nossos objetivos então seriam:
 
 - Fazer o inimigo mover
+- Fazer o inimigo não poder se mover pela diagonal, apenas para cima, baixo, esquerda e direita.
 - Fazer o inimigo calcular a trajetória até jogador
 - Fazer o inimigo chegar até o jogador, evitando colidir com a parede
 - Fazer o inimigo chegar até o jogador da forma mais eficiente possível
+
+![ai](https://user-images.githubusercontent.com/9157977/210408979-2d6b6827-8842-4003-8508-79a2d47bd90d.jpg)
+
+O quadrado verde é o jogador, os quadrados cinzas representa as paredes e o quadrado vermelho é o inimigo
 
 ### 2 - Conceptualização da solução.
 
@@ -77,7 +82,13 @@ def aStarSearch(problem: SearchProblem, heuristic=nullHeuristic):
                 visited.add(node[POSITION])
 ```
 
-Obs.: Não se preocupe, vocês não tem a obrigação de entender o que está acontecendo aqui em cima, apenas entender que isso é uma solução 
+![ai2](https://user-images.githubusercontent.com/9157977/210409079-0edfb743-7b8d-4c23-a054-176ef118cacc.jpg)
+
+Inimigo fez o trajeto até o jogador, que é representando com a linha vermelha.
+
+**Obs1.:** Observe que a nossa solução não permite o inimigo andar pelas diagonais
+
+**Obs2.:** Não se preocupe, vocês não tem a obrigação de entender o que está acontecendo aqui em cima, apenas entender que isso é uma solução 
 para o nosso problema ;-).
 
 Vocês provavelmente deve ter notado que a nossa solução foi feita de cima para baixo ou "Top-down", essa é uma forma de aproximação muito comum para resolução de problemas do mundo real, e é também chamada de aproximação descendente.
