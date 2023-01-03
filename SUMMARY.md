@@ -3,7 +3,6 @@
 * [Introdução](README.md)
 * [Algoritmos e Estruturas de Dados 1](AEDs1/README.md)
   * [Introdução](AEDs1/Introducao.md)
-  * [Árvore Binária](AEDs2/ArvoreBinaria/README.md)
 * [Algoritmos e Estruturas de Dados 2](AEDs2/README.md)
   * [Árvore Binária](AEDs2/ArvoreBinaria/README.md)
 * [Algoritmos e Estruturas de Dados 3](AEDs3/README.md)
