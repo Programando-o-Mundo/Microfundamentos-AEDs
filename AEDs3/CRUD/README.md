@@ -12,7 +12,7 @@ A operação Delete é usada para remover um registro ou recurso existente do si
 
 As operações CRUD são uma parte fundamental de muitos sistemas de software e geralmente são implementadas como parte da camada de persistência de um aplicativo, responsável por armazenar e recuperar dados de um sistema de armazenamento persistente.
 
-Felizmente temos daqui dois exemplos de apoio para ajudar você a criar o seu próprio CRUD, a primeira versão **CRUD-simples** possui as implementações básicas do CRUD e além do uso de um índice direto e indireto para melhor atravessia das operações do CRUD. Por fim temos uma segunda implementação que usa de Arvore B+ e Hash Extensível que foi feita por mim, mas as implementações das estruturas de Arvore e Hash foram feitos pelo [Professor Marcos Kutova](https://www.kutova.com/)
+Felizmente neste módulo temos dois exemplos de apoio para ajudar você a criar o seu próprio CRUD genérico, ou seja, você pode usá-lo para armazenar qualquer tipo de Objeto, desde que o mesmo tenha suporte para as operações que o CRUD precisa. A primeira versão **CRUD-simples** possui as implementações básicas do CRUD e além do uso de um índice direto e indireto para melhor atravessia das operações do CRUD. Por fim temos uma segunda implementação que usa de Arvore B+ e Hash Extensível que foi feita por mim, mas as implementações das estruturas de Arvore e Hash foram feitos pelo [Professor Marcos Kutova](https://www.kutova.com/)
 
 - [Crud Simples](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/tree/main/AEDs3/CRUD/CRUD-simples)
 - [Crud Avançado](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/tree/main/AEDs3/CRUD/CRUD-com-arvore-bmais-e-hash-extensivel)
