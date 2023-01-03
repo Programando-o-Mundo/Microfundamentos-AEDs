@@ -2,6 +2,10 @@
 
 CRUD significa Criar (**C**reate), Ler (**R**ead), Atualizar (**U**pdate) e Excluir (**D**elete). Essas são as quatro operações básicas normalmente implementadas para qualquer armazenamento persistente, seja um banco de dados, sistema de arquivos ou algum outro tipo de sistema de armazenamento.
 
+![crud](https://user-images.githubusercontent.com/9157977/210387625-8803252f-d142-4586-b16b-e09701f260f2.jpg)
+
+Fonte: https://devporai.com.br/o-que-e-crud-e-porque-voce-deveria-aprender-a-criar-um/
+
 A operação Create é usada para criar um novo registro ou recurso no sistema de armazenamento. Por exemplo, você pode usar a operação Create para adicionar um novo cliente a um banco de dados ou criar um novo arquivo em um sistema de arquivos.
 
 A operação Read é usada para recuperar um registro ou recurso existente do sistema de armazenamento. Por exemplo, você pode usar a operação Read para procurar um cliente por seu ID ou para ler o conteúdo de um arquivo.
