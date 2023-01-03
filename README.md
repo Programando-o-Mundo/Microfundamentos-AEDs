@@ -1,7 +1,7 @@
 # Microfundamentos-AEDs
 
-Este repositório tem como o objetivo armazenar micro-aulas além de utilidades para a disciplina 
-de Algoritmos e Estruturas de Dados 2. 
+Este repositório tem como o objetivo armazenar micro-aulas além de utilidades para as disciplinas 
+de Algoritmos e Estruturas de Dados. 
 
 Fiquem a vontade para abrirem *Issues* com sugestões de aulas além de correções de 
 qualquer erro que for encontrado.
@@ -39,6 +39,17 @@ qualquer erro que for encontrado.
   - Java Debugger (JDB)
   - VS Code Debugger 
 - Argumentos de Entrada (em breve)
+
+</details>
+
+<details>
+  <summary>
+  <h2>
+  AEDs1
+  </h2>
+  </summary>
+
+- Introdução
 
 </details>
 
