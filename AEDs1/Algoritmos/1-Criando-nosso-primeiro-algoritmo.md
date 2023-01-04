@@ -105,3 +105,4 @@ Isso foi provavelmente bastante informação, então vamos terminar por aqui, at
 
 - [Aula completa de AEDs1 - UNIVERSIDADE FERNANDO PESSOA](http://www3.dsi.uminho.pt/iiee/repos/AEDados.pdf)
 - [Qual a REAL diferença entre Árquivos Binário e Texto?? - Fabio Akita](https://youtu.be/oSCVb4Ts-G4)
+- [C in 100 Seconds](https://youtu.be/U3aXWizDbQ4)
