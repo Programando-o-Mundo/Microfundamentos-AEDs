@@ -96,10 +96,8 @@ Vocês provavelmente deve ter notado que a nossa solução foi feita de cima par
 ## Estruturas de Dados
 
 Do outro lado da moeda, nós temos Estruturas de dados, que são formas de representar itens de dados que são logicamente relacionados ao dados
-que queremos representar. Isso parece muito confuso, mas pense o seguinte: Vamos supor que estamos trabalhando em um algoritmo para 
-calcular o troco em uma padaria. Você provavelmente sabe que trabalhos com números que tem casas decimais (por exemplo R$3.14), essa representação
-númerica (3.14) chamamos isso de um número com ponto flutuante ou apenas float, e um float é uma estrutura de dado que está logicamente relacionado
-com o problema que queremos resolver da vida real.
+que queremos representar. Isso parece muito confuso, mas pense o seguinte: Vamos supor que estamos produzindo um algoritmo para 
+calcular o troco em uma padaria. Aqui, você provavelmente deve saber que iremos trabalhar com números que tem casas decimais (por exemplo R$3.32), essa representação númerica (3.32) chamamos isso de um número com ponto flutuante ou apenas float, e um float é uma estrutura de dado que está logicamente relacionado com o problema que queremos resolver da vida real.
 
 Um exemplo mais simples ainda, estamos programando o interruptor de uma lâmpada, sabemos aqui que temos dois estados: ligado (ON) e desligado (OFF), para isso temos uma estrutura de dado chamado boolean (ou simplesmente bool) que representa um dígito (0 ou 1) onde 0 representa falso "False" e pode ser a nossa lâmpada desligada, e 1 representa verdadeiro "True" e pode ser a nossa lâmpada ligada.
 
