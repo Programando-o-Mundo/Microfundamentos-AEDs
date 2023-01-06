@@ -18,9 +18,15 @@ Quando trabalhamos com a construção de algoritmos, precisamos pensar nas entid
 
 Um outro exemplo bem simples seria por exemplo: vamos supor que estamos trabalhando em um aplicativo para uma padaria e temos que fazer um contador para a disponibilidade de um novo pão que estão vendendo agora. Neste caso não precisamos de números com casas decimais, pois não existe ter "2.43 pães disponíveis", então nesse caso precisariamos trabalhar com números inteiros. Porém, ao mesmo tempo não tem como ter "-5 pães disponíveis", e por isso precisamos trabalhar com números inteiros que não possuem o bit de sinal. 
 
-Enfim nós poderiamos continuar essa discussão por horas, mas acredito que tenha ficado mais do que claro o porquê estruturas de dados são tão importantes para nós, mas a final de contas, qual é a definição de Estruturas de Dados? Estruturas de Dados são entidades responsáveis em armazenar e organizar dados de forma que podemos acessar, atualizar e processar esses dados de forma eficiente. Nesta aula em específica iremos trabalhar com Estruturas de Dados Primitivas que são estruturas de dados básicas que normalmente são construídas dentro de uma linguagem de programação. Além disso, elas são responsáveis em armazenar dados de apenas um tipo de dado.
+# Definindo Estruturas de Dados
 
-De maneira geral, toda linguagem de programação possui essas estruturas:
+Enfim nós poderiamos continuar essa discussão por horas, mas acredito que tenha ficado mais do que claro o porquê estruturas de dados são tão importantes para nós, mas a final de contas, qual é a definição de Estruturas de Dados? 
+
+Estruturas de Dados são entidades responsáveis em armazenar e organizar dados de forma que podemos acessar, atualizar e processar esses dados de forma eficiente. 
+
+Nesta aula em específica iremos trabalhar com Estruturas de Dados Primitivas que são estruturas de dados básicas que normalmente são construídas dentro de uma linguagem de programação. Além disso, elas são responsáveis em armazenar dados de apenas um tipo de dado.
+
+Aqui estão as estruturas de dados primitivas da linguagem C:
 
 ### Inteiro (int)
 
@@ -49,3 +55,4 @@ E por enquanto é apenas isto, existe mais algumas pequenas variações nos tipo
 ## Línks úteis
 
 - [Aula de AEDs1](http://www3.dsi.uminho.pt/iiee/repos/AEDados.pdf)
+- [Leia mais sobre tipos de Dados em C](https://byjus.com/gate/data-types-in-c/)
