@@ -1,4 +1,18 @@
-## Estruturas de Dados Primitivas
+# Estruturas de Dados Primitivas
+
+# Gustavo Lopes Rodrigues
+
+## Você vai aprender
+
+- O que são Estruturas de Dados
+- Qual é a importância das Estruturas de Dados e escolher as estruturas de dados certa
+- O que são as Estruturas de Dados Primitivas e quais são elas
+
+## Pré-requisitos
+
+- Introdução a AEDs1
+
+## O Mundo simbolizado pelas Estruturas de Dados
 
 Quando trabalhamos com a construção de algoritmos, precisamos pensar nas entidades que iram suportar e representar os objetos dos nossos problemas de forma fiel. Um exemplo bem simples de visualizar esse conceito é a calculadora, pois nela, precisamos trabalhar com números que possam ter casas decimais e para isso temos o float e o double para representar número com casas decimais, porém qual deles utilizar, pois o float pode ter até 7 casas decimais enquanto que o double pode guardar 15 casas decimais. Esta discussão é para ilustrar a importância das estruturas de dados: organizar dados de maneira que representem o nosso problema de forma fidedigna e eficiente.
 
@@ -31,3 +45,7 @@ Por fim temos o ponteiro, que não iremos entrar em detalhes nesta aula, pois é
 ## Conclusão
 
 E por enquanto é apenas isto, existe mais algumas pequenas variações nos tipos de dados, como por exemplo o **size_t** do C, que permite guardar números inteiros sem sinal de 16 bits, mas deixaremos esses detalhes para você pesquisar, por agora, você deve ter entendido a importância das estruturas de dados como um dado e você deve agora saber quais são as estruturas de dados primitivas.
+
+## Línks úteis
+
+- [Aula de AEDs1](http://www3.dsi.uminho.pt/iiee/repos/AEDados.pdf)
