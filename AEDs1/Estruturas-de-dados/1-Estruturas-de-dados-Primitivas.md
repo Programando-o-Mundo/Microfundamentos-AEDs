@@ -32,7 +32,7 @@ Ponto flutuante descreve um número geralmente de 32 bits, sendo 24 desses bits 
 
 ### Booleano (bool)
 
-Criado pelo matemático inglês George Boole, a algebra booleana descreve um valor que pode ser verdadeiro (true) que é representado pelo número 1, ou pode ser falso (false) que é representado pelo número 0. De forma geral, nós usamos booleanos para fazer lógicas condicionais.
+Inspirado pela algebra booleana, criada pelo matemático inglês George Boole, um booleano descreve um valor que pode ser verdadeiro (true) que é representado pelo número 1, ou pode ser falso (false) que é representado pelo número 0. De forma geral, nós usamos booleanos para fazer lógicas condicionais.
 
 ### Caractere (char)
 
