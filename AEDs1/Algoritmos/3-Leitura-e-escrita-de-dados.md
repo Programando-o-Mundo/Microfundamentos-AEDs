@@ -67,13 +67,13 @@ int main(void) {
 }
 ``` 
 
-Vamos explicar o que está acontecendo, primeiramente invocamos a função **printf** ainda não chegamos na aula de funções então essa sintaxe parece meio confusa, mas de forma simplificada, quando queremos invocar uma função, colocamos o seu nome exato, seguindo de dois colchetes "()".
+Vamos explicar o que está acontecendo, primeiramente invocamos a função **printf** ainda não chegamos na aula de funções então essa sintaxe parece meio confusa, mas de forma simplificada, quando queremos invocar uma função, colocamos o seu nome exato, seguindo de dois parênteses "()".
 ```
 printf()
   ^
  nome
 ``` 
-Dentro do colchete nós colocamos o que chamamos de os argumentos da função, que são valores para que a função precisa para gerar um resultado. Neste caso para imprimirmos algo na tela precisamos de dois argumentos, o primeiro é uma sequência de caracteres colocadas dentro de aspas duplas (" "), dentro das asplas duplas colocamos o nosso formatador, que no nosso caso, como queremos imprimir um número decimal, colocamos *%d*. 
+Dentro dos parênteses nós colocamos o que chamamos de os argumentos da função, que são valores para que a função precisa para gerar um resultado. Neste caso para imprimirmos algo na tela precisamos de dois argumentos, o primeiro é uma sequência de caracteres colocadas dentro de aspas duplas (" "), dentro das asplas duplas colocamos o nosso formatador, que no nosso caso, como queremos imprimir um número decimal, colocamos *%d*. 
 
 ```
 printf("%d")
@@ -164,7 +164,7 @@ int main(void) {
   return 0;
 }
 ``` 
-Essa sintaxe parece meio maluca, mas vamos destrinchar ela. A primeira parte vocês já devem estar familiarizados, nome da função, colchetes, sequência de caracteres com os formatadores, e por fim a variável, mas e esse sinal "&"? Bem, novamente não iremos entrar em detalhes nisso agora, apenas entenda que esse sinal está nos dizendo que estamos passando o endereço da variável "a", pois como queremos atualizar o valor de "a" precisamos passar o endereço de memória, para que o valor dentro de "a" seja sobreescrito.
+Essa sintaxe parece meio maluca, mas vamos destrinchar ela. A primeira parte vocês já devem estar familiarizados, nome da função, parênteses, sequência de caracteres com os formatadores, e por fim a variável, mas e esse sinal "&"? Bem, novamente não iremos entrar em detalhes nisso agora, apenas entenda que esse sinal está nos dizendo que estamos passando o endereço da variável "a", pois como queremos atualizar o valor de "a" precisamos passar o endereço de memória, para que o valor dentro de "a" seja sobreescrito.
 
 Além disso, podemos usar o scanf para fazer leituras de forma customizada, por exemplo, podemos ler mais de uma variável na mesma linha:
 
