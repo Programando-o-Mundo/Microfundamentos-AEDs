@@ -1,6 +1,21 @@
 # Estruturas de Dados não Primitivas
 
-Até então, temos usados os componentes que a linguagem C tem nos oferecido, inteiros, floats, booleanos, char e etc. Agora nós iremos dar uma olhada breve no mundo de Estruturas de Dados não Primitivas, ou seja, estruturas que são estruturas mais complexas e geralmente são composições feitas usando duas ou mais estruturas primitivas.
+# Gustavo Lopes Rodrigues
+
+## Você irá ver nessa aula:
+
+- O que são estruturas de dados não primitivas
+- Alguns exemplos dessas estruturas na linguagem C
+- Como utilizar elas na linguagem
+
+## Pré-requisitos
+
+- 1-Estruturas-de-dados-Primitivas
+- [Todas as aulas de algoritmos e sugerido ter assistido até aqui](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/tree/main/AEDs1/Algoritmos)
+
+## Aplicando 
+
+Até então, temos usados os componentes que a linguagem C tem nos oferecido, inteiros, floats, booleanos, char e etc. Agora nós iremos dar uma olhada breve no mundo de Estruturas de Dados não Primitivas, ou seja, estruturas que são estruturas mais complexas e geralmente são composições feitas usando duas ou mais estruturas primitivas, sejam elas do mesmo tipo ou não.
 
 ## Arrays
 
@@ -25,9 +40,11 @@ int a = array[0];
 
 Uma observação importante é que quando criamos um array de tamanho dez, você imagine que ele vai da posição 1 até a posição 10, certo? Porém, você irá ver que não só em C, mas em várias linguagens, que na verdade nós temos um array que vai de 0 até 9, sendo o 5 elemento acessado nesse exemplo, sendo 4° elemento. Você provavelmente deve estar muito confuso a respeito disso e deve estar pensando em como isso é possível.
 
-A explicação disso exige um pouco de arquitetura, mas de forma bem simplificada, quando criamos um array, esse array está em alguma posição da memória, vamos supor , ele está na posição 1. Então nesse caso nós temos 10 inteiros, como cada inteiro tem 32 bits ou 4 bytes, então vai da posição 1 até a posição 41, sendo a posição 1 onde começa o primeiro elemento do array.
+A explicação disso exige um pouco de arquitetura, mas de forma bem simplificada, quando criamos um array, esse array está em alguma posição da memória, vamos supor , ele está na posição 0. Então nesse caso nós temos 10 inteiros, como cada inteiro tem 32 bits ou 4 bytes, então vai da posição 0 até a posição 40, sendo a posição 0 onde começa o primeiro elemento do array.
 
-Quando você faz essa sintaxe ```array[0]```, o que você na verdade está pedindo para linguagem C de forma implícita, é pegar o endereço de onde o array começa na memória (no nosso exemplo 1) e somar com índice que você passou (nesse caso 0) e multiplicar com o tamanho do tipo do array (neste caso o inteiro que é de 4 bytes). Como eu disse anteriormente, o primeiro elemento está na posição 1, e o array começa o ponteiro no primeiro elemento, então (1 + (0 * 4)) = 1, que é justamente o primeiro elemento do array.
+![Diagrama sem nome drawio](https://user-images.githubusercontent.com/9157977/211172398-dd4748c3-a654-4830-95dd-f2488bfa0bbb.png)
+
+Pegando a imagme acima como exemplo, quando usamos essa sintaxe```array[0]```, o que você na verdade está pedindo para linguagem C de forma implícita, é pegar o endereço de onde o array começa na memória (no nosso exemplo 0) e somar com índice que você passou (nesse caso 0) e multiplicar com o tamanho do tipo do array (neste caso o inteiro que é de 4 bytes). Como eu disse anteriormente, o primeiro elemento está na posição 0, e o array começa o ponteiro no primeiro elemento, então (0 + (0 * 4)) = 0, que é justamente o primeiro elemento do array.
 
 É por essa maneira que se quisermos preencher o nosso array usando um laço de repetição for, vamos do índice 0, até que o índice seja menor que 10, porque assim ele vai de 0 a 9.
 
@@ -113,3 +130,4 @@ Existe mais exemplos de Estruturas não primitivas, mas por enquanto acredito qu
 
 - [C Structs](https://www.youtube.com/watch?v=oKXP1HZ8xIs)
 - [C Arrays](https://www.youtube.com/watch?v=eE9MnoS0lc0)
+- [Leia mais sobre Strings em C](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/blob/main/C/string/Strings-em-C.md)
