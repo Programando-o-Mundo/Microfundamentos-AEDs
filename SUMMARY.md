@@ -10,8 +10,6 @@
     * [Estruturas condicionais](AEDs1/Algoritmos/4-Estruturas-condicionais.md)
     * [Instruções de repetição](AEDs1/Algoritmos/5-Instrucoes-de-repeticao.md)
     * [Operadores aritméticos](AEDs1/Algoritmos/6-Operadores-aritmeticos.md)
-    * [Operadores relacionais](AEDs1/Algoritmos/7-Operadores-relacionais.md)
-    * [Operadores lógicos](AEDs1/Algoritmos/8-Operadores-logicos.md)
   * [Estruturas-de-dados](AEDs1/Estruturas-de-dados/README.md)
     * [Estruturas de dados primitivas](AEDs1/Estruturas-de-dados/1-Estruturas-de-dados-Primitivas.md)
     * [Estruturas de dados não primitivas](AEDs1/Estruturas-de-dados/2-Estruturas-de-dados-nao-Primitivas.md)
