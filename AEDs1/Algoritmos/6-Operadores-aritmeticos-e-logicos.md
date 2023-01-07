@@ -1,0 +1,1 @@
+# Operadores aritméticos e lógicos
