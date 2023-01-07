@@ -18,7 +18,7 @@
 
 Temos agora o nosso primeiro algoritmo, porém, tudo que sabemos fazer até então e criar a função principal e imprimir texto na tela, vamos passar para o próximo passo que seria declarar e atribuir valor a variáveis.
 
-## Declaração e variáveis8 
+## Declaração e variáveis
 
 Variáveis são objetos capazes de reter e representar um valor ou expressão, na linguagem C a sintaxe para declaração são duas:
 
@@ -31,7 +31,14 @@ int a;
 int a = 5;
 ```
 
-Não irei entrar em detalhes sobre tipos de variáveis, para isso deixarei as aulas de estruturas de dados para explicar esse tópico, por agora basta que o nome que você colocar primeiro indica o tipo que a variável. Além disso, recomendo que evite usar a declaração de tipo 1, pois neste caso não estamos inicializando a memória dessa variável, mas não se preocupe, chegaremos neste assunto eventualmente.
+Obs.: Você também pode declarar mais de uma variável na mesma linha, colocando as variáveis entre vírgulas, a única condição é que todas as variáveis serão do mesmo tipo
+
+Exemplo:
+
+```c
+// Três variáveis do tipo int
+int a,b,c;
+```
 
 Além disso, podemos declarar uma variável como **constante**.
 
@@ -80,7 +87,7 @@ Quanto ao nome das variáveis, não se preocupe, você pode dar o nome que quise
 ter uma sequência praticamente infinita de letras, digitos ou *"_"* até encontrar um espaço vazio ou outro caractere.
 
 ```c
-int a233;  // válido
+int A233;  // válido
 int _a233; // válido
 int 2a3_;  // inválido
 ```
