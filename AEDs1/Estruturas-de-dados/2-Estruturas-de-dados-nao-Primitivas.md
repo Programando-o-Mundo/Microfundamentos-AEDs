@@ -42,7 +42,7 @@ Uma observação importante é que quando criamos um array de tamanho dez, você
 
 A explicação disso exige um pouco de arquitetura, mas de forma bem simplificada, quando criamos um array, esse array está em alguma posição da memória, vamos supor , ele está na posição 0. Então nesse caso nós temos 10 inteiros, como cada inteiro tem 32 bits ou 4 bytes, então vai da posição 0 até a posição 40, sendo a posição 0 onde começa o primeiro elemento do array.
 
-![Diagrama sem nome drawio](https://user-images.githubusercontent.com/9157977/211172398-dd4748c3-a654-4830-95dd-f2488bfa0bbb.png)
+![Diagrama sem nome](https://user-images.githubusercontent.com/9157977/211172527-013888da-8d08-45c0-a0e9-277549e2c9a5.jpg)
 
 Pegando a imagme acima como exemplo, quando usamos essa sintaxe```array[0]```, o que você na verdade está pedindo para linguagem C de forma implícita, é pegar o endereço de onde o array começa na memória (no nosso exemplo 0) e somar com índice que você passou (nesse caso 0) e multiplicar com o tamanho do tipo do array (neste caso o inteiro que é de 4 bytes). Como eu disse anteriormente, o primeiro elemento está na posição 0, e o array começa o ponteiro no primeiro elemento, então (0 + (0 * 4)) = 0, que é justamente o primeiro elemento do array.
 
