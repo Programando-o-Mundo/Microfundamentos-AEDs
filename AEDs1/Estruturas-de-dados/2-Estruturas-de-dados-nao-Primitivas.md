@@ -44,7 +44,9 @@ A explicação disso exige um pouco de arquitetura, mas de forma bem simplificad
 
 ![Diagrama sem nome](https://user-images.githubusercontent.com/9157977/211172527-013888da-8d08-45c0-a0e9-277549e2c9a5.jpg)
 
-Pegando a imagme acima como exemplo, quando usamos essa sintaxe```array[0]```, o que você na verdade está pedindo para linguagem C de forma implícita, é pegar o endereço de onde o array começa na memória (no nosso exemplo 0) e somar com índice que você passou (nesse caso 0) e multiplicar com o tamanho do tipo do array (neste caso o inteiro que é de 4 bytes). Como eu disse anteriormente, o primeiro elemento está na posição 0, e o array começa o ponteiro no primeiro elemento, então (0 + (0 * 4)) = 0, que é justamente o primeiro elemento do array.
+Pegando a imagem acima como nosso array de exemplo, quando usamos essa sintaxe```array[0]```, o que você na verdade está pedindo para linguagem C de forma implícita, é pegar o endereço de onde o array começa na memória (no nosso exemplo 0) e somar com índice que você passou (nesse caso 0) e multiplicar com o tamanho do tipo do array (neste caso o inteiro que é de 4 bytes). Como eu disse anteriormente, o primeiro elemento está na posição 0, e o array começa o ponteiro no primeiro elemento, então (0 + (0 * 4)) = 0, que é justamente o primeiro elemento do array.
+
+Obs.: Importante observar que o endereço das posições é colocado de forma decimal, mas na realidade elas são colocadas em forma hexadecimal, elas só foram colocadas em decimal para melhor visualização
 
 É por essa maneira que se quisermos preencher o nosso array usando um laço de repetição for, vamos do índice 0, até que o índice seja menor que 10, porque assim ele vai de 0 a 9.
 
