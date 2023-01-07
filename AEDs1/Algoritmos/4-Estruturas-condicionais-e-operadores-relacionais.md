@@ -1,5 +1,23 @@
 # Estruturas condicionais
 
+# Gustavo Lopes Rodrigues
+
+## O que você vai ver...
+
+- O que são  e como usar estruturas condicionais
+- Para que usamos estruturas condicionais
+- O que são e como usar operadores relacionais
+
+## Pré-requisitos
+
+- 1-Criando-nosso-primeiro-algoritmo
+- 2-Atribuicao-e-declaracao
+- 3-Leitura-e-escrita-de-dados
+
+- 1-Estruturas-de-dados-Primitivas
+
+## Usando Estruturas Condicionais
+
 Ao construir o nosso programa, precisamos criar estruturas que são capazes de fazer validação lógica dentro do nosso programa. Vamos voltar ao problema da padaria, e agora estamos trabalhando no caixa, fazendo as contas da compra de uma pessoa. Nós precisamos validar que o dinheiro entregue pela pessoa é o suficiente para realizar as compras, e para essa tarefa e outras, nós precisamos  usar estruturas condicionais. Eis um pequeno exemplo disso em código
 
 ```c
@@ -80,6 +98,14 @@ Vamos agora dar uma pequena olhada na sintaxe das estruturas condicionais
 
 Primeiro temos o **if** ou se, e a sua sintaxe é está, a palavra "if" em caixa baixa, seguido de parênteses, depois tem a condição para entrar no "if", ou seja, a condição precisa ser verdadeira, fecha parênteses e abre e fecha chaves, sendo o código dentro da chave indicando o escopo da estrutura condicional.
 
+Obs.: Quando falarmos de funções voltaremos a falar de escopo, mas pense que quando falamos de escopo nesse caso, estamos falando do espaço onde o programa receberá instruções se a condição da estrutura for aceita, então por exemplo:
+
+```c
+//...
+  if (dinheiro_cliente >= total_compras) {
+    printf("A compra foi um sucesso!\n"); //<--- O espaço entre as chaves é o escopo do "if"
+  } //...
+``` 
 ## ELSE 
 
 Em segundo temos o "else". Se a condição do "if" for falsa, então iremos entrar dentro do escopo do "else". A sintaxe dele é bem parecida com a do "if", com a diferença que não temos que checar por nenhuma condição. Importante notar que todo "else" precisa vir após o "if" ou o "else if" que veremos daqui a pouco. Não podemos começar uma estrutura condicional com o "else".
