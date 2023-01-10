@@ -1,5 +1,18 @@
 # Funções e escopo
 
+## Você irá aprender
+
+- O que são funções
+- Como declarar e usar funções
+- Quais são as regras no uso de funções
+- O que é o escopo
+
+## Pré-requisitos
+
+- Aulas anteriores
+
+## Saindo da main
+
 Até então nós temos trabalhado com código todo escrito na função "main", nós também temos usado algumas funções das bibliotecas da linguagem C, como o **printf** e o **scanf**, agora nós iremos criar nossas próprias funções, e falar um pouco também de escopo.
 
 ## O que são funções?
@@ -166,6 +179,34 @@ void imprima_hello_world(void) {
 ```
 Note que apenas colocamos o cabeçalho da função antes da main, e só isso é o suficiente para retirar o aviso anterior.
 
+## Funções precisam retornar um valor (exceto quando o tipo delas é void)
+
+Você já deve ter visto desde a primeira aula que usamos essa palavra chave **return**. Essa palavra, como o nome indica, serve para finalizar a função, retornando um valor com o mesmo tipo indicado pela função. Em outras palavras, se o cabeçalho da função indica o retorno de um inteiro, então só podemos retornar inteiros.
+
+```c
+#include<stdio.h>
+
+void somar(int a,int b) { 
+  return a + b;
+} 
+
+int main(void) {
+  printf("%d\n", somar(3,5));
+  return 0;
+}
+```
+
+Uma coisa interessante de notar no exemplo acima, é que podemos retornar expressões, ou seja, podemos fazer operações junto ao retorno, desde que essas operações impliquem na criação de uma expressão do tipo especificado pela função de retorno.
+
+Obs.: Não é possível colocar instruções depois do retorno, pois como o retorno implica no término da função, estas instruções seram ignoradas durante a execução do código
+
+<details>
+  <summary>Pílula</summary>
+    No caso da função main, o retorno dela indica que a aplicação fechou com exito ou não, sendo o número 0 indicando que deu tudo certo, e o número 1 que houve algum problema.
+</details>
+
+
+
 ## Escopo
 
 Agora vamos terminar essa aula com uma breve discussão sobre escopos. Você deve se lembrar que falamos bastante dessa palavra, na aula de estruturas condicionais e laços de repitação, mas afinal de contas, o que é o escopo? Uma palavra melhor para escopo é visibilidade, pois é isto que estamos tratando: a visibilidade que uma variável ou função tem dentro de um determinado contexto.
@@ -209,4 +250,5 @@ Neste exemplo a nossa variável **a** está dentro da função main, logo seu es
 
 ## Línks úteis
 
-
+- [Funções em C - Tutorialspoint](https://www.tutorialspoint.com/cprogramming/c_functions.htm)
+- [Funções em C - LinguagemMC](http://linguagemc.com.br/funcoes-em-c/)
