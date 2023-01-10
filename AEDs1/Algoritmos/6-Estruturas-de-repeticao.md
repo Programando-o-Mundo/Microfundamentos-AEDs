@@ -178,7 +178,6 @@ for (int i = 0; i < 10; i++) {
 ```
 
 Depois teste o código, e perceba que agora, o número 5 não é imprimido.
-
 ## Línks uteis
 
 - [Loop in C](https://www.programiz.com/c-programming/c-for-loop)
