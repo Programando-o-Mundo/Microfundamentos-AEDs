@@ -21,6 +21,15 @@ Sim está definição não deixa de ser correta, mas é importante lembrar que p
 
 ## O que é um ponteiro?
 
+```mermaid
+classDiagram
+    class a{
+        tipo(int)
+        valor: 5
+        endereço: 0x7ffdee2c0f94
+    }
+``` 
+
 Quando criamos qualquer variável dentro da linguagem C, a variável, além de armazenar um valor, também possui um endereço que armazena esse valor em memória no seu computador, nós podemos imprimir esse valor utilizando o formato especial **%p** como no exemplo abaixo.
 
 ```c
