@@ -14,7 +14,7 @@ Com isso dito, vamos então criar nossas próprias funções
 
 ### Tipo da função
 
-Primeiramente vamos ver como é a sintaxe para criar uma função, primeiro começamos com o tipo da função, ou seja, que tipo de dado a função irá retornar para nós. As vezes queremos que uma função retorne o resultado de um cálculo, um booleano indicando que uma operação foi um sucesso, ou simplesmente retornar nada, pois não é necessário utilizar a função de tornar valores. De qualquer forma, é assim que começamos uma função:
+Primeiramente vamos ver como é a sintaxe para criar uma função, primeiro começamos com o tipo da função, ou seja, que tipo de dado a função irá retornar para nós. As vezes queremos que uma função retorne o resultado de um cálculo, um booleano indicando que uma operação foi um sucesso, ou simplesmente retornar nada, pois não é necessário retonar nenhum valor. De qualquer forma, é assim que começamos uma função:
 
 ```
 void
@@ -22,7 +22,7 @@ void
  tipo da função
 ```
 
-Obs.: Apenas para refrescar sua memória, **void** é um tipo especial que usamos, quando a função não retorna nenhum valor
+Obs.: Apenas para refrescar sua memória, **void** é um tipo especial que usamos, quando a função não retorna nenhum valor.
 
 ### Nome da função
 
@@ -34,7 +34,7 @@ void imprima_hello_world
       nome da função
 ``` 
 
-### Argumentos
+### Argumentos e o cabeçalho da função
 
 Até então nós temos feito a mesma coisa do que criar uma variável, porém é a partir desse ponto que iremos diferenciar a sintaxe de uma variável e uma função. Uma variável iria receber um ponto e vírgula agora, ou então uma atribuição seguido de ponto e vírgula, já uma função recebe dois parénteses:
 
@@ -43,6 +43,8 @@ void imprima_hello_world()
 ``` 
 
 Dentro dos parénteses, nós colocamos o que chamamos de os **argumentos** da função, ou seja, variáveis que a função precisa receber para manter o seu funcionamento. Nessa nossa função não iremos colocar argumentos, por isso usaremos a palavra "void" para indicar que essa função não tem nenhum argumento.
+
+Além disso, vale a pena falar que essa parte que você está vendo em cima, nós chamamos de o cabeçalho da função já que é a parte que define as propriedades das mesma.
 
 ``` 
 void imprima_hello_world(void)
