@@ -1,5 +1,20 @@
 # Estruturas de Repetição
 
+# Gustavo Lopes Rodrigues
+
+## Você vai aprender
+
+- O que são estruturas de repetição
+- Porque utilizar elas
+- Como utilizar as diferentes tipo de estruturas de repetição
+- Como utilizar as instruções de controle de fluxo
+
+## Pré-requisitos
+
+- Aulas anteriores
+
+## Tratando problemas repetitivos
+
 Nesta aula iremos trabalhar com estruturas de repetição ou loops, que, assim como o nome sugere, permite que seja possível fazer loop em um bloco de instruções.
 
 Existem várias maneiras de fazer um loop, cada uma com seus próprios casos de uso específicos. Aqui estão algumas das maneiras mais comuns de fazer um loop em C:
@@ -76,7 +91,7 @@ for( ; i < 10; ) {
 }
 ``` 
 
-### Incremento/Decremento
+### Incremento/Decremento (Expressão de atualização)
 
 Eu chamo essa seção de incremento e decremento, pois é nela onde incrementamos ou decrementamos a variável, após o fim do "for" loop. Mas na realidade, nessa seção podemos fazer uma sequência infinita de atribuições, lembrando obviamente de que precisamos implementar a lógica para que eventualmente faça o código sair do loop, caso contrário, o código irá ficar em um loop infinito.
 
@@ -85,6 +100,7 @@ for (int i = 0; i < 10; i++) {
                          ^
                     incremento
 ``` 
+Obs.: a seção de incremento não é acionada quando entramos no laço "for", quando entramos na seção de loop, as instruções de inicialização de condição são acionadas, mas a de incremento é apenas acionadas depois da primeira iteração.
 
 ## While
 
@@ -164,3 +180,6 @@ for (int i = 0; i < 10; i++) {
 Depois teste o código, e perceba que agora, o número 5 não é imprimido.
 
 ## Línks uteis
+
+- [Loop in C](https://www.programiz.com/c-programming/c-for-loop)
+- [Estruturas de Repetição em C - LinguagemMC](http://linguagemc.com.br/a-estrutura-de-repeticao-for-em-c/)
