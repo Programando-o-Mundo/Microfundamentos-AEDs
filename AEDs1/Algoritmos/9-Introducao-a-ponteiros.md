@@ -53,6 +53,20 @@ int main(void) {
   printf("%p\n", p);
 ```
 
+```mermaid
+classDiagram
+    class a{
+        tipo(int)
+        valor: 5
+        endereço: 0x7ffdee2c0f94
+    }
+    class p{
+        tipo(int*)
+        valor: 0x7ffdee2c0f94
+        endereço: 0x9d23ae1c0a52
+    }
+``` 
+
 Obs.: Importante notar que assim como a variável, o ponteiro também possui um endereço de memória, permitindo que seja assim criado uma cadeia infinita de ponteiros.
 
 Ok, agora temos um ponteiro, mas o que a final de contas podemos fazer com ele? Uma propriedade muito interessante que podemos fazer com isso é que a partir desse ponteiro,, podemos mudar o valor de "a" sem mexer com a variável "a", vamos ver como fazer isso.
@@ -125,6 +139,8 @@ int main(void) {
 ```
 
 Note que passamos para a função ```trocar``` o endereço de "a" e "c" permitindo que dentro de outra função, seja possível trocar os valores de variáveis que estão dentro de outro escopo.
+
+Obs.: Esse processo de passar um valor para outra função usando ponteiros se chama: passar um valor por referência.
 
 ## Conclusão
 
