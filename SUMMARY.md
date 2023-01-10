@@ -4,7 +4,7 @@
 * [Algoritmos e Estruturas de Dados 1](AEDs1/README.md)
   * [Parte 1 - Começando com o básico](AEDs1/Parte1_Comecando_com_o_basico/README.md)
     * [Criando nosso primeiro algoritmo](AEDs1/Parte1_Comecando_com_o_basico/1-Criando-nosso-primeiro-algoritmo.md)
-    * [Estruturas de dados primitivas](AEDs1/Estruturas-de-dados/2-Estruturas-de-dados-Primitivas.md)
+    * [Estruturas de dados primitivas](AEDs1/Parte1_Comecando_com_o_basico/2-Estruturas-de-dados-Primitivas.md)
     * [Atribuição e declaração de variáveis](AEDs1/Parte1_Comecando_com_o_basico/3-Atribuicao-e-declaracao.md)
     * [Leitura e escrita de dados](AEDs1/Parte1_Comecando_com_o_basico/4-Leitura-e-escrita-de-dados.md)
     * [Estruturas condicionais e Operadores relacionais](AEDs1/Parte1_Comecando_com_o_basico/5-Estruturas-condicionais-e-operadores-relacionais.md)
