@@ -1,4 +1,4 @@
-# Introdução a ponteiros em C
+# Ponteiros e alocação de memória
 
 # Gustavo Lopes Rodrigues
 
