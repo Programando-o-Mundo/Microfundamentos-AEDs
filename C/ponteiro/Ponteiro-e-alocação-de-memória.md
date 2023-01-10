@@ -155,9 +155,10 @@ int main() {
 
 ### links úteis
 
-[Aprenda mais sobre alocação dinâmica](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
-
-[Aprenda mais aplicações de ponteiros e alocação dinâmica](https://www.ime.usp.br/~pf/algoritmos/aulas/pont.html)
+- [Aprenda mais sobre alocação dinâmica](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
+- [Aprenda mais aplicações de ponteiros e alocação dinâmica](https://www.ime.usp.br/~pf/algoritmos/aulas/pont.html)
+- [Assista um vídeo explicativo sobre ponteiros e alocação dinâmica](https://youtu.be/2ybLD6_2gKM)
+- [Aprenda conceitos mais avançados de ponteiros, alocação dinâmica, arrays e aritmética com ponteiros](https://youtu.be/zuegQmMdy8M)
 
 
 
