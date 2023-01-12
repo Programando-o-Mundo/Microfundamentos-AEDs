@@ -150,3 +150,4 @@ Certamente muito mais simples, mas isso é para ilustrar que nem todo problema d
 ## Línks úteis
 
 - [Aprenda recursão com o problema do fibonnaci](https://www.youtube.com/watch?v=1kBiqUCN888)
+- [Recursão em 5 minutos](https://www.youtube.com/watch?v=ivl5-snqul8)
