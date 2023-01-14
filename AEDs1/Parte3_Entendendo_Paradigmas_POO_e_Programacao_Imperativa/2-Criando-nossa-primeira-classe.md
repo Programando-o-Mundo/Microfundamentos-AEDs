@@ -15,7 +15,7 @@ Obs.: Geralmente criamos classe com o primeiro caractere em caixa alta.
 class Veiculo
 ```
 
-A única diferença é que em Java, podemos indicar também o escopo de acesso da classe, com as palavras ```public```, ```private``` e ```protected```. Mas isso não é tão importante assim para nós.
+A única diferença é que em Java, podemos indicar também o escopo de acesso da classe, com as palavras ```public```, ```private``` e ```protected```. Mas isso não é tão importante assim para nós no momento.
 
 Após isso, nós iremos colocar duas chaves, igual quando criamos uma função:
 
@@ -30,11 +30,11 @@ class Veiculo {
     
 }
 ``` 
-Assim como em funções, as chaves indicam o escopo para os membros de dados e funções, e juntos eles formam os atributos da nossa classe.
+Assim como em funções, as chaves indicam o escopo para os **atributos** da nossa classe, isto é, os membros de dados e funções que pertencem ao nosso veículo.
 
 ## Criando variáveis
 
-Agora que temos as nossas classes, vamos criar alguns atributos para a nossa classe, vamos começar criando as nossa variáveis. você vai observar que tanto para criar variáveis e declara funções dentro de classes envolve usar a mesma sintaxe, quando criamos foras de classe.
+Agora que temos as nossas classes, vamos criar alguns atributos para a nossa classe, vamos começar criando as nossa variáveis. você vai observar que tanto para criar variáveis e declara funções dentro de classes envolve usar a mesma sintaxe que já estamos acostumados.
 
 ```C++
 #include<string> // Necessario para usar a std::string
@@ -57,11 +57,11 @@ class Veiculo {
   int altura_em_cm;
 }
 ``` 
-Obs.: Observe que diferente de C, C++ e Java possui em suas bibliotecas padrões uma implementação da estrutura String. Esse ```std``` no código de C++ refere ao fato de que essa implementação da String vem da biblioteca padrão do C++, e por isso não se esqueça de importar no seu código.
+Obs.: Observe que diferente de C, C++ e Java possui em suas bibliotecas padrões uma implementação da estrutura String. Esse ```std``` no código de C++ refere ao fato de que essa implementação da String vem da biblioteca padrão do C++ ([C++ Standard Library](https://en.cppreference.com/w/cpp/header)), e por isso não se esqueça de importar a biblioteca específica no seu código.
 
 ## Criando construtor
 
-Agora que temos as nossa variáveis, precisamos criar um mecanismo para iniciar os atributos da nossa classe, para isso, usamos os chamados "Construtores" que são funções especiais na qual são chamadas na hora em que criamos a instância da nossa classe. A sintaxe da crição de construtores é mesma de quando criamos funções, porém esta função tem o nome da nossa classe.
+Agora que temos as nossa variáveis, precisamos criar um mecanismo para iniciar as variáveis da nossa classe, para isso, usamos os chamados "Construtores" que são funções especiais na qual são chamadas no momento em que criamos a instância da nossa classe. A sintaxe da crição de construtores é mesma de quando criamos funções, porém esta função tem o nome da nossa classe.
 
 ```java
 NomeDaClasse(argumentos) {
@@ -96,8 +96,8 @@ class Veiculo {
   int altura_em_cm;
   
   // Assim como a criação de classes em Java, também podemos especificar o escopo de acesso dos contrutores assim:
-  // public Veiculo(String raca...)
-  Veiculo(String raca, String cor, double peso, int altura_em_cm) {
+  // public Veiculo(String placa...)
+  Veiculo(String placa, String cor, double peso, int altura_em_cm) {
   
   }
 }
@@ -132,19 +132,21 @@ class Veiculo {
 ```Java
 class Veiculo {
 
-  String raca;
+  String placa;
   String cor;
   float peso_em_kg;
   int altura_em_cm;
  
-  Veiculo(String raca, String cor, double peso_em_kg, int altura_em_cm) {
-    this.raca = raca;
+  Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+    this.placa = placa;
     this.cor = cor;
     this.peso_em_kg = peso_em_kg;
     this.altura_em_cm = altura_em_cm;
   }
 }
 ``` 
+
+Obs.: Podemos usar a palavra ```this``` para se referir a uma função também.
 
 ## Criando funções
 
@@ -177,13 +179,13 @@ class Veiculo {
 ```Java
 class Veiculo {
 
-  String raca;
+  String placa;
   String cor;
   float peso_em_kg;
   int altura_em_cm;
  
-  Veiculo(String raca, String cor, double peso_em_kg, int altura_em_cm) {
-    this.raca = raca;
+  Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+    this.placa = placa;
     this.cor = cor;
     this.peso_em_kg = peso_em_kg;
     this.altura_em_cm = altura_em_cm;
@@ -192,5 +194,40 @@ class Veiculo {
   void acelerar() {
     System.out.println("Vrrmmmmmm!!\n"); 
   }
+}
+``` 
+Ótimo! Por fim, vamos então instanciar a nossa classe e chamar os seus atributos.
+
+## Instanciado a nossa classe e chamando os seus atributos
+
+Vamos voltar a main e agora vamos instanciar um objeto da nossa classe Veículo.
+
+```Java
+class Veiculo {
+
+  String placa;
+  String cor;
+  float peso_em_kg;
+  int altura_em_cm;
+ 
+  Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+    this.placa = placa;
+    this.cor = cor;
+    this.peso_em_kg = peso_em_kg;
+    this.altura_em_cm = altura_em_cm;
+  }
+  
+  void acelerar() {
+    System.out.println("Vrrmmmmmm!!\n"); 
+  }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Veiculo v = new Veiculo("HDX-3821", "Amarelo", 1554.3, 165);
+        v.acelerar();
+    }
 }
 ``` 
