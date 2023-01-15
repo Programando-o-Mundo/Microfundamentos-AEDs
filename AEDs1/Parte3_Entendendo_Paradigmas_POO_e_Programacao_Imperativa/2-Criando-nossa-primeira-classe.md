@@ -161,7 +161,7 @@ class Veiculo {
   float peso_em_kg;
   int altura_em_cm;
   
-  public: // Aqui estamos indicando a visibilidade dos componentes criados abaixo
+  public:
   
     Veiculo(std::string placa, std::string cor, float peso_em_kg, int altura_em_cm) {
       this->placa = placa;
@@ -198,9 +198,105 @@ class Veiculo {
 ``` 
 Ótimo! Por fim, vamos então instanciar a nossa classe e chamar os seus atributos.
 
-## Instanciado a nossa classe e chamando os seus atributos
+## Instanciado a nossa classe
 
-Vamos voltar a main e agora vamos instanciar um objeto da nossa classe Veículo.
+Vamos voltar a main e agora vamos instanciar um objeto da nossa classe Veículo. Para instanciar um objeto nós fazemos igual uma declaração de uma estrutura de dados qualquer, primeiro colocamos o tipo, seguido do nome da variável.
+
+```
+NomeDaClasse nomeDaVariavel
+```
+
+Depois disso, é onde começamos a ter algumas diferenças. Tanto em C++,e em Java, você coloca um sinal de igual, seguido da palavra "new" e o nome da classe,. A diferença chave é que, em C++, você só usa a palavra "new" se a instância que você está criando é feita usando alocação de memória, caso contrário é só retirar a palavra "new".
+
+Depois disso, nós colocamos os parênteses, igual quando estamos invocando uma função, e passamos para dentro dos parênteses os nossos argumentos (se tiver).
+
+### Java
+```java
+NomeDaClasse nomeDaVariavel = new NomeDaClasse();
+```
+
+### C++
+```c++
+# Usando alocacao dinamica
+NomeDaClasse* nomeDaVariavel = new NomeDaClasse();
+
+# Sem alocacao dinamica
+NomeDaClasse nomeDaVariavel = NomeDaClasse();
+# Tambem pode criar a instancia assim
+NomeDaClasse nomeDaVariavel();
+``` 
+
+Aqui está um exemplo mais concreto disso:
+
+```Java
+class Veiculo {
+
+  String placa;
+  String cor;
+  float peso_em_kg;
+  int altura_em_cm;
+ 
+  Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+    this.placa = placa;
+    this.cor = cor;
+    this.peso_em_kg = peso_em_kg;
+    this.altura_em_cm = altura_em_cm;
+  }
+  
+  void acelerar() {
+    System.out.println("Vrrmmmmmm!!\n"); 
+  }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Veiculo v = new Veiculo("HDX-3821", "Amarelo", 1554.3, 165);
+    }
+}
+``` 
+
+```C++
+#include<string> // Necessario para usar a std::string
+class Veiculo {
+  
+  std::string placa;
+  std::string cor;
+  float peso_em_kg;
+  int altura_em_cm;
+  
+  public: 
+  
+    Veiculo(std::string placa, std::string cor, float peso_em_kg, int altura_em_cm) {
+      this->placa = placa;
+      this->cor = cor;
+      this->peso_em_kg = peso_em_kg;
+      this->altura_em_cm = altura_em_cm;
+    }
+    
+    void acelerar() {
+      std::cout << "Vrrmmmmmm!!\n";
+    }
+}; 
+
+int main(void) {
+    Veiculo v = Veiculo("HDX-3821", "Amarelo", 1554.3, 165);
+    return 0;
+}
+``` 
+
+Importante notar que em C++, a ordem que as coisas são declaradas no código é importante e por conta disson lembre-se de declarar a classe antes da função main.
+
+## Chamando os atributos da classe
+
+Para chamar atributos da classe, a sintaxe também é bem parecida, com uma única diferença, colocamos o nome da variável seguido de ponto e o nome do atributo que queremos acessar:
+
+``` 
+nomeDaVariavel.nomeDoAtributo
+```
+
+Lembrando, atributo pode ser tanto uma função, quanto uma variável.
 
 ```Java
 class Veiculo {
@@ -228,6 +324,41 @@ public class Main {
         
         Veiculo v = new Veiculo("HDX-3821", "Amarelo", 1554.3, 165);
         v.acelerar();
+        v.peso_em_kg = 2033.5;
+        System.out.println(v.peso_em_kg);
     }
 }
 ``` 
+
+```C++
+#include<string> // Necessario para usar a std::string
+class Veiculo {
+  
+  public:
+   
+    std::string placa;
+    std::string cor;
+    float peso_em_kg;
+    int altura_em_cm;
+    
+    Veiculo(std::string placa, std::string cor, float peso_em_kg, int altura_em_cm) {
+      this->placa = placa;
+      this->cor = cor;
+      this->peso_em_kg = peso_em_kg;
+      this->altura_em_cm = altura_em_cm;
+    }
+    
+    void acelerar() {
+      std::cout << "Vrrmmmmmm!!\n";
+    }
+}; 
+
+int main(void) {
+    Veiculo v = Veiculo("HDX-3821", "Amarelo", 1554.3, 165);
+    v.acelerar();
+    v.peso_em_kg = 2033.5;
+    std::cout << v.peso_em_kg << "\n";
+    return 0;
+}
+``` 
+
