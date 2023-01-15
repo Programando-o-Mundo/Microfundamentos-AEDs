@@ -1,1 +1,1 @@
-# Entendendo encapsulação
+# Entendendo encapsulação e escopo de classes
