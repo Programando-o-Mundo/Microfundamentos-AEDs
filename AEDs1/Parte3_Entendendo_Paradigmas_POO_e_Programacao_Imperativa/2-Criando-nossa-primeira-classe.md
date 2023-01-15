@@ -71,7 +71,7 @@ NomeDaClasse(argumentos) {
 Observe os dois exemplos abaixo:
 
 ```C++
-#include<string> // Necessario para usar a std::string
+#include<string> 
 class Veiculo {
   
   std::string placa;
@@ -110,7 +110,7 @@ Com o construtor criado, precisamos iniciar os nossos atributos, mas perceba que
 As linguagens que tem suporte a POO geralmente usam alguma palavra chave para se referir a atributos que pertencem a classe, no caso de C++ e Java, nós temos a palavra "this", usando ela, podemos diferenciar as variáveis da classe e as variáveis de um escopo local.
 
 ```C++
-#include<string> // Necessario para usar a std::string
+#include<string> 
 class Veiculo {
   
   std::string placa;
@@ -153,7 +153,7 @@ Obs.: Podemos usar a palavra ```this``` para se referir a uma função também.
 Podemos criar funções dentro das nossas classes, usando a mesma sintaxe para criar funções fora da classe. Para dar exemplo, vamos criar uma função para ser chamada, que simula quando pisamos no acelerador do carro.
 
 ```C++
-#include<string> // Necessario para usar a std::string
+#include<string> 
 class Veiculo {
   
   std::string placa;
@@ -258,7 +258,7 @@ public class Main {
 ``` 
 
 ```C++
-#include<string> // Necessario para usar a std::string
+#include<string>
 class Veiculo {
   
   std::string placa;
@@ -331,10 +331,10 @@ public class Main {
 ``` 
 
 ```C++
-#include<string> // Necessario para usar a std::string
+#include<string> 
 class Veiculo {
   
-  public:
+  public: // Para esse exemplo, coloquei todos os atributos como publico
    
     std::string placa;
     std::string cor;
@@ -362,3 +362,7 @@ int main(void) {
 }
 ``` 
 
+## Links úteis
+
+- [Criando a primeira classe em C++](https://www.facom.ufu.br/~flavio/ed1/files/2011-01/ED1_C++_OO_CriacaoClasses.pdf)
+- [Criando a primeira classe em Java](https://www.devmedia.com.br/como-criar-minha-primeira-classe-em-java/38940)
