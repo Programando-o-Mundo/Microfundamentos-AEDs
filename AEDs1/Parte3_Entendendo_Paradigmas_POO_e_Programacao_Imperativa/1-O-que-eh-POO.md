@@ -28,6 +28,7 @@ Pense que classes são como as Structs que estavamos criando em C, porém, essas
 
 Para exemplificar melhor, vamos voltar para a Struct "Pessoa" que fizemos aulas atrás, para explicar como uma classe funciona.
 
+#### C
 ```c
 struct Pessoa {
   char nome[50];
@@ -38,7 +39,7 @@ struct Pessoa {
 ``` 
 
 Você também deve se lembrar que para instanciar e manipular dados dessa nossa struct, usavamos essa sintaxe:
-
+#### C
 ```c
 #include<stdio.h>
 #include<string.h>
@@ -117,7 +118,7 @@ Quando estamos trabalhando com classes, nós precisamos definir quais membros da
 
 Private significa que esse membro é apenas acessível dentro da classe. Então significa que se tentarmos acessar um elemento da classe, como no exemplo 
 abaixo:
-
+#### C++
 ```c++
 int main(void) {
   std::cout << "Hello world!\n";
@@ -126,7 +127,7 @@ int main(void) {
   return 0;
 }
 ```
-
+#### Java
 ```java
 public static void main(String[] args) {
   System.out.println("Hello world!\n");
@@ -141,7 +142,7 @@ Nós iremos receber o erro de que esse membro da classe "nome" é inacessível o
 
 Public significa que esse membro pode ser acessado/modificado fora dele. Em outras palavras, se quisermos mudar o nome da nossa pessoa fora da classe, agora podemos.
 
-
+#### C++
 ```c++
 class Pessoa {
   public: // Especificamos que essas variáveis agora sao publicas
@@ -151,7 +152,7 @@ class Pessoa {
     float peso_em_kg;
 };
 ``` 
-
+#### Java
 ```java
 class Pessoa {
   public String nome; 
@@ -166,10 +167,11 @@ A palavra chave protected, iremos deixar para explorar ela quando falarmos de he
 ## Construtor
 
 Você também deve ter notado, que para criar uma instância de uma classe, precisamos invocar essa função com o nome da classe
-
+#### C++
 ```c++
 Pessoa joao = Pessoa();
 ```
+#### Java
 ```java
 Pessoa joao = new Pessoa();
 ```
@@ -237,7 +239,7 @@ Obs.: Nós podemos ter mais de um construtor dentro de uma classe, ele só preci
 Agora nós criamos um construtor para a nossa classe, lembrando sempre de respeitar a sintaxe das funções de Construtor, onde a função precisa ter o nome da sua classe (Não se esquecendo de especificar o escopo se necessário).
 
 Uma coisa que você deve ter notado é que nós utilizamos essa palavra "this". Essa palavra serve para referenciarmos especificamente elementos da nossa classe. Não precisamos usar sempre essa palavra para referenciar eles, apenas quando dentro de um mesmo escopo, temos duas variáveis com o mesmo nome.
-
+#### Java
 ```java
   private String nome;
   private int idade;
