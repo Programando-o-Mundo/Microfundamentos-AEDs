@@ -128,11 +128,11 @@ int main(void) {
 ```
 
 ```java
-    public static void main(String[] args) {
-      System.out.println("Hello world!\n");
-      Pessoa joao = new Pessoa();
-      joao.nome= "João";
-    }
+public static void main(String[] args) {
+  System.out.println("Hello world!\n");
+  Pessoa joao = new Pessoa();
+  joao.nome= "João";
+}
 ```
 
 Nós iremos receber o erro de que esse membro da classe "nome" é inacessível ou que ele não é visível, e isso acontece justamente por termos utilizado essa palavra chave "private". Mas e se quisermos modificar fora da classe? Para isso usamos a palavra "public"
@@ -215,9 +215,8 @@ class Pessoa {
   private int idade;
   private int altura_em_cm;
   private double peso_em_kg;
-  
-  // Novamente, não colocamos a palavra "public" pois quando você não especifica, o escopo é "public"
-  Pessoa(String nome, int idade, int altura_em_cm, double peso_em_kg) {
+ 
+  public Pessoa(String nome, int idade, int altura_em_cm, double peso_em_kg) {
       this.nome = nome;
       this.idade = idade;
       this.altura_em_cm = altura_em_cm;
@@ -245,7 +244,7 @@ Uma coisa que você deve ter notado é que nós utilizamos essa palavra "this". 
   private int altura_em_cm;
   private double peso_em_kg;
   
-  Pessoa(String nome, int idade, int altura_em_cm, double peso_em_kg) {
+  public Pessoa(String nome, int idade, int altura_em_cm, double peso_em_kg) {
       this.nome = nome; // perceba que "this.nome" se refere ao membro da classe "String nome", enquanto que a variável
                         // "nome" se refere ao parâmetro passado ao construtor da classe
 ``` 
@@ -301,7 +300,7 @@ class Pessoa {
     private int altura_em_cm;
     private double peso_em_kg;
 
-    Pessoa(String nome, int idade, int altura_em_cm, double peso_em_kg) {
+    public Pessoa(String nome, int idade, int altura_em_cm, double peso_em_kg) {
         this.nome = nome;
         this.idade = idade;
         this.altura_em_cm = altura_em_cm;
