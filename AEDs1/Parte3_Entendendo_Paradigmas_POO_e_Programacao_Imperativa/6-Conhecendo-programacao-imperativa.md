@@ -1,1 +1,0 @@
-# Conhecendo programação funcional
