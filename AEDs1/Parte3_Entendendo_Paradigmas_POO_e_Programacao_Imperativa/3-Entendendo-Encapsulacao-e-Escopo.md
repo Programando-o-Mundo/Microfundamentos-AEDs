@@ -7,7 +7,6 @@ Durante as duas primeiras aulas de POO, você viu muito falarmos sobre escopo de
 Vamos mais uma vez lembrar das nossas Structs, você devê se lembrar que lá, quando temos algum dado na mesma, podemos acessá-lo sem nenhum problema, basta criar umas instância da Struct e podemos acessar seu atributo sem problemas.
 
 ```c
-
 Pessoa p;
 p.idade = 18;
 ```
@@ -15,7 +14,6 @@ p.idade = 18;
 Em muitos casos, ter esse livre acesso aos membros de uma amarração não é um problema, mas agora, vamos pensar que estamos criando a nossa classe Pessoa para identificar a conta bancária de um cliente qualquer, e agora temos o atributo ```saldo```.
 
 ```c
-
 typedef struct Pessoa {
   char nome[50];
   float saldo;
@@ -68,9 +66,35 @@ int main(void) {
   return 0;
 }
 ```
-### Private
+
+```Java
+class Pessoa {
+  public String nome;
+  public String cpf;
+  public double saldo;
+  
+  public Pessoa(String nome, String cpf, double saldo) {
+    this.nome = nome;
+    this.cpf = cpf;
+    this.saldo = saldo;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Pessoa joao = new Pessoa("Joao","58423593212",4584);
+    System.out.println(joao.saldo);
+  }
+}
+```
+
+Uma observação importante, quando você não coloca nenhum especificador em Java, ele não será "public" mas sim "default", nós não iremos entrar em detalhes disso, pois isso é coisa da linguagem, mas para mais informações, [acesse esse link](https://www.geeksforgeeks.org/access-modifiers-java/).
+
+#### Private
 
 Já o especificador de acesso private, significa que tal atributo não pode ser acessado fora do escopo da classe,e caso a gente tente, o compilador irá nos retornar um erro:
+
+#### C++
 
 ```c++
 #include<iostream>
@@ -97,7 +121,32 @@ int main(void) {
 }
 ```
 
+#### Java
+
+```Java
+class Pessoa {
+  private String nome;
+  private String cpf;
+  private double saldo;
+  
+  public Pessoa(String nome, String cpf, double saldo) {
+    this.nome = nome;
+    this.cpf = cpf;
+    this.saldo = saldo;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Pessoa joao = new Pessoa("Joao","58423593212",4584);
+    System.out.println(joao.saldo);
+  }
+}
+```
+
 Dê uma olhada no erro que recebemos:
+
+#### C++
 ```
 main.cpp:20:21: error: 'saldo' is a private member of 'Pessoa'
   std::cout << joao.saldo << "\n";
@@ -107,6 +156,17 @@ main.cpp:9:11: note: declared private here
           ^
 1 error generated.
 ``` 
+#### Java
+``` 
+Main.java:18: error: cannot find symbol
+    System.out.println(joao.saldo);
+                           ^
+  symbol:   variable saldo
+  location: variable joao of type Pessoa
+1 error
+``` 
+
+Note que em Java o erro é um pouco diferente mas a ideia é a mesma. "Cannot find symbol" quer dizer que, ou ele não existe, ou o escopo de acesso não permite que ele seja visível, logo ele não existe.
 
 Agora fica a questão, se o nosso atributo é privado, como que acessamos ele fora da classe? Para isso, vamos voltar a falar de Encapsulação, mais especificamente, das funções tipo "Getters" e "Setters".
 
@@ -149,6 +209,39 @@ int main(void) {
   Pessoa joao = Pessoa("Joao","58423593212",4584);
   std::cout << joao.get_saldo() << "\n";
   return 0;
+}
+```
+
+```Java
+class Pessoa {
+  private String nome;
+  private String cpf;
+  private double saldo;
+
+  public Pessoa(String nome, String cpf, double saldo) {
+    this.nome = nome;
+    this.cpf = cpf;
+    this.saldo = saldo;
+  }
+
+  public String getNome() {
+    return nome;
+  }
+
+  public String getCpf() {
+    return cpf;
+  }
+
+  public double getSaldo() {
+    return saldo;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Pessoa joao = new Pessoa("Joao","58423593212",4584);
+    System.out.println(joao.getSaldo());
+  }
 }
 ```
 
@@ -209,6 +302,53 @@ int main(void) {
   return 0;
 }
 ```
+
+```Java
+class Pessoa {
+  private String nome;
+  private String cpf;
+  private double saldo;
+
+  public Pessoa(String nome, String cpf, double saldo) {
+    this.nome = nome;
+    this.cpf = cpf;
+    this.saldo = saldo;
+  }
+
+  public String getNome() {
+    return nome;
+  }
+
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+
+  public String getCpf() {
+    return cpf;
+  }
+
+  public void setCpf(String cpf) {
+    this.cpf = cpf;
+  }
+
+  public double getSaldo() {
+    return saldo;
+  }
+
+  public void setSaldo(double saldo) {
+    this.saldo = saldo;
+  }
+  
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Pessoa joao = new Pessoa("Joao","58423593212",4584);
+    joao.setSaldo(5832);
+    System.out.println(joao.getSaldo());
+  }
+}
+``` 
 
 Com os setters o padrão é um pouquinho diferente das funções de "getters", primeiramente toda função é void, pois não existe nenhum dado que precisamos voltar. Segundo, colocamos a palavra "set" ao lado do nome da variável. Terceiro, funções setters recebe como argumento o novo valor da nossa variável.
 
