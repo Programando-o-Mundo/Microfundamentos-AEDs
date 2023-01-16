@@ -90,14 +90,12 @@ class Veiculo {
 ```Java
 class Veiculo {
 
-  String placa;
-  String cor;
-  float peso_em_kg;
-  int altura_em_cm;
+  public String placa;
+  public String cor;
+  public float peso_em_kg;
+  public int altura_em_cm;
   
-  // Assim como a criação de classes em Java, também podemos especificar o escopo de acesso dos contrutores assim:
-  // public Veiculo(String placa...)
-  Veiculo(String placa, String cor, double peso, int altura_em_cm) {
+  public Veiculo(String placa, String cor, double peso, int altura_em_cm) {
   
   }
 }
@@ -132,12 +130,12 @@ class Veiculo {
 ```Java
 class Veiculo {
 
-  String placa;
-  String cor;
-  float peso_em_kg;
-  int altura_em_cm;
+  public String placa;
+  public String cor;
+  public float peso_em_kg;
+  public int altura_em_cm;
  
-  Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+  public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
     this.placa = placa;
     this.cor = cor;
     this.peso_em_kg = peso_em_kg;
@@ -179,12 +177,12 @@ class Veiculo {
 ```Java
 class Veiculo {
 
-  String placa;
-  String cor;
-  float peso_em_kg;
-  int altura_em_cm;
+  public String placa;
+  public String cor;
+  public float peso_em_kg;
+  public int altura_em_cm;
  
-  Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+  public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
     this.placa = placa;
     this.cor = cor;
     this.peso_em_kg = peso_em_kg;
@@ -231,12 +229,12 @@ Aqui está um exemplo mais concreto disso:
 ```Java
 class Veiculo {
 
-  String placa;
-  String cor;
-  float peso_em_kg;
-  int altura_em_cm;
+  public String placa;
+  public String cor;
+  public float peso_em_kg;
+  public int altura_em_cm;
  
-  Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+  public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
     this.placa = placa;
     this.cor = cor;
     this.peso_em_kg = peso_em_kg;
@@ -301,12 +299,12 @@ Lembrando, atributo pode ser tanto uma função, quanto uma variável.
 ```Java
 class Veiculo {
 
-  String placa;
-  String cor;
-  float peso_em_kg;
-  int altura_em_cm;
+  public String placa;
+  public String cor;
+  public float peso_em_kg;
+  public int altura_em_cm;
  
-  Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+  public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
     this.placa = placa;
     this.cor = cor;
     this.peso_em_kg = peso_em_kg;
