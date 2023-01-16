@@ -155,11 +155,13 @@ class Pessoa {
 ```java
 class Pessoa {
   public String nome; 
-  int idade; // Em Java, quando nao especificamos o escopo de acesso, ele sera colocado automaticamente como public
-  int altura_em_cm;
-  double peso_em_kg;
+  public int idade;
+  public int altura_em_cm;
+  public double peso_em_kg;
 }
 ``` 
+Uma observação importante, quando você não coloca nenhum especificador, ele não será "public" mas sim "default", nós não iremos entrar em detalhes disso, pois isso é coisa da linguagem, mas para mais informações, [acesse esse link](https://www.geeksforgeeks.org/access-modifiers-java/).
+
 A palavra chave protected, iremos deixar para explorar ela quando falarmos de herança.
 
 ## Construtor
