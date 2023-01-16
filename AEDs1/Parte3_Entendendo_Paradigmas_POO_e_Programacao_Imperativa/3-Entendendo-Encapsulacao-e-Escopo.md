@@ -42,6 +42,7 @@ A ideia aqui é bem simples, como o único meio de acessar os dados da classe é
 
 Quando dizemos que a variável é publica, quer dizer que tanto dentro quanto fora da classe, podemos acessar esse atributo. Esse é o mesmo comportamento das Structs em C, onde você pode acessar qualquer coisa usando o ponto "." seguido do atributo da struct. A mesma coisa acontece em classes:
 
+#### C++
 ```c++
 #include<iostream>
 #include<string>
@@ -66,7 +67,7 @@ int main(void) {
   return 0;
 }
 ```
-
+#### Java
 ```Java
 class Pessoa {
   public String nome;
@@ -174,6 +175,7 @@ Agora fica a questão, se o nosso atributo é privado, como que acessamos ele fo
 
 Para acessar esses dados, nós temos os getters, uma função que tem como único objetivo retornar o atributo.
 
+### C++
 ```c++
 #include<iostream>
 #include<string>
@@ -211,7 +213,7 @@ int main(void) {
   return 0;
 }
 ```
-
+### Java
 ```Java
 class Pessoa {
   private String nome;
@@ -253,6 +255,7 @@ Note que neste caso não usamos a palavra "this" pois diferente do construtor, n
 
 Por outro lado, temos os setters, funções que existem para mudarmos o valor de uma variável.
 
+### C++
 ```c++
 #include<iostream>
 #include<string>
@@ -302,7 +305,7 @@ int main(void) {
   return 0;
 }
 ```
-
+### Java
 ```Java
 class Pessoa {
   private String nome;
