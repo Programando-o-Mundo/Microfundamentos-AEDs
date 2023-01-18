@@ -9,7 +9,7 @@
 
 ## Pré-requisitos
 
-- Aulas anteriores
+- [Estruturas de dados não primitivas](2-Estruturas-de-dados-nao-Primitivas.md)
 
 ## Iterativa vs Recursiva, problemas similares, estratégias diferentes
 
