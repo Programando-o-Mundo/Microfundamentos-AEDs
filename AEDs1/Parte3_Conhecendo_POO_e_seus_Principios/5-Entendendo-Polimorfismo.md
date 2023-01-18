@@ -1,5 +1,18 @@
 # Entendendo Polimorfismo
 
+## Você vai aprender
+
+- O que é Polimorfismo
+- Quais são os tipos de polimorfismo
+- Porquê usar polimorfismo
+- Como aplicar Polimorfismo em seus códigos
+
+## Pré-requisitos
+
+- [O que é POO](1-O-que-eh-POO.md)
+
+## Definição
+
 Para finalizar o tópico de POO, vamos falar um pouco sobre Polimorfismo, que é mais um dos princípios que utilizamos quando trabalhamos com esse paradigma da Computação. A palavra Polimorfismo tem como origem nas palavras "poly" (muitas) e "morphe" (forma(s)) ou em outras palavras "muitas formas" e basicamente descreve um objeto que pode apresentar uma única interface a apresentar múltiplos comportamentos diferentes. Parece um conceito meio arbitrário, mas não se preocupe, acredito que alguns exemplos serão mais do que o suficientes.
 
 ## Polimorfismo em tempo de Compilação
@@ -194,6 +207,8 @@ Para melhor exemplificar, vamos voltar para a nossa classe ```Veiculo``` e ```Se
 
 Em C++ podemos usar a palavra "virtual" para especificar uma função que pode ser redefinida em uma classe filha e a palavra "override" para especificar uma função que está sobrescrevendo uma função já existente. Observe o exemplo abaixo:
 
+### C++ 
+
 ```cpp
 #include<string> 
 #include<iostream>
@@ -247,6 +262,8 @@ int main(void) {
 Aqui temos a função "get_tipo" que é do tipo "string" e retorna o tipo de veiculo que estamos trabalhando, e na classe "Sedan" essa função é sobrescrita e dessa vez apenas retorna "Sedan".
 
 Já em Java, podemos usar o decorador "@Override" para específicar uma função que foi sobrescrita.
+
+### Java
 
 ```java
 class Veiculo {
