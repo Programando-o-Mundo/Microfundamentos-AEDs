@@ -38,17 +38,17 @@ int main(void) {
 Perceba que a função interface a função recursiva possuem nomes diferentes, pois em C, não podemos criar funções com o mesmo nome. Porém em linguagens que possuem orientação a objeto isso é possível, graças ao tipo de polimorfismo em questão "Sobrecarga de funções".
 
 ```java
-    public void imprimir_hello_world(int i, int n) {
-        if (i < n) {
-            System.out.println("Hello world!\n");
-            imprimir_hello_world(++i,n);
-        }
+public void imprimir_hello_world(int i, int n) {
+    if (i < n) {
+        System.out.println("Hello world!\n");
+        imprimir_hello_world(++i,n);
     }
+}
 
-    public void imprimir_hello_world(int n) {
-        int i = 0;
-        imprimir_hello_world(i, n);
-    }
+public void imprimir_hello_world(int n) {
+    int i = 0;
+    imprimir_hello_world(i, n);
+}
 ```
 
 Aqui está esse mesmo código, só que em Java e usando sobrecarga de funções. Em outras palavras, podemos ter duas funções com o mesmo nome, desde que elas tenham número diferentes de variáveis ou que as variáveis sejam de tipos diferentes.
@@ -76,13 +76,13 @@ class Pessoa {
 ``` 
 Observe que, ambos são construtores e possuem a mesma sintaxe de criação, porém possuem argumentos diferentes, logo, não há conflito na hora de compilar o programa.
 
-### Sobrecarga de Operadores
+### Sobrecarga de Operadores (Exclusivo de C++)
 
 Já a sobrecarga de operadores é um pouco mais incomum de usar (e nem possui na linguagem Java), mas em resumo, sobrecarga de operadores permite que sejá possível usar os operadores aritméticos, relacionais e lógicos junto as nossas classes que criamos.
 
 Como exemplo, vamos supor que queremos criar um comportamento que permita ver se duas pessoas são as mesmas, fazendo checagem do CPF. A primeira ideia que muito de vocês teriam seria esta:
 
-```c++
+```cpp
 #include<iostream>
 #include<string>
 
@@ -129,7 +129,7 @@ int main(void) {
 
 Aqui nós utilizamos os nossos getters para comparar se as strings que representam o CPF é o mesmo. Porém, utilizando operator overloading, podemos fazer uma solução que é mais simples e elegante.
 
-```c++
+```cpp
 #include<iostream>
 #include<string>
 
@@ -194,7 +194,7 @@ Para melhor exemplificar, vamos voltar para a nossa classe ```Veiculo``` e ```Se
 
 Em C++ podemos usar a palavra "virtual" para especificar uma função que pode ser redefinida em uma classe filha e a palavra "override" para especificar uma função que está sobrescrevendo uma função já existente. Observe o exemplo abaixo:
 
-```c++
+```cpp
 #include<string> 
 #include<iostream>
 
