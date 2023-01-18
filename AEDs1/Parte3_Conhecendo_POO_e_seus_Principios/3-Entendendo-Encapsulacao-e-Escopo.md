@@ -1,8 +1,18 @@
 # Entendendo encapsulação e escopo de classes
 
-Durante as duas primeiras aulas de POO, você viu muito falarmos sobre escopo de classes, sendo as com maior frequência: ```public```, e ```private```. Nesta aula, nós iremos entrar em detalhe em como usar essas palavras chaves, além de explicar o padrão do encapsulamento, muito importante quando estamos falando de Programação Orientada a Objetos.
+## Você vai aprender
+
+- O que é Encapsulação
+- Porquê usamos encapsulação
+- Como usar Encapsulação
+
+## Pré-requisitos
+
+- [O que é POO](1-O-que-eh-POO.md)
 
 ## Protegendo dados de uso indevido
+
+Durante as duas primeiras aulas de POO, você viu muito falarmos sobre escopo de classes, sendo as com maior frequência: ```public```, e ```private```. Nesta aula, nós iremos entrar em detalhe em como usar essas palavras chaves, além de explicar o padrão do encapsulamento, muito importante quando estamos falando de Programação Orientada a Objetos.
 
 Vamos mais uma vez lembrar das nossas Structs, você devê se lembrar que lá, quando temos algum dado na mesma, podemos acessá-lo sem nenhum problema, basta criar umas instância da Struct e podemos acessar seu atributo sem problemas.
 
@@ -11,7 +21,7 @@ Pessoa p;
 p.idade = 18;
 ```
 
-Em muitos casos, ter esse livre acesso aos membros de uma amarração não é um problema, mas agora, vamos pensar que estamos criando a nossa classe Pessoa para identificar a conta bancária de um cliente qualquer, e agora temos o atributo ```saldo```.
+Em muitos casos, ter esse livre acesso aos membros de uma amarração não é um problema, mas agora, vamos pensar que estamos criando uma classe ```Pessoa``` para identificar a conta bancária de um cliente qualquer, e agora temos o atributo ```saldo```.
 
 ```c
 typedef struct Pessoa {
@@ -26,11 +36,13 @@ typedef struct Pessoa {
  }
  ``` 
  
-Obviamente o saldo é algo muito importante, e por conta disso, por questões de segurança, precisamos proteger esse dado de manipulações indevidas, caso contrário alguém poderia aumentar o seu saldo de R$1,00 para R$1.000.000,00 apenas trocando o valor de uma variável, ou até pior, pode diminuir o seu saldo. É por conta de problemas como esse que nós criamos design de software, para implementar soluções que resolvam problemas diversos e inclusive segurança e integridade dos dados. Para o nosso caso, podemos usar um design de software que é a Encapsulação.
+Obviamente o saldo é algo muito importante, e por questões de segurança, precisamos proteger esse dado de manipulações indevidas, caso contrário alguém poderia facilmente aumentar o seu saldo de R$1,00 para R$1.000.000,00 apenas trocando o valor de uma variável, ou até pior, pode diminuir o seu saldo. É por conta de problemas como esse que nós criamos design de software, para implementar soluções que resolvam problemas diversos, isso inclui soluções para segurança e integridade dos dados. 
+
+Para o nosso caso, podemos usar um dos princípios de POO que é a Encapsulação.
 
 ## O que é Encapsulação?
 
-Em resumo, encapsulação é um padrão de software, onde colocamos os dados da classe como privado e para acessar e modificar tais dados, usamos funções de escopo público. 
+Em resumo, encapsulação é um padrão de software, onde colocamos os dados da classe como privado e para acessar/modificar tais dados, usamos funções de escopo público. 
 
 A ideia aqui é bem simples, como o único meio de acessar os dados da classe é a partir dessa funções, nós estamos protegendo a variável de ser modificada de formas imprevisíveis. Além disso caso a lógica de recuperar ou modificar tais dados modifique durante a criação do software (Algo que acontece bem frequentemente na vida útil de qualquer aplicação), o custo para refatorar essas modificações é mais baixo, já que tudo que temos que fazer é modificar essas funções.
 
