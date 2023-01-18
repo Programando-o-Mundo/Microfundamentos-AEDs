@@ -37,7 +37,7 @@ int main(void) {
 
 Perceba que a função interface a função recursiva possuem nomes diferentes, pois em C, não podemos criar funções com o mesmo nome. Porém em linguagens que possuem orientação a objeto isso é possível, graças ao tipo de polimorfismo em questão "Sobrecarga de funções".
 
-```Java
+```java
     public void imprimir_hello_world(int i, int n) {
         if (i < n) {
             System.out.println("Hello world!\n");
@@ -55,7 +55,7 @@ Aqui está esse mesmo código, só que em Java e usando sobrecarga de funções.
 
 Uma curiosidade interessante, você também pode replicar esse comportamento para Construtores.
 
-```Java
+```java
 class Pessoa {
   public String nome;
   public String cpf;
@@ -248,7 +248,7 @@ Aqui temos a função "get_tipo" que é do tipo "string" e retorna o tipo de vei
 
 Já em Java, podemos usar o decorador "@Override" para específicar uma função que foi sobrescrita.
 
-```
+```java
 class Veiculo {
 
     String placa;
