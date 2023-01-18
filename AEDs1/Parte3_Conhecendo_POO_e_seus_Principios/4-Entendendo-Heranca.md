@@ -327,6 +327,86 @@ Para consertar isso, precisamos colocar essas variáveis como ```protected``` pe
     protected int altura_em_cm;
 ```
 
+### Armazenando instâncias de uma classe filha
+
+Um comportamento que surgiu com a Herança é a capacidade de armazenar instâncias de uma classe filha em um Array de uma classe pai. Vamos supor que estamos trabalhando em uma loja de Carros e para isso precisamos de um array que represente os carros que estão disponíveis para comprar.
+
+Uma coisa interessante é que podemos guardar instâncias da classe "Sedan" em um array de "Veiculo". O que não podemos fazer é guardar instâncias de uma classe pai na classe filha.
+
+
+#### Java
+
+```java
+  public class Main {
+  
+      public static void main(String[] args) {
+          
+          Sedan v = new Sedan("HDX-3821", "Amarelo", 1554.3, 165);
+          v.acelerar();
+          Veiculo[] veiculos = new Veiculo[10];
+          veiculos[0] = new Sedan("AVD-5932", "Azul", 1800, 155);
+      }
+  }
+```
+
+#### C++
+
+```c++
+#include<string> 
+#include<iostream>
+
+class Veiculo {
+  
+  protected: 
+   
+    std::string placa;
+    std::string cor;
+    float peso_em_kg;
+    int altura_em_cm;
+    
+    public: 
+
+        Veiculo() { // Em c++ para criar um array de elementos, precisamos ter um construtor vazio
+            
+        }
+
+        Veiculo(std::string placa, std::string cor, float peso_em_kg, int altura_em_cm) {
+          this->placa = placa;
+          this->cor = cor;
+          this->peso_em_kg = peso_em_kg;
+          this->altura_em_cm = altura_em_cm;
+          std::cout << "Veiculo iniciado!\n";
+        }
+        
+        void acelerar() {
+          std::cout << "Vrrmmmmmm!!\n";
+        }
+
+        virtual std::string get_tipo() {
+            return "Não definido";
+        }
+
+}; 
+
+class Sedan : public Veiculo {
+    public: 
+        Sedan(std::string placa, std::string cor, float peso_em_kg, int altura_em_cm) : Veiculo(placa, cor, peso_em_kg, altura_em_cm) {
+        }
+
+        std::string get_tipo() override {
+            return "Sedan";
+        }
+};
+
+int main(void) {
+    Sedan v = Sedan("HDX-3821", "Amarelo", 1554.3, 165);
+    v.acelerar();
+    Veiculo vs[10];
+    vs[1] = Sedan("AVD-5932", "Azul", 1800, 155);
+    return 0;
+}
+```
+
 ## Links úteis
 
 - [Inheritance and access specifiers](https://www.learncpp.com/cpp-tutorial/inheritance-and-access-specifiers/)
