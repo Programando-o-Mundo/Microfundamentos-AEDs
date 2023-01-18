@@ -1,8 +1,18 @@
 # Entendendo Herança
 
-Nesta e na próxima aula iremos trabalhar com dois princípios muito importantes, quando trabalhamos com linguagens orientada a objetos. O primeiro princípio é a chamada Herança onde temos classes que compartilhem atributos e métodos. O objetivo desse princípio é porque durante a produção de um Software você irá encontrar muito código com lógica repetida ou que possuem um comportamento que pode ser generalizado. 
+## Você vai aprender
 
-Importe notar que chamamos a classe na qual herdamos de classe pai (parent class) ou classe base (base class).
+- O que é Herança
+- Porquê usar Herança
+- Como usar Herança
+
+## Pré-requisitos
+
+- [O que é POO](1-O-que-eh-POO.md)
+
+## Reusando Com
+
+Nesta e na próxima aula iremos trabalhar com um dos pilares de POO mais importantes que tem. O nome dele é a Herança, onde criamos classes (classe filha) que compartilha dados e métodos herdados de uma outra classe (classe pai). O objetivo desse princípio é para a generalização de código onde existe muitos componentes com lógicas parecidas/iguais que podem ser abstraídos para uma classe separada.
 
 ## Como usar Herança
 
@@ -413,8 +423,11 @@ int main(void) {
 }
 ```
 
+Para finalizar essa aula eu gostaria de te fazer um convite para um dos vídeos que está na seção de **Links úteis**. Por mais que Herança possa ser muito útil, e é um dos pilares da Programação Orientada a Objetos, nem sempre usar herança é uma boa opção, e para entender mais sobre o assunto, assista o vídeo que está na seção abaixo.
+
 ## Links úteis
 
 - [Inheritance and access specifiers](https://www.learncpp.com/cpp-tutorial/inheritance-and-access-specifiers/)
 - [Herança em C++](https://acervolima.com/heranca-em-c/)
 - [Entendendo e aplicando Herança em Java](https://www.devmedia.com.br/entendendo-e-aplicando-heranca-em-java/24544)
+- [Os problemas de usar Herança](https://youtu.be/hxGOiiR9ZKg)
