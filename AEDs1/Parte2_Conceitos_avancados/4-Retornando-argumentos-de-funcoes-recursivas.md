@@ -1,5 +1,16 @@
 # Retornando argumentos de funções recursivas
 
+## Você vai aprender
+
+- Como retornar dados de funções recursivas
+- Uma melhor maneira de visualizar recursão
+
+## Pré-requisitos
+
+- [Básico de recursão](3-Entendendo-recursao.md)
+
+## Dando um passo adiante
+
 Agora que temos uma compreensão básica em como recursão funciona, vamos explorar mais alguns exemplos e ver como podemos usar a recursão para retornar uma resposta. ou no nosso exemplo a seguir, um valor
 
 ## Soma de elementos de um array
@@ -317,3 +328,4 @@ A soma dos elementos do array é igual a 116
 ## Links úteis
 
 - [Recursion in C](https://www.youtube.com/watch?v=kepBmgvWNDw)
+- [Recursion in 100 seconds](https://www.youtube.com/watch?v=rf60MejMz3E)
