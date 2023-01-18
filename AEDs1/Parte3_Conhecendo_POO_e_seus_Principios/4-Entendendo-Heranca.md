@@ -10,9 +10,9 @@ Primeiramente vamos voltar para a nossa classe Veículo. Vamos supor que queremo
 
 Observe a sintaxe de como usamos herança:
 
-#### C++
+### C++
 
-```c++
+```cpp
 class Sedan : public Veiculo {
     
 };
@@ -27,7 +27,7 @@ Note que esse especificador de acesso que colocamos, indica qual será a visibil
 
 Se colocarmos a herança como privada, então todos os atributos ficaram como privado.
 
-#### Java
+### Java
 
 ```java
 class Sedan extends Veiculo {
@@ -40,6 +40,8 @@ Em java é mais simples, basta usar a palavra "extends" seguido do nome da class
 ## Acessando a classe base da classe filha
 
 Agora que criamos a nossa classe, precisamos iniciar os nossos dados e iniciar o nosso construtor. Em Java, quando criamos uma classe que herda de outra, precisamos chamar o construtor da classe base, usando a palavra ```super```.
+
+### Java
 
 ```java
 class Veiculo {
@@ -70,7 +72,9 @@ class Sedan extends Veiculo {
 
 Em c++, nós temos uma sintaxe específica para replicar esse comportamento.
 
-```c++
+### C++
+
+```cpp
 class Veiculo {
   
   public: 
@@ -102,9 +106,53 @@ class Sedan : public Veiculo {
 
 Em ambas situações, nós estamos criando um construtor na classe filho ```Sedan``` que fará como primeira ação, chamar o construtor da classe pai ```Veiculo```. Podemos comprovar esse compartamento, colocando uma instrução de print dentro dos construtores.
 
-#### c++
+### Java
 
-```c++
+```java
+class Veiculo {
+
+    public String placa;
+    public String cor;
+    public double peso_em_kg;
+    public int altura_em_cm;
+   
+    public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+      this.placa = placa;
+      this.cor = cor;
+      this.peso_em_kg = peso_em_kg;
+      this.altura_em_cm = altura_em_cm;
+      System.out.println("Veiculo iniciado!");
+    }
+    
+    void acelerar() {
+      System.out.println("Vrrmmmmmm!!"); 
+    }
+}
+  
+class Sedan extends Veiculo {
+
+    public Sedan(String placa, String cor, double peso_em_kg, int altura_em_cm) {
+        super(placa, cor, peso_em_kg, altura_em_cm);
+        System.out.println("Sedan iniciado!");
+    }
+    
+}
+
+public class Main {
+
+  public static void main(String[] args) {
+
+      Sedan v = new Sedan("HDX-3821", "Amarelo", 1554.3, 165);
+      v.acelerar();
+      v.peso_em_kg = 2033.5;
+      System.out.println(v.peso_em_kg);
+  }
+}
+```
+
+### C++
+
+```cpp
 #include<string> 
 #include<iostream>
 
@@ -145,48 +193,6 @@ int main(void) {
     return 0;
 }
 ```
-#### java
-```java
-class Veiculo {
-
-    public String placa;
-    public String cor;
-    public double peso_em_kg;
-    public int altura_em_cm;
-   
-    public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
-      this.placa = placa;
-      this.cor = cor;
-      this.peso_em_kg = peso_em_kg;
-      this.altura_em_cm = altura_em_cm;
-      System.out.println("Veiculo iniciado!");
-    }
-    
-    void acelerar() {
-      System.out.println("Vrrmmmmmm!!"); 
-    }
-}
-  
-class Sedan extends Veiculo {
-
-    public Sedan(String placa, String cor, double peso_em_kg, int altura_em_cm) {
-        super(placa, cor, peso_em_kg, altura_em_cm);
-        System.out.println("Sedan iniciado!");
-    }
-    
-}
-
-  public class Main {
-  
-      public static void main(String[] args) {
-          
-          Sedan v = new Sedan("HDX-3821", "Amarelo", 1554.3, 165);
-          v.acelerar();
-          v.peso_em_kg = 2033.5;
-          System.out.println(v.peso_em_kg);
-      }
-  }
-  ```
 
 Esse será o resultado do nosso código quando rodamos ele:
 
@@ -203,9 +209,9 @@ Perceba que primeiro, o código irá executar primeiro o construtor da classe ba
 
 Até então nós temos mantido um suspense a respeito do que a palavra "protected" faz e agora podemos explicar. Quando criamos uma variável privada na classe pai, nós não podemos acessar ela na classe filha, observe o exemplo abaixo.
 
-#### C++
+### C++
 
-```c++
+```cpp
 #include<string> 
 #include<iostream>
 
@@ -247,7 +253,7 @@ int main(void) {
 }
 ``` 
 
-#### Java
+### Java
 
 ```java
 class Veiculo {
@@ -302,7 +308,7 @@ main.cpp:8:17: note: declared private here
       |                 ^~~~~
 ```
 
-#### Java
+### Java
 
 ``` 
 Main.java:24: error: placa has private access in Veiculo
@@ -311,7 +317,7 @@ Main.java:24: error: placa has private access in Veiculo
 
 Para consertar isso, precisamos colocar essas variáveis como ```protected``` permitindo assim o acesso delas na classe filha.
 
-```c++
+```cpp
   protected: 
    
     std::string placa;
@@ -334,7 +340,7 @@ Um comportamento que surgiu com a Herança é a capacidade de armazenar instânc
 Uma coisa interessante é que podemos guardar instâncias da classe "Sedan" em um array de "Veiculo". O que não podemos fazer é guardar instâncias de uma classe pai na classe filha.
 
 
-#### Java
+### Java
 
 ```java
   public class Main {
@@ -349,9 +355,9 @@ Uma coisa interessante é que podemos guardar instâncias da classe "Sedan" em u
   }
 ```
 
-#### C++
+### C++
 
-```c++
+```cpp
 #include<string> 
 #include<iostream>
 
