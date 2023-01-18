@@ -34,16 +34,17 @@ Em resumo, encapsulação é um padrão de software, onde colocamos os dados da 
 
 A ideia aqui é bem simples, como o único meio de acessar os dados da classe é a partir dessa funções, nós estamos protegendo a variável de ser modificada de formas imprevisíveis. Além disso caso a lógica de recuperar ou modificar tais dados modifique durante a criação do software (Algo que acontece bem frequentemente na vida útil de qualquer aplicação), o custo para refatorar essas modificações é mais baixo, já que tudo que temos que fazer é modificar essas funções.
 
-### Público e Privado
+## Especificadores de acesso
 
-É aqui que essas palavras chaves entram, pois diferente de C, C++, Java e outras linguagens que possuem POO, também introduzem esse conceito de publico e privado que não tem em outras linguagens. Também temos o especificador ```protected``` mas iremos entrar em maiores detalhes quando falarmos de Herança.
+É aqui que as palavras chaves ```public``` e ```private``` entram em ação, pois diferente de C, C++ e Java (assim como outras linguagens que possuem suporte a POO), também introduzem esse conceito de especificadores de acesso. Também temos a palavra-chave ```protected``` mas iremos entrar em maiores detalhes quando falarmos de Herança.
 
-#### Public
+### Public
 
 Quando dizemos que a variável é publica, quer dizer que tanto dentro quanto fora da classe, podemos acessar esse atributo. Esse é o mesmo comportamento das Structs em C, onde você pode acessar qualquer coisa usando o ponto "." seguido do atributo da struct. A mesma coisa acontece em classes:
 
-#### C++
-```c++
+### C++
+
+```cpp
 #include<iostream>
 #include<string>
 
@@ -67,8 +68,10 @@ int main(void) {
   return 0;
 }
 ```
-#### Java
-```Java
+
+### Java
+
+```java
 class Pessoa {
   public String nome;
   public String cpf;
@@ -91,13 +94,13 @@ public class Main {
 
 Uma observação importante, quando você não coloca nenhum especificador em Java, ele não será "public" mas sim "default", nós não iremos entrar em detalhes disso, pois isso é coisa da linguagem, mas para mais informações, [acesse esse link](https://www.geeksforgeeks.org/access-modifiers-java/).
 
-#### Private
+### Private
 
 Já o especificador de acesso private, significa que tal atributo não pode ser acessado fora do escopo da classe,e caso a gente tente, o compilador irá nos retornar um erro:
 
 #### C++
 
-```c++
+```cpp
 #include<iostream>
 #include<string>
 
@@ -122,9 +125,9 @@ int main(void) {
 }
 ```
 
-#### Java
+### Java
 
-```Java
+```java
 class Pessoa {
   private String nome;
   private String cpf;
@@ -147,7 +150,8 @@ public class Main {
 
 Dê uma olhada no erro que recebemos:
 
-#### C++
+### C++
+
 ```
 main.cpp:20:21: error: 'saldo' is a private member of 'Pessoa'
   std::cout << joao.saldo << "\n";
@@ -157,7 +161,9 @@ main.cpp:9:11: note: declared private here
           ^
 1 error generated.
 ``` 
-#### Java
+
+### Java
+
 ``` 
 Main.java:18: error: cannot find symbol
     System.out.println(joao.saldo);
@@ -176,7 +182,8 @@ Agora fica a questão, se o nosso atributo é privado, como que acessamos ele fo
 Para acessar esses dados, nós temos os getters, uma função que tem como único objetivo retornar o atributo.
 
 ### C++
-```c++
+
+```cpp
 #include<iostream>
 #include<string>
 
@@ -213,8 +220,10 @@ int main(void) {
   return 0;
 }
 ```
+
 ### Java
-```Java
+
+```java
 class Pessoa {
   private String nome;
   private String cpf;
@@ -256,7 +265,8 @@ Note que neste caso não usamos a palavra "this" pois diferente do construtor, n
 Por outro lado, temos os setters, funções que existem para mudarmos o valor de uma variável.
 
 ### C++
-```c++
+
+```cpp
 #include<iostream>
 #include<string>
 
@@ -305,8 +315,10 @@ int main(void) {
   return 0;
 }
 ```
+
 ### Java
-```Java
+
+```java
 class Pessoa {
   private String nome;
   private String cpf;
