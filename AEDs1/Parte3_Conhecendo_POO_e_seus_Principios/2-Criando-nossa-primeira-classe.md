@@ -1,5 +1,15 @@
 # Criando nossa primeira classe
 
+## Você vai aprender
+
+- Como criar a sua primeira classe
+- Qual a sintaxe de criar uma classe
+- Criação de atributos de uma classe (variáveis, funções, construtores)
+
+## Pré-requisitos
+
+- [O que é POO](1-O-que-eh-POO.md)
+
 Anteriormente, nós transformamos uma dos nossos antigos exemplos de Struct para uma classe. Por mais que esse exemplo tenha sido ótimo para iniciar o nosso estudo em classes, acredito que seria melhor darmos alguns passos para trás, e criar uma nova classe do zero, para que possamos melhor entender os conceitos de POO
 
 ## Criando uma classe para classificar carros
@@ -113,6 +123,8 @@ class Veiculo {
   }
 }
 ``` 
+
+Observação importante, é que em C++, também possuimos destrutores, ou seja, um tipo de função especial que é atividade quando um objeto da nossa classe está prestes a ser destruído (liberamos da memória ou o objeto saiu de escopo. Para mais detalhes, não deixe de olhar a seção de links úteis.
 
 Com o construtor criado, precisamos iniciar os nossos atributos, mas perceba que tanto o nome dos argumentos da funcao, quanto o nome dos atributos da classe são os mesmos, como é que fazemos essa diferenciação? 
 
@@ -397,3 +409,4 @@ int main(void) {
 
 - [Criando a primeira classe em C++](https://www.facom.ufu.br/~flavio/ed1/files/2011-01/ED1_C++_OO_CriacaoClasses.pdf)
 - [Criando a primeira classe em Java](https://www.devmedia.com.br/como-criar-minha-primeira-classe-em-java/38940)
+- [Destrutores em C++](https://www.geeksforgeeks.org/destructors-c/)
