@@ -19,12 +19,17 @@ A única diferença é que em Java, podemos indicar também o escopo de acesso d
 
 Após isso, nós iremos colocar duas chaves, igual quando criamos uma função:
 
-```C++
+### C++
+
+```cpp
 class Veiculo {
 
 }; // Note que em C++, precisamos colocar esse ponto-e-vírgula após a segunda chave.
-``` 
-```Java
+```
+
+### Java
+
+```java
 class Veiculo {
 
     
@@ -36,7 +41,9 @@ Assim como em funções, as chaves indicam o escopo para os **atributos** da nos
 
 Agora que temos as nossas classes, vamos criar alguns atributos para a nossa classe, vamos começar criando as nossa variáveis. você vai observar que tanto para criar variáveis e declara funções dentro de classes envolve usar a mesma sintaxe que já estamos acostumados.
 
-```C++
+### C++
+
+```cpp
 #include<string> // Necessario para usar a std::string
 class Veiculo {
   
@@ -48,7 +55,9 @@ class Veiculo {
 }; 
 ``` 
 
-```Java
+### Java
+
+```java
 class Veiculo {
 
   String placa;
@@ -70,7 +79,9 @@ NomeDaClasse(argumentos) {
 ```
 Observe os dois exemplos abaixo:
 
-```C++
+### C++
+
+```cpp
 #include<string> 
 class Veiculo {
   
@@ -87,7 +98,9 @@ class Veiculo {
 }; 
 ``` 
 
-```Java
+### Java
+
+```java
 class Veiculo {
 
   public String placa;
@@ -107,7 +120,9 @@ Com o construtor criado, precisamos iniciar os nossos atributos, mas perceba que
 
 As linguagens que tem suporte a POO geralmente usam alguma palavra chave para se referir a atributos que pertencem a classe, no caso de C++ e Java, nós temos a palavra "this", usando ela, podemos diferenciar as variáveis da classe e as variáveis de um escopo local.
 
-```C++
+### C++
+
+```cpp
 #include<string> 
 class Veiculo {
   
@@ -127,7 +142,9 @@ class Veiculo {
 }; 
 ``` 
 
-```Java
+### Java
+
+```java
 class Veiculo {
 
   public String placa;
@@ -150,7 +167,9 @@ Obs.: Podemos usar a palavra ```this``` para se referir a uma função também.
 
 Podemos criar funções dentro das nossas classes, usando a mesma sintaxe para criar funções fora da classe. Para dar exemplo, vamos criar uma função para ser chamada, que simula quando pisamos no acelerador do carro.
 
-```C++
+### C++
+
+```cpp
 #include<string> 
 #include<iostream>
 
@@ -175,6 +194,8 @@ class Veiculo {
     }
 }; 
 ``` 
+
+### Java
 
 ```Java
 class Veiculo {
@@ -216,7 +237,7 @@ NomeDaClasse nomeDaVariavel = new NomeDaClasse();
 ```
 
 ### C++
-```c++
+```cpp
 # Usando alocacao dinamica
 NomeDaClasse* nomeDaVariavel = new NomeDaClasse();
 
@@ -228,7 +249,9 @@ NomeDaClasse nomeDaVariavel();
 
 Aqui está um exemplo mais concreto disso:
 
-```Java
+### Java
+
+```java
 class Veiculo {
 
   public String placa;
@@ -257,7 +280,9 @@ public class Main {
 }
 ``` 
 
-```C++
+### C++
+
+```cpp
 #include<string>
 #include<iostream>
 
@@ -300,7 +325,9 @@ nomeDaVariavel.nomeDoAtributo
 
 Lembrando, atributo pode ser tanto uma função, quanto uma variável.
 
-```Java
+### Java
+
+```java
 class Veiculo {
 
   public String placa;
@@ -332,7 +359,9 @@ public class Main {
 }
 ``` 
 
-```C++
+### C++
+
+```cpp
 #include<string> 
 class Veiculo {
   
