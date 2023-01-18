@@ -53,7 +53,7 @@ class Veiculo {
 
   String placa;
   String cor;
-  float peso_em_kg;
+  double peso_em_kg;
   int altura_em_cm;
 }
 ``` 
@@ -92,7 +92,7 @@ class Veiculo {
 
   public String placa;
   public String cor;
-  public float peso_em_kg;
+  public double peso_em_kg;
   public int altura_em_cm;
   
   public Veiculo(String placa, String cor, double peso, int altura_em_cm) {
@@ -132,7 +132,7 @@ class Veiculo {
 
   public String placa;
   public String cor;
-  public float peso_em_kg;
+  public double peso_em_kg;
   public int altura_em_cm;
  
   public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
@@ -181,7 +181,7 @@ class Veiculo {
 
   public String placa;
   public String cor;
-  public float peso_em_kg;
+  public double peso_em_kg;
   public int altura_em_cm;
  
   public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
@@ -233,7 +233,7 @@ class Veiculo {
 
   public String placa;
   public String cor;
-  public float peso_em_kg;
+  public double peso_em_kg;
   public int altura_em_cm;
  
   public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
@@ -305,7 +305,7 @@ class Veiculo {
 
   public String placa;
   public String cor;
-  public float peso_em_kg;
+  public double peso_em_kg;
   public int altura_em_cm;
  
   public Veiculo(String placa, String cor, double peso_em_kg, int altura_em_cm) {
