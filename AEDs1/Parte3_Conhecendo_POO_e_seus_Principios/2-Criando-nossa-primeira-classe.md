@@ -152,6 +152,8 @@ Podemos criar funções dentro das nossas classes, usando a mesma sintaxe para c
 
 ```C++
 #include<string> 
+#include<iostream>
+
 class Veiculo {
   
   std::string placa;
@@ -257,6 +259,8 @@ public class Main {
 
 ```C++
 #include<string>
+#include<iostream>
+
 class Veiculo {
   
   std::string placa;
