@@ -123,7 +123,7 @@ Quando estamos trabalhando com classes, nós precisamos definir quais membros da
 Private significa que esse membro é apenas acessível dentro da classe. Então significa que se tentarmos acessar um elemento da classe, como no exemplo 
 abaixo:
 
-#### C++
+### C++
 
 ```cpp
 int main(void) {
@@ -134,7 +134,7 @@ int main(void) {
 }
 ```
 
-#### Java
+### Java
 
 ```java
 public static void main(String[] args) {
@@ -150,7 +150,7 @@ Nós iremos receber o erro de que esse membro da classe "nome" é inacessível o
 
 Public significa que esse membro pode ser acessado/modificado fora dele. Em outras palavras, se quisermos mudar o nome da nossa pessoa fora da classe, agora podemos.
 
-#### C++
+### C++
 
 ```cpp
 class Pessoa {
@@ -162,7 +162,7 @@ class Pessoa {
 };
 ``` 
 
-#### Java
+### Java
 
 ```java
 class Pessoa {
@@ -179,13 +179,13 @@ A palavra chave protected, iremos deixar para explorar ela quando falarmos de he
 
 Você também deve ter notado, que para criar uma instância de uma classe, precisamos invocar essa função com o nome da classe
 
-#### C++
+### C++
 
 ```cpp
 Pessoa joao = Pessoa();
 ```
 
-#### Java
+### Java
 
 ```java
 Pessoa joao = new Pessoa();
@@ -196,7 +196,7 @@ não especificamos nenhum construtor, então esse construtor vazio, apenas irá 
 
 Para isso então, vamos criar o nosso construtor:
 
-#### C++
+### C++
 
 ```cpp
 #include<iostream>
@@ -227,7 +227,7 @@ int main(void) {
 }
 ``` 
 
-#### Java
+### Java
 
 ```java
 class Pessoa {
@@ -258,7 +258,7 @@ Agora nós criamos um construtor para a nossa classe, lembrando sempre de respei
 
 Uma coisa que você deve ter notado é que nós utilizamos essa palavra "this". Essa palavra serve para referenciarmos especificamente elementos da nossa classe. Não precisamos usar sempre essa palavra para referenciar eles, apenas quando dentro de um mesmo escopo, temos duas variáveis com o mesmo nome.
 
-#### Java
+### Java
 ```java
   private String nome;
   private int idade;
@@ -277,7 +277,7 @@ Para finalizar vamos criar uma classe que seja capaz de imprimir os dados da min
 Em Java, nós podemos sobrescrever a função mágina "toString()" da nossa classe, para reproduzir esse comportamento. Em C++ iremos apenas criar uma função própria para fazer isso e usar uma classe chamada "std::stringstream" para converter os dados da classe para uma String.
 
 
-#### C++
+### C++
 
 ```cpp
 #include<iostream>
