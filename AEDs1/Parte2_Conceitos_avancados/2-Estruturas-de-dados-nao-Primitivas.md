@@ -1,7 +1,5 @@
 # Estruturas de Dados não Primitivas
 
-# Gustavo Lopes Rodrigues
-
 ## Você irá ver nessa aula:
 
 - O que são estruturas de dados não primitivas
