@@ -1,7 +1,5 @@
 # Tratando exceções com try catch e throws
 
-# Gustavo Lopes Rodrigues 
-
 ## Você vai aprender
 
 - O que é uma exceção
