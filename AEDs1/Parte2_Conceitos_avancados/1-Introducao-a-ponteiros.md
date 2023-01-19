@@ -7,7 +7,7 @@
 
 ## Pré-requisitos
 
-- Aulas passadas
+- [Conceitos básicos](../Parte1_Comecando_com_o_basico/README.md)
 
 ## Trabalhando com endereços de memória
 
