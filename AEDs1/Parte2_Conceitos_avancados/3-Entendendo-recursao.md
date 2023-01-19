@@ -1,7 +1,5 @@
 # Entendendo Recursão
 
-# Gustavo Lopes Rodrigues
-
 ## Você irá aprender
 
 - O que é Recursão.
