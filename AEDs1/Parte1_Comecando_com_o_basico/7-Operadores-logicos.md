@@ -1,7 +1,5 @@
 # Operadores lógicos
 
-# Gustavo Lopes Rodrigues
-
 ## Você vai aprender
 
 - O que são operadores lógicos
