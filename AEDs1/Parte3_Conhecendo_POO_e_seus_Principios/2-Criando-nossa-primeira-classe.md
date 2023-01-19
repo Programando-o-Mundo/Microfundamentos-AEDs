@@ -255,7 +255,7 @@ NomeDaClasse* nomeDaVariavel = new NomeDaClasse();
 
 # Sem alocacao dinamica
 NomeDaClasse nomeDaVariavel = NomeDaClasse();
-# Tambem pode criar a instancia assim
+# Tambem podemos criar a instancia assim
 NomeDaClasse nomeDaVariavel();
 ``` 
 
