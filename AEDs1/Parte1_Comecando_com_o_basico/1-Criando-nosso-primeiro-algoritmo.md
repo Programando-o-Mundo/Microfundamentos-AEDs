@@ -1,7 +1,5 @@
 # Criando nosso primeiro algoritmo
 
-# Gustavo Lopes Rodrigues
-
 ## Você irá aprender
 
 - Como fazer seu primeiro algoritmo em C
