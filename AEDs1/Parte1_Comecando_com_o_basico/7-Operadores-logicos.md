@@ -9,7 +9,7 @@
 
 ## Pré-requisitos
 
-- Aulas anteriores
+- [Operadores aritméticos](6-Operadores-aritmeticos.md)
 
 ## Definição
 
