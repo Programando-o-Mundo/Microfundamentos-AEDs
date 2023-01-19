@@ -16,9 +16,9 @@ Até então nós temos feito apenas declaração e leitura de variáveis, mas e 
 
 ## Standard Input and Output (stdio.h)
 
-Você deve se lembrar da primeira aula quando importamos essa biblioteca "stdio.h", esse nome é uma simplificação de Standard Input and Output, que em outras palavras, é a biblioteca padrão de entrada e saída de dados da linguagem C. Em geral, todas as linguagens precisam de ser capazes de fazer essas operações.
+Você deve se lembrar da primeira aula quando importamos essa biblioteca "stdio.h", esse nome é uma simplificação de Standard Input and Output, que em outras palavras, é a biblioteca padrão de entrada e saída de dados da linguagem C. Em geral, todas as linguagens são capazes de fazer essas operações
 
-No caso, essa biblioteca tem várias funções, mas nesta aula iremos focar em duas funções em específico, uma permite escrever dados do programa no terminal e a outra permite que o usuário digite um valor e o programa irá ler e armazenar em uma variável para nós.
+A biblioteca "stdio.h" tem várias funções, mas nesta aula iremos focar em duas funções em específico, uma permite escrever dados do programa no terminal (printf) e a outra permite que o usuário digite um valor e o programa irá ler e armazenar em uma variável para nós (scanf).
 
 ## Escrevendo valores na tela com printf
 
