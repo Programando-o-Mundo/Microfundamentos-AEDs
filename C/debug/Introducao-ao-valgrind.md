@@ -1,7 +1,5 @@
 # Introdução ao Valgrind
 
-# Gustavo Lopes Rodrigues
-
 ## Você vai aprender
 
 - O que é o Valgrind.
