@@ -91,7 +91,7 @@ int 2a3_;  // inválido
 
 Isso não é um tópico tão importante ao mundo de Algoritmo e Estrutura de Dados, mas é uma habilidade muito importante saber dar nome significativos para suas variáveis. Se quiser olhar mais para este tópico, deixarei um link na seção de "Línks úteis" dessa aula.
 
-Ok, então agora você entende o que é uma declaração, mas é uma atribuição?
+Ok, então agora você entende o que é uma declaração, mas o que é uma atribuição?
 
 ## Atribuição
 
