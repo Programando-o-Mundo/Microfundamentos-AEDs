@@ -8,8 +8,7 @@
 
 ## Pré-requisitos
 
-- 1-Estruturas-de-dados-Primitivas
-- [Todas as aulas de algoritmos e sugerido ter assistido até aqui](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/tree/main/AEDs1/Algoritmos)
+- [Introdução à ponteiros](1-Introducao-a-ponteiros.md)
 
 ## Aplicando 
 
