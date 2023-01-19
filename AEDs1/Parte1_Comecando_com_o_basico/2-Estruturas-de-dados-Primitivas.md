@@ -3,12 +3,12 @@
 ## Você vai aprender
 
 - O que são Estruturas de Dados
-- Qual é a importância das Estruturas de Dados e escolher as estruturas de dados certa
+- Qual é a importância das Estruturas de Dados e escolher as Estruturas de Dados certa
 - O que são as Estruturas de Dados Primitivas e quais são elas
 
 ## Pré-requisitos
 
-- Introdução a AEDs1
+- [Criando nosso primeiro algoritmo](1-Criando-nosso-primeiro-algoritmo.md)
 
 ## O Mundo simbolizado pelas Estruturas de Dados
 
