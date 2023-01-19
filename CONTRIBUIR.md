@@ -1,15 +1,15 @@
 # Como contribuir para o Microfundamentos
 
-# Gustavo Lopes Rodrigues.
-
 Você já teve alguma ideia que pode contribuir para o repositório? Se sim, seja bem vindo, aqui eu irei mostrar para você como criar 
 um. 
 
-# Dando início a sua aula
+## Corrigindo erros 
 
-Primeiramente lembre-se que a aula precisa de um nome, e precisa que esse nome venha no nome do arquivo e na primeira linha do arquivo. E em sequêcia deve
-vir o nome do professor da aula (neste caso o seu). Para efeitos práticos, segue um exemplo, eu tenho uma aula de Quicksort então o 
-nome do arquivo será: ```Quicksort.md``` e no começo do arquivo a sua aula está assim:
+As vezes durante sua leitura dos microfundamentos, você deve ter encontrado erros de gramática ou até erros factuais, se isso acontecer, reporte esses erros na aba **Issues** do nosso github e iremos corrigir isso.
+
+## Dando início a sua aula
+
+Caso você esteja interessado em fazer uma aula, primeiramente lembre-se que a aula precisa de um nome, e precisa que esse nome venha no nome do arquivo e na primeira linha do arquivo. E em sequêcia deve vir o nome do professor da aula (neste caso o seu). Para efeitos práticos, segue um exemplo, eu tenho uma aula de Quicksort então o nome do arquivo será: ```Quicksort.md``` e no começo do arquivo a sua aula está assim:
 
 ```
 # Quicksort
@@ -26,12 +26,12 @@ por exemplo, o nome do arquivo pode ser ```Quicksort.md``` e a aula pode ter o n
 
 ```
 
-# A aula em si
+## A aula em si
 
 Agora você irá montar o conteúdo da aula, aqui você terá uma maior liberdade em como seguir o seu roteiro, mas em geral, algumas coisas eu recomendo para 
 todos.
 
-# Primeiro, coloque o conteúdo da aula e seus pré-requisitos no começo
+## Primeiro, coloque o conteúdo da aula e seus pré-requisitos no começo
 
 É importante que toda aula mantenha o aluno informado no que ele vai aprender, além dos pré-requisitos necessários para acompanhar a aula, até porque
 se você, por exemplo, fizer uma aula sobre o algoritmo Quicksort, você precisa assumir que o aluno vai entender conceitos básicos como: Complexidade e 
@@ -49,7 +49,7 @@ o que significa ser um Algoritmo de Ordenação Interna. Neste caso é important
 - Noções básicas de Ordenação interna
 ```
 
-# Segundo, separe cada parte do aprendizado em seções
+## Segundo, separe cada parte do aprendizado em seções
 
 Para cada parte da aula separe a apresentação de cada ideia em seção, então por exemplo nessa nossa aula de quicksort, coloque cada um tópicos para
 aprendizado em seções diferentes para que você possa deixar ainda mais claro o fluxo da aula para o aluno.
@@ -70,7 +70,7 @@ de números abaixo
 
 ``` 
 
-# Terceiro, finalize a aula com links de referência
+## Terceiro, finalize a aula com links de referência
 
 Toda informação tem uma origem, então não se esqueça de colocar de onde tirou essas informações, além de links para que o aluno possa continuar
 o aprendizado daquele tópico.
