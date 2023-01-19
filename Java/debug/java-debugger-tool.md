@@ -1,7 +1,5 @@
 # Fazendo debug por terminal usando o JDB
 
-# Gustavo Lopes Rodrigues 
-
 ## Você vai aprender
 
 - O que é debug e quais são suas vantagens
