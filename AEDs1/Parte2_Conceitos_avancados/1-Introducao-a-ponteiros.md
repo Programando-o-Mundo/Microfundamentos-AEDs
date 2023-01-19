@@ -1,7 +1,5 @@
 # Introdução a ponteiros
 
-# Gustavo Lopes Rodrigues
-
 ## Você vai aprender
 
 - O que é um ponteiro.
