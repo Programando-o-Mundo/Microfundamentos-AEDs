@@ -1,7 +1,5 @@
 # Estruturas de Dados Primitivas
 
-# Gustavo Lopes Rodrigues
-
 ## Você vai aprender
 
 - O que são Estruturas de Dados
@@ -47,6 +45,8 @@ Temos o char que pode guardar um caractere, este caractere irá depender de qual
 ### Ponteiro (*)
 
 Por fim temos o ponteiro, que não iremos entrar em detalhes nesta aula, pois é um pouco mais complexo, mas basicamente um ponteiro descreve um tipo que guardar o endereço de uma outra variável em nosso programa.
+
+Obs.: Também temos o tipo void, mas entraremos em detalhe em próximas aulas.
 
 ## Conclusão
 
