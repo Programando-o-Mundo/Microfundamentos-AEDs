@@ -9,8 +9,7 @@
 
 ## Pré-requisitos
 
-- 1-Criando-nosso-primeiro-algoritmo
-- 1-Estruturas-de-dados-Primitivas
+- [Estruturas de Dados Primitivas](2-Estruturas-de-dados-Primitivas.md)
 
 ## Atribuição e Declaração de variáveis
 
