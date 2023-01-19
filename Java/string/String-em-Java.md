@@ -1,7 +1,5 @@
 # Criando e manipulando Strings em Java
 
-# Gustavo Lopes Rodrigues 
-
 ## Você vai aprender
 
 - Tipo String em Java
