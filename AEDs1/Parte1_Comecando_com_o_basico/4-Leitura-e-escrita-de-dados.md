@@ -1,7 +1,5 @@
 # Leitura e escrita de dados
 
-# Gustavo Lopes Rodrigues
-
 ## Você irá aprender
 
 - Como usar as funções printf e scanf
