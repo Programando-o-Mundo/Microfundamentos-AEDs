@@ -1,7 +1,5 @@
 # Estruturas condicionais
 
-# Gustavo Lopes Rodrigues
-
 ## O que você vai ver...
 
 - O que são  e como usar estruturas condicionais
