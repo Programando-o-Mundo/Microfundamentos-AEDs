@@ -1,8 +1,4 @@
-# Nocoes-basicas
-
-## Seja bem vindo ao ![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge\&logo=java\&logoColor=white)
-
-## Gustavo Lopes Rodrigues
+# Noções básicas - Java ![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge\&logo=java\&logoColor=white)
 
 ### Você vai aprender
 
