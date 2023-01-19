@@ -8,7 +8,7 @@
 
 ## Pré-requisitos
 
-- O que é um Algoritmo
+- [O que é um Algoritmo](../README.md)
 
 ## Linguagem C
 
