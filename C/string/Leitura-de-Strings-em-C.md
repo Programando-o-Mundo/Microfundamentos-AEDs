@@ -1,8 +1,4 @@
-# Leitura-de-Strings-em-C
-
-## Leitura de Strings em C
-
-## Gustavo Lopes Rodrigues
+# Leitura de Strings em C
 
 ### Você vai aprender
 
