@@ -6,6 +6,12 @@
 - Como usar os formatadores do C
 - O que são e como usar Caracteres de escape
 
+## Pré-requisitos
+
+- [Atributos e declaração](3-Atribuicao-e-declaracao.md)
+
+## Usando Estruturas Condicionais
+
 Até então nós temos feito apenas declaração e leitura de variáveis, mas e que tal se agora a gente fizesse escrita desses valores na tela para vermos? Ou melhor ainda, e se a gente fizesse um programa que tenha a capacidade de ler a entrada do teclado feita pelo usuário? Nesta seção iremos trabalhar com leitura e escrita de dados, usando como contexto a Linguagem C.
 
 ## Standard Input and Output (stdio.h)
