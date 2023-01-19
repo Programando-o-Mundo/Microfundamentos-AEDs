@@ -1,7 +1,5 @@
 # Ponteiros e alocação de memória
 
-# Gustavo Lopes Rodrigues
-
 ## Você vai aprender
 
 - O que é um ponteiro.
