@@ -1,7 +1,5 @@
 # Atribuição e declaração
 
-# Gustavo Lopes Rodrigues
-
 ## Você irá aprender
 
 - O que é atribuição, declaração e inicialização
