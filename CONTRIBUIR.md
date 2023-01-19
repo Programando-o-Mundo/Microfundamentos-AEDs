@@ -1,7 +1,6 @@
 # Como contribuir para o Microfundamentos
 
-Você já teve alguma ideia que pode contribuir para o repositório? Se sim, seja bem vindo, aqui eu irei mostrar para você como criar 
-um. 
+Você já teve alguma ideia que pode contribuir para o repositório? Se sim, seja bem vindo, aqui eu irei mostrar como você pode contribuir para esse repositório! 
 
 ## Corrigindo erros 
 
