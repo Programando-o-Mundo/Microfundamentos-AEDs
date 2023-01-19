@@ -20,8 +20,8 @@
   * [Parte 3 - Conhecendo POO e seus Princípios](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/README.md)
     * [O que é Programação Orientada a Objetos?](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/1-O-que-eh-POO.md)
     * [Criando nossa primeira classe](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/2-Criando-nossa-primeira-classe.md)
-    * [Entendendo Encapsulação](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/3-Criando-nossa-primeira-classe.md)
-    * [Entendendo Herança](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/3-Entendendo-Encapsulacao-e-Escopo.md)
+    * [Entendendo Encapsulação](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/3-Entendendo-Encapsulacao-e-Escopo.md)
+    * [Entendendo Herança](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/4-Entendendo-Heranca.md)
     * [Entendendo Polimorfismo](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/5-Entendendo-Polimorfismo.md)
 
 * [Algoritmos e Estruturas de Dados 2](AEDs2/README.md)
