@@ -4,7 +4,7 @@ Você já teve alguma ideia que pode contribuir para o repositório? Se sim, sej
 
 ## Corrigindo erros 
 
-As vezes durante sua leitura dos microfundamentos, você deve ter encontrado erros de gramática ou até erros factuais, se isso acontecer, reporte esses erros na aba **Issues** do nosso github e iremos corrigir isso.
+As vezes durante sua leitura dos microfundamentos, você deve ter encontrado erros de gramática ou até erros factuais, se isso acontecer, reporte esses erros na aba [**Issues**](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/issues) do nosso github e iremos corrigir isso.
 
 ## Dando início a sua aula
 
