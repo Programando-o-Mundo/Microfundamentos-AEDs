@@ -1,7 +1,5 @@
 # Argumentos de Entrada
 
-# Gustavo Lopes Rodrigues
-
 ## Você vai aprender
 
 - O que são argumentos de entrada
