@@ -1,5 +1,16 @@
 # Operadores aritmético
 
+## Você vai aprender
+
+- O que são operadores aritméticos
+- Como usar operadores aritméticos
+
+## Pré-requisitos 
+
+- [Estruturas Condicionais e Operadores relacionais](5-Estruturas-condicionais-e-operadores-relacionais.md)
+
+## Fazendo operações em código
+
 Quando trabalhando variáveis de tipos númericos, o trabalho de fazer operações entre os números se torna algo muito importante, por conta disso, nessa seção iremos trabalhar um pouco operadores aritméticos.
 
 ## Operadores aritméticos
