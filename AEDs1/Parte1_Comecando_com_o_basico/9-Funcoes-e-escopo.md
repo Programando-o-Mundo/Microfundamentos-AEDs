@@ -9,7 +9,7 @@
 
 ## Pré-requisitos
 
-- Aulas anteriores
+- [Estruturas de repetição](8-Estruturas-de-repeticao.md)
 
 ## Saindo da main
 
