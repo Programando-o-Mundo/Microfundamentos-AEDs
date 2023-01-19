@@ -1,7 +1,5 @@
 # Estruturas de Repetição
 
-# Gustavo Lopes Rodrigues
-
 ## Você vai aprender
 
 - O que são estruturas de repetição
@@ -11,7 +9,7 @@
 
 ## Pré-requisitos
 
-- Aulas anteriores
+- [Operadores lógicos](7-Operadores-logicos.md)
 
 ## Tratando problemas repetitivos
 
