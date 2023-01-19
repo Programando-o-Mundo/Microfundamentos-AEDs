@@ -1,7 +1,5 @@
 # Fazendo debug pelo Visual Studio Code
 
-# Gustavo Lopes Rodrigues 
-
 ## Você vai aprender
 
 - Como fazer depuração pelo VSCode
