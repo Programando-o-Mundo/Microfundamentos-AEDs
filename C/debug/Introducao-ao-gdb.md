@@ -1,7 +1,5 @@
 # Introdução ao GDB
 
-# Gustavo Lopes Rodrigues
-
 ## Você vai aprender
 
 - O que é o GDB.
