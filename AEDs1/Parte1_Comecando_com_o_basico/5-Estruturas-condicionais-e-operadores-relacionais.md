@@ -8,11 +8,7 @@
 
 ## Pré-requisitos
 
-- 1-Criando-nosso-primeiro-algoritmo
-- 2-Atribuicao-e-declaracao
-- 3-Leitura-e-escrita-de-dados
-
-- 1-Estruturas-de-dados-Primitivas
+- [Leitura e escrita de dados](4-Leitura-e-escrita-de-dados.md)
 
 ## Usando Estruturas Condicionais
 
