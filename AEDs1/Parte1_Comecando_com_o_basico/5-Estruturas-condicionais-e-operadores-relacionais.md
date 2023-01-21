@@ -2,9 +2,9 @@
 
 ## Você irá aprender
 
-- O que são e como usar estruturas condicionais
-- Para que usamos estruturas condicionais
-- O que são e como usar operadores relacionais
+- O que são e como usar estruturas condicionais.
+- Para que usamos estruturas condicionais.
+- O que são e como usar operadores relacionais.
 
 ## Pré-requisitos
 
