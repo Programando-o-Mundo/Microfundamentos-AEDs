@@ -2,9 +2,9 @@
 
 ## Você vai aprender
 
-- O que são Estruturas de Dados
-- Qual é a importância das Estruturas de Dados e escolher as Estruturas de Dados certa
-- O que são as Estruturas de Dados Primitivas e quais são elas
+- O que são Estruturas de Dados.
+- Qual é a importância das Estruturas de Dados e escolher as Estruturas de Dados certa.
+- O que são as Estruturas de Dados Primitivas e quais são elas.
 
 ## Pré-requisitos
 
