@@ -17,7 +17,7 @@ Para isso, eu irei usar uma linguagem de programação muito famosa e muito impo
 
 Uma importante observação antes de continuar: eu irei ensinar a utilizar a linguagem C no contexto para aprender os conceitos básicos da programação, então teoricamente, você pode usar esses conceitos para aprender toda e qualquer linguagem, já que a grande maioria segue as mesmas ideias. Por mais que esta seja uma linguagem consideravelmente avançada em alguns pontos, acredito que esta ainda seja a mais ideal para começar a ter uma maior familiaridade com os conceitos da Ciência da Computação.
 
-Se você quiser depois dar uma olhada em algumas aulas mais avançadas de C, dê uma olhada no nosso módulo feito especialmente para a linguagem C.
+Se você quiser depois dar uma olhada em algumas aulas mais avançadas de C, dê uma olhada no nosso módulo feito especialmente para a linguagem C. O link ficará na seção de links úteis.
 
 C é uma linguagem de programação de alto nível que foi desenvolvida no início dos anos 1970 por Dennis Ritchie na empresa Bell Labs. Essa linguagem foi projetada para ser de uso geral, portátil e expressiva que pudesse ser usada para uma ampla gama de aplicações.
 
@@ -102,5 +102,6 @@ Isso foi provavelmente bastante informação, então vamos terminar por aqui, at
 ## Links úteis
 
 - [Aula completa de AEDs1 - UNIVERSIDADE FERNANDO PESSOA](http://www3.dsi.uminho.pt/iiee/repos/AEDados.pdf)
+- [Módulo de C](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/tree/main/C)
 - [Qual a REAL diferença entre Árquivos Binário e Texto?? - Fabio Akita](https://youtu.be/oSCVb4Ts-G4)
 - [C in 100 Seconds](https://youtu.be/U3aXWizDbQ4)
