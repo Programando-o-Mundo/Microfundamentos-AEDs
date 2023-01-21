@@ -42,7 +42,7 @@ Obs.: Também temos o tipo "void", mas entraremos em detalhe em próximas aulas.
 
 E por enquanto é isto, existe mais algumas pequenas variações nos tipos de dados, como, por exemplo, o **size_t** do C, que permite guardar números inteiros sem sinal de 16 bits. Entretanto, deixaremos esses detalhes para você pesquisar por conta própria. Por agora, espero que você tenha entendido a importância das estruturas de dados e as suas formas primitivas na linguagem C.
 
-## Línks úteis
+## Links úteis
 
 - [Aula de AEDs1](http://www3.dsi.uminho.pt/iiee/repos/AEDados.pdf)
 - [Leia mais sobre tipos de Dados em C](https://byjus.com/gate/data-types-in-c/)
