@@ -2,8 +2,8 @@
 
 ## Você vai aprender
 
-- O que são operadores lógicos
-- Quais são e como usar
+- O que são operadores lógicos.
+- Quais são e como usar.
 
 ## Pré-requisitos
 
@@ -11,7 +11,7 @@
 
 ## Definição
 
-Operações lógicas são aquelas que trabalham sobre valores booleanos, ou seja, operadores lógicos são operadores que servem para fazer operações em expressões booleanas. Para deixar isso mais claro, vamos lembrar das operações que fizemos quando estavamos calculando o troco da padaria:
+Operações lógicas são aquelas que trabalham sobre valores boolianos, ou seja, operadores lógicos são operadores que servem para efetuar operações em expressões boolianas. Para deixar isso mais claro, lembremos das operações que fizemos quando estávamos calculando o troco da padaria:
 
 ```c
 #include<stdio.h>
@@ -38,13 +38,13 @@ int main(void) {
 }
 ```
 
-Quando fazemos as operações ```dinheiro_cliente == total_compras``` e ```dinheiro_cliente > total_compras```, essa operações implicitamente implicam que uma expressão booleano é gerada, e, ao trabalhar com operadores lógicos, nós utilizamos essas expressões ou até mesmo variáveis booleanas, para criar as operações lógicas. Operadores lógicos podem ser usadas em estruturas condicionais ou até mesmo em estruturas de repetições (que ainda chegaremos lá).
+Quando fazemos as operações ```dinheiro_cliente == total_compras``` e ```dinheiro_cliente > total_compras```, essas operações implicitamente implicam que uma expressão booliana é gerada, e, ao trabalhar com operadores lógicos, nós utilizamos essas expressões ou até mesmo variáveis boolianas, para criar as operações lógicas. Operadores lógicos podem ser usadas em estruturas condicionais ou até mesmo em estruturas de repetições (que ainda chegaremos lá).
 
-Por agora, vamos ver quais são os operadores lógicos, além de ver alguns exemplos.
+Por agora, veremos quais são os operadores lógicos, além de ver alguns exemplos.
 
 ## AND ( && )
 
-O operador AND recebe duas ou mais expressões booleanas e retorna verdadeiro **se e somente se** ambas expressões forem verdadeiras. Por exemplo:
+O operador "AND" recebe duas ou mais expressões boolianas e retorna verdadeiro **se e somente se** ambas expressões forem verdadeiras. Por exemplo:
 
 ```c
 int x = 5;
@@ -57,7 +57,7 @@ if (x > 0 && y > 0) {
 
 ## OR ( || )
 
-O operador OR recebe duas ou mais expressões booleanas e retorna verdadeiro se pelo menos uma das expressões forem verdadeira. Por exemplo:
+O operador "OR" recebe duas ou mais expressões boolianas e retorna verdadeiro se pelo menos uma das expressões for verdadeira. Por exemplo:
 
 ```c
 int x = -5;
@@ -70,7 +70,7 @@ if (x > 0 || y > 0) {
 
 ## NOT ( ! )
 
-O operador NOT pega um único operando booleano e retorna o valor oposto. Por exemplo:
+O operador "NOT" pega um único operando booliano e retorna o valor oposto. Por exemplo:
 
 ```c
 bool eh_verdadeiro = false;
@@ -80,7 +80,7 @@ if (!eh_verdadeiro) {
 }
 ```
 
-Vale ressaltar que, assim como nos operadores aritméticos, os operadores lógicos costumam ter uma ordem de precedência e uma sequência lógica de avaliação das operações. O operador NOT tem a precedência mais alta, seguido pelo operador AND e pelo operador OR. Porém, em algumas situações, também é possível agrupar as operações utilizando parênteses para indicar a ordem de avaliação.
+Vale ressaltar que, assim como nos operadores aritméticos, os operadores lógicos costumam ter uma ordem de precedência e uma sequência lógica de avaliação das operações. O operador "NOT "tem a precedência mais alta, seguido pelo operador "AND" e pelo operador "OR". Porém, em algumas situações, também é possível agrupar as operações utilizando parênteses para indicar a ordem de avaliação.
 
 ## Línks uteis
 
