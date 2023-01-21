@@ -2,10 +2,10 @@
 
 ## Você irá aprender
 
-- O que é atribuição, declaração e inicialização
-- O que são variáveis
-- Como declarar e atribuir variáveis em C
-- O que não fazer quando declarar e atribuir varíaveis em C
+- O que é atribuição, declaração e inicialização.
+- O que são variáveis.
+- Como declarar e atribuir variáveis em C.
+- O que não fazer quando declarar e atribuir variáveis em C.
 
 ## Pré-requisitos
 
@@ -13,14 +13,14 @@
 
 ## Atribuição e Declaração de variáveis
 
-Temos agora o nosso primeiro algoritmo, porém, tudo que sabemos fazer até então e criar a função principal e imprimir texto na tela, vamos passar para o próximo passo que seria declarar e atribuir valor a variáveis.
+Temos agora o nosso primeiro algoritmo, porém, tudo que sabemos fazer até então e criar a função principal e imprimir texto na tela, proponho passarmos para o próximo passo que seria declarar e atribuir valor a variáveis.
 
 ## Declaração e variáveis
 
 Variáveis são objetos capazes de reter e representar um valor ou expressão, na linguagem C a sintaxe para declaração são duas:
 
 - Colocar tipo da variável, nome e por fim ponto e vírgula. (Tipo 1)
-- Colocar tipo da variável, nome , sinal de igual "=" e por fim um valor, seguido de ponto e vírgula. (Tipo 2)
+- Colocar tipo da variável, nome, sinal de igual "=" e por fim um valor, seguido de ponto e vírgula. (Tipo 2)
 ```c
 // Tipo 1
 int a;
@@ -28,7 +28,7 @@ int a;
 int a = 5;
 ```
 
-Obs.: Você também pode declarar mais de uma variável na mesma linha, colocando as variáveis entre vírgulas, a única condição é que todas as variáveis serão do mesmo tipo
+Obs.: Você também pode declarar mais de uma variável na mesma linha, colocando as variáveis entre vírgulas, a única condição é que todas as variáveis serão do mesmo tipo.
 
 Exemplo:
 
@@ -59,7 +59,7 @@ int main(void) {
     return 0;
 }
 ```
-"Redefinition" é um problema que o compilador de C detecta, quando uma variável é redeclarada, ou seja, você faz a sua declaração e tentar declara-la novamente.
+"Redefinition" é um problema que o compilador de C detecta, quando uma variável é redeclarada, ou seja, você faz a sua declaração e tentar declará-la novamente.
 ```
 main.c: In function ‘main’:
 main.c:5:9: error: redefinition of ‘a’
@@ -81,7 +81,7 @@ main.c:4:9: note: previous declaration of ‘a’ with type ‘int’
 ### Nome as variáveis
 
 Quanto ao nome das variáveis, não se preocupe, você pode dar o nome que quiser, desde que siga essa regra: precisa começar com *"_"* ou letra e pode 
-ter uma sequência praticamente infinita de letras, digitos ou *"_"* até encontrar um espaço vazio ou outro caractere.
+ter uma sequência praticamente infinita de letras, dígitos ou *"_"* até encontrar um espaço vazio ou outro caractere.
 
 ```c
 int A233;  // válido
@@ -89,7 +89,7 @@ int _a233; // válido
 int 2a3_;  // inválido
 ```
 
-Isso não é um tópico tão importante ao mundo de Algoritmo e Estrutura de Dados, mas é uma habilidade muito importante saber dar nome significativos para suas variáveis. Se quiser olhar mais para este tópico, deixarei um link na seção de "Línks úteis" dessa aula.
+Isso não é um tópico tão importante ao mundo de Algoritmo e Estrutura de Dados, mas é uma habilidade muito importante saber dar nome significativos para suas variáveis. Se quiser olhar mais para este tópico, deixarei um link na seção de "Links úteis" dessa aula.
 
 Ok, então agora você entende o que é uma declaração, mas o que é uma atribuição?
 
@@ -106,7 +106,7 @@ a = 5;
 
 Além disso, também podemos fazer apenas uma atribuição, colocando o nome da variável seguido do sinal de igual "=", o novo valor da variável e o ponto e vírgula ";".
 
-Agora vamos falar dos casos proibídos:
+Agora falaremos dos casos proibidos:
 
 ### Reatribuir uma constante
 
@@ -121,7 +121,7 @@ const int b = 3;
 b = 7;
 ```
 
-Se colocarmos esse código na função main e rodar, recebemos o seguinte aviso
+Se colocarmos esse código na função "main" e rodar, recebemos o seguinte aviso:
 
 ```
 main.c: In function ‘main’:
@@ -130,15 +130,15 @@ main.c:9:7: error: assignment of read-only variable ‘b’
       |       ^
 ``` 
 
-Isso se deve ao fato de que variáveis constantes só podem ser atribuidas uma única vez, ou seja, após ela ser declarada e atribuída, nós não podemos mudar o seu valor, podemos apenas ler o valor. É por esse motivo que o compilador nomeou a variável "b" como "read-only variable".
+Isso se deve ao fato de que variáveis constantes só podem ser atribuídas uma única vez, ou seja, após ela ser declarada e atribuída, nós não podemos mudar o seu valor, podemos apenas ler o valor. É por esse motivo que o compilador nomeou a variável "b" como "read-only variable".
 
 ### Atribuir com um tipo diferente
 
-Durante a atribuição, precisamos respeitar o tipo que a variável pertence, ou seja, se a nossa variável é do tipo "int" evite atribuir outros tipos, como por exemplo: atribuir um ponto flutuante (float) para um inteiro.
+Durante a atribuição, precisamos respeitar o tipo que a variável pertence, ou seja, se a nossa variável é do tipo "int" evite atribuir outros tipos, como, por exemplo: atribuir um ponto flutuante (float) para um inteiro.
 ```c
 int a = 5.7;
 ``` 
-Esse tipo de comando não irá fazer o GCC acionar algum tipo de erro, mas pode gerar comportamentos inesperados e até erros durante a execução. Neste caso, em vez de 5.7, a variável **a** irá armazenar o valor 5.
+Esse tipo de comando não irá fazer o GCC acionar algum tipo de erro, mas pode gerar comportamentos inesperados e até erros durante a execução. Neste caso, em vez de 5,7, a variável **a** irá armazenar o valor 5.
 
 ## Links úteis
 
