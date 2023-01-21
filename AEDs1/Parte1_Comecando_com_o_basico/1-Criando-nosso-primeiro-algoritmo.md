@@ -12,8 +12,7 @@
 
 ## Linguagem C
 
-Agora que temos uma noção básica em o quê é um algoritmo e como um funciona, vamos criar o nosso primeiro algoritmo juntos.
-Para isso, eu irei usar uma linguagem de programação muito famosa e muito importante para a história da programação chamada C.
+Agora que temos uma noção básica no quê é um algoritmo e como um funciona, vamos criar o nosso primeiro algoritmo junto. Para isso, eu irei usar uma linguagem de programação muito famosa e muito importante para a história da programação chamada C.
 
 Uma importante observação antes de continuar: eu irei ensinar a utilizar a linguagem C no contexto para aprender os conceitos básicos da programação, então teoricamente, você pode usar esses conceitos para aprender toda e qualquer linguagem, já que a grande maioria segue as mesmas ideias. Por mais que esta seja uma linguagem consideravelmente avançada em alguns pontos, acredito que esta ainda seja a mais ideal para começar a ter uma maior familiaridade com os conceitos da Ciência da Computação.
 
@@ -29,7 +28,7 @@ Vamos então começar a programar em C.
 
 ## Nosso primeiro programa
 
-Afins de deixar as aulas mais acessíveis, irei usar um site famoso para criar códigos colaborativos chamado [replit](https://replit.com/).Aqui entre no site, e crie um projeto em branco, pois iremos criar tudo do zero. Se você tiver feito tudo corretamente até aqui, você estará em uma tela parecida com esta:
+Afins de deixar as aulas mais acessíveis, irei usar um site famoso para criar códigos colaborativos, chamado [replit](https://replit.com/). Aqui entre no site, e crie um projeto em branco, pois iremos criar tudo do zero. Se você tiver feito tudo corretamente até aqui, você estará em uma tela parecida com esta:
 
 ![image](https://user-images.githubusercontent.com/9157977/210573859-495bf89f-122e-43c8-ac6a-4f3ed5033856.png)
 
@@ -41,23 +40,23 @@ No centro temos o nosso editor de texto, onde o arquivo que selecionarmos estar�
 
 ![image](https://user-images.githubusercontent.com/9157977/210574281-57f02f9f-678f-416f-a7a3-0099335d3143.png)
 
-Por fim, na direita, temos a seção do console linux para interagir com a nossa área de trabalho de forma mais avançada.
+Por fim, na direita, temos a seção do console Linux para interagir com a nossa área de trabalho de forma mais avançada.
 
 ![image](https://user-images.githubusercontent.com/9157977/210574689-cae7335f-bd11-46ba-b746-b017261de406.png)
 
-Eu irei assumir que você é completamente novo ao mundo Linux, e por isso darei o passo-a-passo nos comandos do Linux, já que este não é o foco da aula. Para criar um novo arquivo na nossa área de trabalho, digite o comando ```touch main.c```, perceba que um novo arquivo foi criado, e este está aberto para edições.
+Eu irei assumir que você é completamente novo ao mundo Linux, e por isso darei o passo-a-passo nos comandos do Linux, já que este não é o foco da aula. Para criar um arquivo na nossa área de trabalho, digite o comando ```touch main.c```, perceba que um novo arquivo foi criado, e este está aberto para edições.
 
 ![image](https://user-images.githubusercontent.com/9157977/210575323-ca6c9a3f-657f-4e35-89b1-848588c7ed35.png)
 
-Uma importante observação, a extensão .c é usada é apenas uma convenção para indicar que o nosso arquivo é um arquivo de código-fonte da linguagem C.
+Uma importante observação, a extensão  .c é usada é apenas uma convenção para indicar que o nosso arquivo é um arquivo de código-fonte da linguagem C.
 
-Agora que temos o nosso arquivo, vamos criar o nosso programa, por enquanto você irá mais copiar as minhas instruções mesmo, mais tarde entraremos em maior detalhe em como cada coisa funciona. Primeiro inclua no topo do arquivo a instrução
+Agora que temos o nosso arquivo, vamos criar o nosso programa, por enquanto você irá mais copiar as minhas instruções mesmo, mais tarde entraremos em maior detalhe em como cada coisa funciona. Primeiro inclua no topo do arquivo a instrução.
 ```c
 #include <stdio.h>
 ```
-Essa instrução está dizendo para o C incluir a biblioteca "stdio.h" ou "Standard Input Output" que é a biblioteca padrão do C para fazer entrada de saída de dados dentro do programa
+Essa instrução está dizendo para o C incluir a biblioteca "stdio.h" ou "Standard Input Output" que é a biblioteca padrão do C para fazer entrada de saída de dados dentro do programa.
 
-Agora, vamos inicializar a nossa função main, que no contexto da maioria das linguagens de programação, é o ponto de partida para o nosso programa:
+Agora, vamos inicializar a nossa função "main", que no contexto da maioria das linguagens de programação, é o ponto de partida para o nosso programa:
 
 ```c
 int main(void) {
@@ -66,7 +65,7 @@ int main(void) {
 
 Ótimo, agora vamos preencher a nossa função, com instruções que serão enviados para a máquina, que no caso são duas:
 
-A primeira é para imprimir no terminal a sequência de caractéres "Hello World!\n" e a segunda é para retornar a função com o valor 0;
+A primeira é para imprimir no terminal a sequência de caracteres "Hello World!\n" e a segunda é para retornar a função com o valor 0.
 
 ```c
 printf("Hello World!\n");
@@ -83,13 +82,13 @@ int main(void) {
   return 0;
 }
 ```
-Perfeito, nosso programa está completo, mas como é que executamos o nosso programa? Para isso iremos precisar do GCC ou o [Gnu C Compiler](https://gcc.gnu.org/), este programa é o que chamamos de um Compilador, e é responsável em transformar o nosso código escrito em C, para uma linguagem que a máquina possa entender. 
+Perfeito, nosso programa está completo, mas como executamos o nosso programa? Para isso iremos precisar do GCC ou o [Gnu C Compiler](https://gcc.gnu.org/), este programa é o que chamamos de um Compilador, e é responsável em transformar o nosso código escrito em C, para uma linguagem que a máquina possa intender. 
 
 Para invocarmos o GCC, iremos digitar no console ```gcc main.c```, o resultado será um arquivo chamado "a.out", como pode ser visto na imagem abaixo:
 
 ![image](https://user-images.githubusercontent.com/9157977/210578249-3fb34af8-63c9-4e54-afb9-6bcb85f4f05f.png)
 
-Se você tentar abrir o arquivo "a.out" perceberá que este é nada mais do que uma sequência maluca de caracteres, reforçando o que falamos anteriormente:  **linguagens de programação é uma convenção que apenas nós seres humanos entendemos**, enquanto isso, o arquivo gerado pelo GCC é um arquivo que a máquina entende como um arquivo executável. Podemos confirmar isso digitando no console o comando ```file main.c``` onde o console irá exibir que o mesmo é apenas um arquivo de texto, enquanto que ```file a.out``` irá nos mostrar que este é um arquivo ELF (Executable and Linkable File), um tipo de arquivo execútável do Linux.
+Se você tentar abrir o arquivo "a.out" perceberá que este é nada mais do que uma sequência maluca de caracteres, reforçando o que falamos anteriormente:  **linguagens de programação é uma convenção que apenas nós seres humanos entendemos**, enquanto isso, o arquivo gerado pelo GCC é um arquivo que a máquina entende como um arquivo executável. Podemos confirmar isso digitando no console o comando ```file main.c``` onde o console irá exibir que o mesmo é apenas um arquivo de texto, enquanto que ```file a.out``` irá nos mostrar que este é um arquivo ELF (Executable and Linkable File), um tipo de arquivo executável do Linux.
 
 ![image](https://user-images.githubusercontent.com/9157977/210579120-c6fc3ed8-e903-4438-b1ef-af06c7d9483d.png)
 
