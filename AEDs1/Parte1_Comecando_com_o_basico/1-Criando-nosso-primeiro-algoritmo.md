@@ -2,9 +2,9 @@
 
 ## Você irá aprender
 
-- Como fazer seu primeiro algoritmo em C
-- O que é o GCC
-- O que diferencia um arquivo de texto e um executável de máquina
+- Como fazer seu primeiro algoritmo em C.
+- O que é o GCC.
+- O que diferencia um arquivo de texto e um executável de máquina.
 
 ## Pré-requisitos
 
