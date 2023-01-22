@@ -1,34 +1,34 @@
 # Estruturas de Repetição
 
-## Você vai aprender
+## Você irá aprender
 
-- O que são estruturas de repetição
-- Porque utilizar elas
-- Como utilizar as diferentes tipo de estruturas de repetição
-- Como utilizar as instruções de controle de fluxo
-
+- O que são estruturas de repetição.
+- Porque utilizar elas.
+- Como utilizar os diferentes tipos de estruturas de repetição.
+- Como utilizar as instruções de controle de fluxo.
+- 
 ## Pré-requisitos
 
 - [Operadores lógicos](7-Operadores-logicos.md)
 
 ## Tratando problemas repetitivos
 
-Nesta aula iremos trabalhar com estruturas de repetição ou loops, que, assim como o nome sugere, permite que seja possível fazer loop em um bloco de instruções.
+Nesta aula trabalharemos com estruturas de repetição ou loops, que, assim como o nome sugere, permite que seja possível fazer loop em um bloco de instruções.
 
 Existem várias maneiras de fazer um loop, cada uma com seus próprios casos de uso específicos. Aqui estão algumas das maneiras mais comuns de fazer um loop em C:
 
 ## For
 
-O loop for é uma maneira popular de iterar um número específico de vezes. A sintaxe básica de um loop for é a seguinte:
+O loop "for" é uma maneira popular criar um loop de repetição, geralmente usada para iterar por um número específico de vezes. A sintaxe básica de um loop "for" em C é a seguinte:
 
 ```c
 
-for (inicialização; condição; incremento/decremento) {
+for (inicialização; condição; atualização) {
     // código para ser executado
 }
 ``` 
 
-Como pode ser ver, essa é uma sintaxe um pouco diferente daquela que estamos acostumada, com três partes diferentes separadas por ponto e vírgula, mas vamos ver um exemplo mais concreto, talvez isso irá ajudar a deixar as coisas mais claras.
+Como pode ser ver, essa é uma sintaxe um pouco diferente daquela que estamos acostumados, com três partes diferentes separadas por ponto e vírgula, mas veremos um exemplo mais concreto, talvez isso irá ajudar a deixar as coisas mais claras.
 
 ```c
 for (int i = 0; i < 10; i++) {
@@ -40,7 +40,7 @@ Aqui temos um exemplo de um loop "for" usado para imprimir os valores de 0 até 
 
 ### Inicialização
 
-Nesta parte você irá fazer a declaração ou atribuição de variáveis, aqui é importante notar que geralmente nós inicializamos variáveis que serão usadas para iterar pelo **for**.
+Nesta parte você irá fazer a declaração ou atribuição de variáveis, aqui é importante notar que geralmente inicializamos variáveis que serão usadas para iterar pelo **for**.
 
 ```
 for (int i = 0; i < 10; i++) {
@@ -48,7 +48,7 @@ for (int i = 0; i < 10; i++) {
    inicialização
 ``` 
 
-Obs.: Aqui nós podemos tanto fazer declaração como atribuição:
+Obs.: Aqui podemos tanto fazer declaração como atribuição:
 
 ```c
 int i;
@@ -89,9 +89,11 @@ for( ; i < 10; ) {
 }
 ``` 
 
-### Incremento/Decremento (Expressão de atualização)
+### Expressão de atualização
 
-Eu chamo essa seção de incremento e decremento, pois é nela onde incrementamos ou decrementamos a variável, após o fim do "for" loop. Mas na realidade, nessa seção podemos fazer uma sequência infinita de atribuições, lembrando obviamente de que precisamos implementar a lógica para que eventualmente faça o código sair do loop, caso contrário, o código irá ficar em um loop infinito.
+Por fim, temos a seção de atualização, pois é nela onde atualizamos as variáveis responsáveis em controlar o fluxo da estrutura. De forma geral, nessa seção incrementamos/decrementamos a variável iniciada na primeira seção. 
+
+Chamamos essa seção de expressão, pois na realidade, podemos fazer uma sequência infinita de atribuições, lembrando obviamente de que precisamos implementar a lógica para que eventualmente faça o código sair do loop, caso contrário, o código irá ficar em um loop infinito.
 
 ```
 for (int i = 0; i < 10; i++) {
@@ -124,7 +126,7 @@ while (i < 10) {
 
 # Do while
 
-O loop do-while é semelhante ao loop while, mas a condição é verificada após a execução do bloco de código. Isso significa que o bloco de código sempre será executado pelo menos uma vez. A sintaxe básica de um loop do-while é a seguinte:
+O loop "do-while" é semelhante ao loop "while", mas a condição é verificada após a execução do bloco de código. Isso significa que o bloco de código sempre será executado pelo menos uma vez. A sintaxe básica de um loop "do-while" é a seguinte:
 
 ```c
 do {
@@ -144,9 +146,9 @@ do {
 
 ## Controladores de fluxo
 
-Além dessas construções básicas de loop, a linguagem C, assim como outras linguagens, também fornece várias outras construções usadas para loop, como as instruções **break** e **continue**. Essas construções podem ser usadas para alterar o fluxo de controle em um loop, permitindo estruturas de loop mais complexas e poderosas.
+Além dessas construções básicas de loop, a linguagem C, assim como outras linguagens, também fornece várias outras construções usadas para loop, como as instruções **break** e **continue**. Essas construções podem ser usadas para alterar o fluxo de controle em um loop, permitindo estruturas de loop mais complexas e poderosas, porém também podem deixar o código mais confuso/dificíl de ser analisado.
 
-Vamos finalizar a aula olhando de forma breve como elas funcionam.
+Finalizaremos a aula olhando brevemente como elas funcionam.
 
 ### Break
 
@@ -160,7 +162,7 @@ for (int i = 0; i < 10; i++) {
     printf("%d\n", i);
 }
 ```
-Neste caso, estamos forçando o laço de repetição sair quando "i" for igual a 5, logo terminando o "for" antecipadamente. Este tipo de estrutura por mais que possível, deve se tomar cuidado, pois o seu uso pode levar a complicar a lógica do programa.
+Neste caso, estamos forçando o laço de repetição sair quando "i" for igual a 5, logo terminando o "for" antecipadamente.
 
 ### Continue
 
