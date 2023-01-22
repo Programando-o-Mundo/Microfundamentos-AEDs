@@ -6,7 +6,7 @@
 - Porque utilizar elas.
 - Como utilizar os diferentes tipos de estruturas de repetição.
 - Como utilizar as instruções de controle de fluxo.
-- 
+
 ## Pré-requisitos
 
 - [Operadores lógicos](7-Operadores-logicos.md)
