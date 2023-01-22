@@ -2,10 +2,10 @@
 
 ## Você irá aprender
 
-- O que são funções
-- Como declarar e usar funções
-- Quais são as regras no uso de funções
-- O que é o escopo
+- O que são funções.
+- Como declarar e usar funções.
+- Quais são as regras no uso de funções.
+- O que é o escopo.
 
 ## Pré-requisitos
 
@@ -13,21 +13,21 @@
 
 ## Saindo da main
 
-Até então nós temos trabalhado com código todo escrito na função "main", nós também temos usado algumas funções das bibliotecas da linguagem C, como o **printf** e o **scanf**, agora nós iremos criar nossas próprias funções, e falar um pouco também de escopo.
+Até então nossos códigos têm sido escrito na função "main", nós também temos usado algumas funções das bibliotecas da linguagem C, como o **printf** e o **scanf**, agora iremos criar nossas próprias funções, e falar um pouco também de escopo.
 
 ## O que são funções?
 
-Funções são módulos que podem conter código e executar funções específicas quando chamados. A grande utilidade de trabalhar com funções é poder separar uma lógica que é repetida várias vezes dentro do código em funções, e então chamar tais funções quando necessárias. 
+Funções são módulos que podem conter código e executar funções específicas quando chamados. A grande utilidade de trabalhar com funções é poder separar uma lógica repetida várias vezes no código em funções, e então chamar tais funções quando necessárias. 
 
-Pense o seguinte, quando você chama o **printf** obviamente tem várias coisas acontecendo por baixo dos panos, porquê se preocupar em como esse conteúdo está sendo imprimido na tela, se você pode apenas chamar uma função que já faz esse serviço para você, essa é a grande utilidade das funções.
+Pense o seguinte, quando você chama o **printf** obviamente tem várias coisas acontecendo por baixo dos panos, porque se preocupar em como esse conteúdo está sendo impresso na tela, se você pode apenas chamar uma função que já faz esse serviço para você, essa é a grande utilidade das funções.
 
-Com isso dito, vamos então criar nossas próprias funções
+Com isso dito, vamos então criar nossas próprias funções.
 
 ## Criando nossas próprias funções
 
 ### Tipo da função
 
-Primeiramente vamos ver como é a sintaxe para criar uma função, primeiro começamos com o tipo da função, ou seja, que tipo de dado a função irá retornar para nós. As vezes queremos que uma função retorne o resultado de um cálculo, um booleano indicando que uma operação foi um sucesso, ou simplesmente retornar nada, pois não é necessário retonar nenhum valor. De qualquer forma, é assim que começamos uma função:
+Primeiramente veremos como é a sintaxe para criar uma função, primeiro começamos com o tipo da função, ou seja, que tipo de dado a função irá retornar para nós. Às vezes queremos que uma função retorne o resultado de um cálculo, um booliano indicando que uma operação foi um sucesso, ou simplesmente retornar nada, pois não é necessário retornar nenhum valor. De qualquer forma, é assim que começamos uma função:
 
 ```
 void
@@ -35,7 +35,7 @@ void
  tipo da função
 ```
 
-Obs.: Apenas para refrescar sua memória, **void** é um tipo especial que usamos, quando a função não retorna nenhum valor.
+Aqui nos temos o uso do tipo especial que falamos anteriormente, o tipo "void", que não é usado para criar variáveis, mas sim funções que retornam nenhum valor, ou, como veremos mais para frente, funções que não recebem nenhum argumento.
 
 ### Nome da função
 
@@ -49,23 +49,26 @@ void imprima_hello_world
 
 ### Argumentos e o cabeçalho da função
 
-Até então nós temos feito a mesma coisa do que criar uma variável, porém é a partir desse ponto que iremos diferenciar a sintaxe de uma variável e uma função. Uma variável iria receber um ponto e vírgula agora, ou então uma atribuição seguido de ponto e vírgula, já uma função recebe dois parénteses:
+Até então fizemos a mesma coisa do que criar uma variável, porém é a partir desse ponto que diferenciaremos a sintaxe de uma variável e uma função. Uma variável iria receber um ponto e vírgula agora, ou então uma atribuição seguido de ponto e vírgula, já uma função recebe dois parênteses:
 
 ``` 
 void imprima_hello_world()
 ``` 
 
-Dentro dos parénteses, nós colocamos o que chamamos de os **argumentos** da função, ou seja, variáveis que a função precisa receber para manter o seu funcionamento. Nessa nossa função não iremos colocar argumentos, por isso usaremos a palavra "void" para indicar que essa função não tem nenhum argumento.
-
-Além disso, vale a pena falar que essa parte que você está vendo em cima, nós chamamos de o cabeçalho da função já que é a parte que define as propriedades das mesma.
+Dentro dos parênteses, nós colocamos o que chamamos de os **argumentos** da função, ou seja, variáveis que a função precisa receber para manter o seu funcionamento. Nessa função não colocaremos argumentos, por isso usaremos a palavra "void" para indicar que essa função não tem nenhum argumento.
 
 ``` 
 void imprima_hello_world(void)
 ``` 
 
-Obs.: Colocar a palavra "void" é opcional, mas é uma otimização para o compilador, então por isso estou colocando.
+Obs.: Colocar a palavra "void" é opcional, mas é uma otimização para o compilador, por isso estou colocando.
 
-Mas apenas para ilustração, vamos supor que queremos colocar argumentos, a sintaxe é bem parecida quando estamos declarando uma variável, porém sem colocar o ponto e vírgula. Em outras palavras, para colocar um argumento na função, colocamos o seu tipo , seguido do nome da variável:
+<details>
+  <summary>Pílula</summary>
+Esses três componentes que falamos até agora, o tipo, o nome e os argumentos, formam o que chamamos de "o cabeçalho da função" já que é a parte que define as propriedades das mesma.
+</details>
+
+Mas agora, proponho imaginarmos um cenário alternativo, suponhamos que queremos colocar argumentos, a sintaxe é bem parecida quando estamos declarando uma variável, porém sem colocar o ponto e vírgula. Em outras palavras, para colocar um argumento na função, colocamos o seu tipo, seguido do nome da variável:
 
 ``` 
 void imprima_hello_world(int a1)
@@ -81,7 +84,7 @@ void imprima_hello_world(int a1 , char c1)
                            separador dos argumentos
 ``` 
 
-Por fim, a parte mais importante de uma função, não se esqueça de colocar as chaves, que indicam o escopo da função
+Por fim, a parte mais importante de uma função, não se esqueça de colocar as chaves, que indicam o escopo da função:
 
 ``` 
 void imprima_hello_world(void) { <-- começo da função
@@ -89,7 +92,7 @@ void imprima_hello_world(void) { <-- começo da função
 } <-- fim da função
 ``` 
 
-Agora, vamos testar nossa nova função, vamos colocar em um programa e testar, lembrando que para chamar uma função, colocamos o seu nome, parénteses, seguido dos argumentos que a mesma precisa (se for especificado que a mesma precisa de argumentos).
+Agora, proponho testarmos nossa nova função, colocaremos em um programa e testar. Importante lembrar que para chamar uma função, colocamos o seu cabeçalho, exceto o tipo, ou seja: colocamos o nome da função seguido de parênteses, e dentro colocamos os argumentos que a mesma precisa (se for especificado que a função precisa de argumentos).
 
 ```c
 #include<stdio.h>
@@ -110,7 +113,7 @@ Perfeito, agora você sabe como criar funções! Antes de movermos para falar so
 
 ### A função precisa existir antes de ser chamada
 
-Obviamente, você não pode chamar funções que não existem, mas a ordem que você coloca funções importa, vamos olhar o exemplo abaixo:
+Obviamente, você não pode chamar funções que não existem, mas a ordem que você coloca funções importa, olhemos o exemplo abaixo:
 
 ```c
 #include<stdio.h>
@@ -124,7 +127,7 @@ void imprima_hello_world(void) {
   printf("hello world!\n");
 } 
 ```
-Perceba que é o mesmo código de antes, porém a nossa função **imprima_hello_world** está abaixo da função main. Teoricamente é a mesma coisa, mas na prática se tentarmos compilar esse código, um estranho aviso irá aparecer, dê uma olhada!
+Perceba que é o mesmo código de antes, porém a nossa função **imprima_hello_world** está abaixo da função "main". Teoricamente é a mesma coisa, mas, na prática, se tentarmos compilar esse código, um estranho aviso irá aparecer, dê uma olhada!
 
 ```
 main.c: In function ‘main’:
@@ -140,7 +143,7 @@ main.c:4:3: note: previous implicit declaration of ‘imprima_hello_world’ wit
       |   ^~~~~~~~~~~~~~~~~~~
 ``` 
 
-Esse erro se dâ pelo fato que em tempo de execução a nossa função não existe no programa, já que a leitura de algoritmos, e você deve-se lembrar da primeira aula de algoritmos ela é "Top-down" ou "de cima para baixo". Por conta disso, prefira duas dessas estratégias:
+Esse erro se dá pelo fato que em tempo de execução a nossa função não existe no programa, já que a leitura de algoritmos, e você deve-se lembrar da primeira aula de algoritmos, ela é "Top-down" ou "de cima para baixo". Por conta disso, prefira duas dessas estratégias:
 
 #### Coloque as funções antes do ponto de serem chamadas dentro do programa
 
@@ -161,7 +164,7 @@ int main(void) {
 
 #### Declare funções no início do programa
 
-Outra estratégia também válida, é declarar a função (igual uma variável), e depois você pode colocar onde você quiser.
+Outra estratégia também válida, é declarar o cabeçalho da função.
 
 ```c
 #include<stdio.h>
@@ -177,16 +180,16 @@ void imprima_hello_world(void) {
   printf("hello world!\n");
 } 
 ```
-Note que apenas colocamos o cabeçalho da função antes da main, e só isso é o suficiente para retirar o aviso anterior.
+Note que apenas declarando da função antes da main, é o suficiente para retirar o aviso anterior.
 
 ## Funções precisam retornar um valor (exceto quando o tipo delas é void)
 
-Você já deve ter visto desde a primeira aula que usamos essa palavra chave **return**. Essa palavra, como o nome indica, serve para finalizar a função, retornando um valor com o mesmo tipo indicado pela função. Em outras palavras, se o cabeçalho da função indica o retorno de um inteiro, então só podemos retornar inteiros.
+Você já deve ter visto desde a primeira aula que usamos essa palavra-chave **return**. Essa palavra, como o nome indica, serve para finalizar a função, retornando um valor com o mesmo tipo indicado pela função. Em outras palavras, se o cabeçalho da função indica o retorno de um inteiro, então só podemos retornar inteiros (ou tipos que podem ser implicitamente convertido para int).
 
 ```c
 #include<stdio.h>
 
-void somar(int a,int b) { 
+int somar(int a,int b) { 
   return a + b;
 } 
 
@@ -196,20 +199,18 @@ int main(void) {
 }
 ```
 
-Uma coisa interessante de notar no exemplo acima, é que podemos retornar expressões, ou seja, podemos fazer operações junto ao retorno, desde que essas operações impliquem na criação de uma expressão do tipo especificado pela função de retorno.
+Uma coisa interessante notar no exemplo acima, é que podemos retornar expressões, ou seja, podemos fazer operações junto ao retorno, desde que essas operações impliquem na criação de uma expressão do tipo especificado pela função de retorno.
 
-Obs.: Não é possível colocar instruções depois do retorno, pois como o retorno implica no término da função, estas instruções seram ignoradas durante a execução do código
+Obs.: Não é possível colocar instruções depois do retorno, pois como o retorno implica no término da função, estas instruções seram ignoradas durante a execução do código (exceto se o retorno esteja em uma estrutura condicional).
 
 <details>
   <summary>Pílula</summary>
-    No caso da função main, o retorno dela indica que a aplicação fechou com exito ou não, sendo o número 0 indicando que deu tudo certo, e o número 1 que houve algum problema.
+    No caso da função "main", o retorno dela indica que a aplicação fechou com exito ou não, sendo o número 0 indicando que deu tudo certo, e o número 1 que houve algum problema.
 </details>
-
-
 
 ## Escopo
 
-Agora vamos terminar essa aula com uma breve discussão sobre escopos. Você deve se lembrar que falamos bastante dessa palavra, na aula de estruturas condicionais e laços de repitação, mas afinal de contas, o que é o escopo? Uma palavra melhor para escopo é visibilidade, pois é isto que estamos tratando: a visibilidade que uma variável ou função tem dentro de um determinado contexto.
+Agora terminaremos essa aula com uma breve discussão sobre escopos. Você deve se lembrar que falamos bastante dessa palavra, na aula de estruturas condicionais e laços de repetição, mas afinal de contas, o que é o escopo? Uma palavra melhor para escopo é visibilidade, pois é isto que estamos tratando: a visibilidade que uma variável ou função tem em um determinado contexto.
 
 Quando criamos uma variável fora de qualquer função chamamos essa variável de global, ou seja, o nosso código inteiro pode ver essa variável e atualizar o seu valor.
 
@@ -224,7 +225,9 @@ int main(void) {
 }
 ``` 
 
-Quando criamos a variável dentro de um escopo, chamamos essa variável de local, ou seja, ela só pode ser acessada por aquele escopo (seja esse escopo de função, laço de repetição, estrutura condicional, e etc), e por escopos que estão dentros desse mesmo escopo, mas não por escopos de fora, veja o exemplo abaixo:
+Quando criamos a variável em um escopo, dizemos que essa variável é de escopo local, ou seja, ela só pode ser acessada por aquele escopo (seja esse escopo de função, laço de repetição, estrutura condicional, etc.). 
+
+Uma maneira simples de visualizar esse conceito é com o exemplo abaixo:
 
 ```c
 #include<stdio.h>
@@ -246,7 +249,7 @@ int main(void) {
 }
 ```
 
-Neste exemplo a nossa variável **a** está dentro da função main, logo seu escopo de visibilidade é a função main e o laço for que tem dentro da main, porém, ela não é visível para a função **imprima_hello_world**. Da mesma forma, o "i" do laço for está apenas dentro do escopo local do "for" se tentarmos imprimir o valor "i" fora do "for" o compilador irá nos jogar um erro.
+Neste exemplo a nossa variável **a** está dentro da função "main", logo seu escopo de visibilidade é a função "main" e o laço "for" que tem dentro da "main", porém, ela não é visível para a função **imprima_hello_world**. Da mesma forma, a variável "i" do laço "for" está visível apenas no escopo local do "for" se tentarmos imprimir o valor "i" fora do "for" o compilador irá nos jogar um erro.
 
 ## Línks úteis
 
