@@ -1,10 +1,10 @@
 # Entendendo Herança
 
-## Você vai aprender
+## Você irá aprender
 
-- O que é Herança
-- Porquê usar Herança
-- Como usar Herança
+- O que é Herança.
+- Porque usar Herança.
+- Como usar Herança.
 
 ## Pré-requisitos
 
@@ -12,11 +12,11 @@
 
 ## Reusando Com
 
-Nesta e na próxima aula iremos trabalhar com um dos pilares de POO mais importantes que tem. O nome dele é a Herança, onde criamos classes (classe filha) que compartilha dados e métodos herdados de uma outra classe (classe pai). O objetivo desse princípio é para a generalização de código onde existe muitos componentes com lógicas parecidas/iguais que podem ser abstraídos para uma classe separada.
+Nesta e na próxima aula trabalharemos com um dos pilares de POO mais importantes que tem. O nome dele é a Herança, onde criamos classes (classe filha) que compartilha dados e métodos herdados de outra classe (classe pai). O objetivo desse princípio é para a generalização de código onde existem muitos componentes com lógicas parecidas/iguais que podem ser abstraídos para uma classe separada.
 
 ## Como usar Herança
 
-Primeiramente vamos voltar para a nossa classe Veículo. Vamos supor que queremos criar uma classe ```Sedan``` para separar lógica com carros de outros tipos. Obviamente um ```Sedan``` ainda é um carro, então podemos usar a Herança para importar essa lógica da classe Veículo e adicionar em cima da nossa nova classe ```Sedan```.
+Primeiramente voltaremos para a nossa classe Veículo. Suponhamos que queremos criar uma classe ```Sedan``` para separar lógica com carros de outros tipos. Obviamente um ```Sedan``` ainda é um carro, então podemos usar a Herança para importar essa lógica da classe Veículo e adicionar em cima da nossa nova classe ```Sedan```.
 
 Observe a sintaxe de como usamos herança:
 
@@ -114,7 +114,7 @@ class Sedan : public Veiculo {
 };
 ``` 
 
-Em ambas situações, nós estamos criando um construtor na classe filho ```Sedan``` que fará como primeira ação, chamar o construtor da classe pai ```Veiculo```. Podemos comprovar esse compartamento, colocando uma instrução de print dentro dos construtores.
+Em ambas situações, nós estamos criando um construtor na classe filho ```Sedan``` que fará como primeira ação, chamar o construtor da classe pai ```Veiculo```. Podemos comprovar esse comportamento, colocando uma instrução de print nos construtores.
 
 ### Java
 
@@ -217,7 +217,7 @@ Perceba que primeiro, o código irá executar primeiro o construtor da classe ba
 
 ## Palavra chave "protected"
 
-Até então nós temos mantido um suspense a respeito do que a palavra "protected" faz e agora podemos explicar. Quando criamos uma variável privada na classe pai, nós não podemos acessar ela na classe filha, observe o exemplo abaixo.
+Até então mantemos um suspense a respeito do que a palavra "protected" faz e agora podemos explicar. Quando criamos uma variável privada na classe pai, nós não podemos acessar ela na classe filha, observe o exemplo abaixo.
 
 ### C++
 
@@ -304,7 +304,7 @@ class Sedan extends Veiculo {
   }
   ```
 
-Agora nós colocamos as variáveis do ```Veículo``` como privadas e estamos tentando acessar elas pelo construtor da classe ```Sedan```. Esse comportamento irá gerar um erro, pois variáveis de escopo privado não são visíveis para classe filha.
+Agora colocamos as variáveis do ```Veículo``` como privadas e estamos tentando acessar elas pelo construtor da classe ```Sedan```. Esse comportamento irá gerar um erro, pois variáveis de escopo privado não são visíveis para classe filha.
 
 #### C++
 
@@ -345,10 +345,9 @@ Para consertar isso, precisamos colocar essas variáveis como ```protected``` pe
 
 ### Armazenando instâncias de uma classe filha
 
-Um comportamento que surgiu com a Herança é a capacidade de armazenar instâncias de uma classe filha em um Array de uma classe pai. Vamos supor que estamos trabalhando em uma loja de Carros e para isso precisamos de um array que represente os carros que estão disponíveis para comprar.
+Um comportamento que surgiu com a Herança é a capacidade de armazenar instâncias de uma classe filha em um Array de uma classe pai. Suponhamos que estamos trabalhando em uma loja de Carros e para isso precisamos de um array que represente os carros que estão disponíveis para comprar.
 
 Uma coisa interessante é que podemos guardar instâncias da classe "Sedan" em um array de "Veiculo". O que não podemos fazer é guardar instâncias de uma classe pai na classe filha.
-
 
 ### Java
 
