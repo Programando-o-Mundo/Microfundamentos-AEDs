@@ -2,11 +2,11 @@
 
 ## Você irá aprender
 
-- O que são Classes e Objetos
-- Como criar uma classe
-- O que é o escopo de uma classe
-- Porque usamos a palavra "this"?
-- Como criar funções dentro da nossa classe
+- O que são Classes e Objetos.
+- Como criar uma classe.
+- O que é o escopo de uma classe.
+- Por que usamos a palavra "this"?
+- Como criar funções dentro da nossa classe.
 
 ## Pré-requisitos
 
@@ -14,17 +14,17 @@
 
 ## Visão panorâmica
 
-Nesta primeira aula, vamos ter uma visão panorâmica de como classes funcionam no geral, tenho certeza que aqui tem bastante informação, mas não se preocupe, nas próximas aulas iremos voltar a pontuar os elementos dessa aula. Sem mais delongas, vamos para a aula.
+Nesta primeira aula, teremos uma visão panorâmica de como classes funcionam no geral, tenho certeza que aqui tem bastante informação, mas não se preocupe, nas próximas aulas voltaremos a pontuar os elementos dessa aula. Sem mais delongas, vamos para a aula.
 
 ## Definição
 
 Programação orientada a objetos (OOP) é um paradigma da programação que usa objetos para representar e manipular dados. Esses objetos são instâncias do que chamamos de classes, ou modelos para objetos e que são responsáveis em definir as propriedades (membros de dados) e métodos (funções) que os objetos de tal classe terão. 
 
-Pense que classes são como as Structs que estavamos criando em C, porém, essas Structs agora possuem superpoderes, pois além de amarrar variáveis, elas também podem conter funções, além de outras funcionalidades como construtores e funções mágicas, que permitem amarrar a lógica de uma implementação de forma mais natural e simplificada. Exemplo de linguagens que usam OOP incluem: Java, Python, C++ e C#.
+Pense que classes são como as Structs que estávamos criando em C, porém, essas Structs agora possuem superpoderes. Classes, além de poder amarrar variáveis, também podem conter funções, além de outras funcionalidades como construtores e funções mágicas, que permitem criar lógica de uma forma mais natural e simplificada. Exemplo de linguagens que usam OOP incluem: Java, Python, C++ e C#.
 
 ## Structs
 
-Para exemplificar melhor, vamos voltar para a Struct "Pessoa" que fizemos aulas atrás, para explicar como uma classe funciona.
+Para exemplificar melhor, voltaremos para a Struct "Pessoa" que fizemos aulas atrás, para explicar como uma classe funciona.
 
 #### C
 
@@ -37,7 +37,7 @@ struct Pessoa {
 };
 ``` 
 
-Você também deve se lembrar que para instanciar e manipular dados dessa nossa struct, usavamos essa sintaxe:
+Você também deve se lembrar que para instanciar e manipular dados dessa nossa struct, usávamos essa sintaxe:
 
 #### C
 
@@ -68,7 +68,7 @@ Vamos supor que agora queremos transformar essa Struct em uma classe, como podem
 
 ## Traduzindo a Struct para a Classe
 
-Vamos começar então com mais básico necessário para criar essa classe: 
+Começaremos então com mais básico necessário para criar essa classe: 
 
 ### C++
 
@@ -116,35 +116,34 @@ Até aqui não tem nada de muito novo, nós criamos uma classe, e então instanc
 
 ## Escopo de uma classe
 
-Quando estamos trabalhando com classes, nós precisamos definir quais membros da minha classe são acessíveis fora da classe, e para isso nós temos essas três palavras chave (mais comuns): "private", "public" e "protected".
+Quando estamos trabalhando com classes, nós precisamos definir quais membros da minha classe são acessíveis fora da classe, e para isso temos essas três palavras-chave (mais comuns): "private", "public" e "protected".
 
 ### Private 
 
-Private significa que esse membro é apenas acessível dentro da classe. Então significa que se tentarmos acessar um elemento da classe, como no exemplo 
-abaixo:
+Private significa que esse membro é apenas acessível na classe. Então significa que se tentarmos acessar um elemento da classe, receberemos o erro de que esse membro da classe "nome" é inacessível ou que ele não é visível. Isso acontece justamente por termos utilizado essa palavra-chave "private".
 
 ### C++
 
 ```cpp
-int main(void) {
-  std::cout << "Hello world!\n";
-  Pessoa joao = Pessoa();
-  joao.nome = "João";
-  return 0;
+  private:
+    std::string nome;
+    int idade;
+    int altura_em_cm;
+    float peso_em_kg;
 }
 ```
 
 ### Java
 
 ```java
-public static void main(String[] args) {
-  System.out.println("Hello world!\n");
-  Pessoa joao = new Pessoa();
-  joao.nome= "João";
+  private String nome;
+  private int idade;
+  private int altura_em_cm;
+  private double peso_em_kg;
 }
 ```
 
-Nós iremos receber o erro de que esse membro da classe "nome" é inacessível ou que ele não é visível, e isso acontece justamente por termos utilizado essa palavra chave "private". Mas e se quisermos modificar fora da classe? Para isso usamos a palavra "public"
+Mas e se quisermos modificar fora da classe? Para isso usamos a palavra "public".
 
 ### Public
 
@@ -173,11 +172,11 @@ class Pessoa {
 }
 ``` 
 
-A palavra chave protected, iremos deixar para explorar ela quando falarmos de herança.
+A palavra-chave protected, deixaremos para explorar ela quando falarmos de herança.
 
 ## Construtor
 
-Você também deve ter notado, que para criar uma instância de uma classe, precisamos invocar essa função com o nome da classe
+Você também deve ter notado, que para criar uma instância de uma classe, precisamos invocar essa função com o nome da classe.
 
 ### C++
 
@@ -194,7 +193,7 @@ Pessoa joao = new Pessoa();
 Isso é uma função especial chamada de "Construtor", e ela é sempre chamada quando criamos um objeto de uma classe. No caso, como
 não especificamos nenhum construtor, então esse construtor vazio, apenas irá iniciar nossa instância, mas não nossos atributos (nome, idade, altura...).
 
-Para isso então, vamos criar o nosso construtor:
+Para isso então, criaremos o nosso construtor:
 
 ### C++
 
@@ -252,11 +251,11 @@ public class Main {
 }
 ```
 
-Obs.: Nós podemos ter mais de um construtor dentro de uma classe, ele só precisa ter argumentos diferentes.
+Obs.: Podemos ter mais de um construtor em uma classe, ele só precisa ter argumentos diferentes.
 
-Agora nós criamos um construtor para a nossa classe, lembrando sempre de respeitar a sintaxe das funções de Construtor, onde a função precisa ter o nome da sua classe (Não se esquecendo de especificar o escopo se necessário).
+Agora criamos um construtor para a nossa classe, lembrando sempre de respeitar a sintaxe das funções de Construtor, onde a função precisa ter o nome da sua classe (Não se esquecendo de especificar o escopo se necessário).
 
-Uma coisa que você deve ter notado é que nós utilizamos essa palavra "this". Essa palavra serve para referenciarmos especificamente elementos da nossa classe. Não precisamos usar sempre essa palavra para referenciar eles, apenas quando dentro de um mesmo escopo, temos duas variáveis com o mesmo nome.
+Uma coisa que você deve ter notado é que utilizamos essa palavra "this". Essa palavra serve para referenciarmos especificamente elementos da nossa classe. Não precisamos usar sempre essa palavra para referenciar eles, apenas quando em um mesmo escopo, temos duas variáveis com o mesmo nome.
 
 ### Java
 ```java
@@ -272,9 +271,9 @@ Uma coisa que você deve ter notado é que nós utilizamos essa palavra "this". 
 
 ## Funções dentro da nossa classe
 
-Para finalizar vamos criar uma classe que seja capaz de imprimir os dados da minha variável "João", para isso iremos criar funções dentro das nossas classes que possam fazer essa tarefa de converter dados da nossa classe em String.
+Para finalizar criaremos uma classe que imprima os dados da minha variável "João", para isso iremos criar funções dentro das nossas classes que possam fazer essa tarefa de converter dados da nossa classe em String.
 
-Em Java, nós podemos sobrescrever a função mágina "toString()" da nossa classe, para reproduzir esse comportamento. Em C++ iremos apenas criar uma função própria para fazer isso e usar uma classe chamada "std::stringstream" para converter os dados da classe para uma String.
+Em Java, nós podemos sobrescrever a função mágica "toString()" da nossa classe, para reproduzir esse comportamento. Em C++ iremos apenas criar uma função própria para fazer isso e usar uma classe chamada "std::stringstream" para converter os dados da classe para uma String.
 
 
 ### C++
@@ -349,7 +348,7 @@ class Pessoa {
   }
 ```
 
-E por enquanto é isso, agora você deve ter uma ideia geral de como uma classe funciona. É importante notar que a maior parte dessas ideias nós passamos por alto, e planejo voltar a elas em futuras aulas, então se tudo pareceu muito confuso, não se preocupe.
+E por enquanto é isso, agora você deve ter uma ideia geral de como uma classe funciona. É importante notar que a maioria dessas ideias passamos por alto, e planejo voltar a elas em futuras aulas, então se tudo pareceu muito confuso, não se preocupe.
 
 ## Links úteis
 
