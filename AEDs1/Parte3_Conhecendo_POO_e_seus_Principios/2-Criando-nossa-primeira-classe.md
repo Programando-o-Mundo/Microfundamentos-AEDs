@@ -2,32 +2,32 @@
 
 ## Você vai aprender
 
-- Como criar a sua primeira classe
-- Qual a sintaxe de criar uma classe
-- Criação de atributos de uma classe (variáveis, funções, construtores)
+- Como criar a sua primeira classe.
+- Qual a sintaxe de criar uma classe.
+- Criação de atributos de uma classe. (variáveis, funções, construtores)
 
 ## Pré-requisitos
 
 - [O que é POO](1-O-que-eh-POO.md)
 
-Anteriormente, nós transformamos uma dos nossos antigos exemplos de Struct para uma classe. Por mais que esse exemplo tenha sido ótimo para iniciar o nosso estudo em classes, acredito que seria melhor darmos alguns passos para trás, e criar uma nova classe do zero, para que possamos melhor entender os conceitos de POO
-
 ## Criando uma classe para classificar carros
 
-Vamos supor que agora queremos criar uma classe que possa gerenciar um carro. Um carro pode ser determinado pela sua placa, sua cor, seu peso, e sua altura (pelo menos por agora, vamos deixar essas características). Agora que determinamos o que queremos, vamos então criar a nossa classe, mas antes, vamos rever a sintaxe para criar uma classe.
+Anteriormente, nós transformamos uma dos nossos antigos exemplos de Struct para uma classe. Por mais que esse exemplo tenha sido ótimo para iniciar o nosso estudo em classes, acredito que seria melhor darmos alguns passos para trás, e criar uma classe do zero, para podermos melhor entender os conceitos de POO
+
+Suponhamos que agora queremos criar uma classe que possa gerenciar um carro. Um carro pode ser determinado pela sua placa, sua cor, seu peso, e sua altura (pelo menos por agora, deixemos essas características). Agora que determinamos o que queremos, vamos então criar a nossa classe, mas antes, proponho revirmos a sintaxe para criar uma classe.
 
 ## Sintaxe da criação de classes.
 
-Primeiramente nós começamos com a palavra ```class```, seguida do nome da nossa classe. Essa sintaxe é muito comum na maioria das linguagens que suportam POO, inclusive C++ e Java.
+Primeiramente começamos com a palavra ```class```, seguida do nome da nossa classe. Essa sintaxe é muito comum na maioria das linguagens que suportam POO, inclusive C++ e Java.
 
-Obs.: Geralmente criamos classe com o primeiro caractere em caixa alta.
+Obs.: Geralmente criamos classe com o primeiro caractere em caixa alta
 ```
 class Veiculo
 ```
 
 A única diferença é que em Java, podemos indicar também o escopo de acesso da classe, com as palavras ```public```, ```private``` e ```protected```. Mas isso não é tão importante assim para nós no momento.
 
-Após isso, nós iremos colocar duas chaves, igual quando criamos uma função:
+Após isso, nós colocaremos duas chaves, igual quando criamos uma função:
 
 ### C++
 
@@ -49,7 +49,7 @@ Assim como em funções, as chaves indicam o escopo para os **atributos** da nos
 
 ## Criando variáveis
 
-Agora que temos as nossas classes, vamos criar alguns atributos para a nossa classe, vamos começar criando as nossa variáveis. você vai observar que tanto para criar variáveis e declara funções dentro de classes envolve usar a mesma sintaxe que já estamos acostumados.
+Agora que temos as nossas classes, criaremos alguns atributos para a nossa classe, comecemos criando as nossas variáveis. Você observará que tanto para criar variáveis e declara funções em classes envolve usar a mesma sintaxe que já estamos acostumados.
 
 ### C++
 
@@ -80,7 +80,7 @@ Obs.: Observe que diferente de C, C++ e Java possui em suas bibliotecas padrões
 
 ## Criando construtor
 
-Agora que temos as nossa variáveis, precisamos criar um mecanismo para iniciar as variáveis da nossa classe, para isso, usamos os chamados "Construtores" que são funções especiais na qual são chamadas no momento em que criamos a instância da nossa classe. A sintaxe da crição de construtores é mesma de quando criamos funções, porém esta função tem o nome da nossa classe.
+Agora que temos as nossas variáveis, precisamos criar um mecanismo para iniciar as variáveis da nossa classe, para isso, usamos os chamados "Construtores" que são funções especiais na qual são chamadas no momento em que criamos a instância da nossa classe. A sintaxe da criação de construtores é mesma de quando criamos funções, porém esta função tem o nome da nossa classe.
 
 ```java
 NomeDaClasse(argumentos) {
@@ -124,13 +124,13 @@ class Veiculo {
 }
 ``` 
 
-Observação importante, é que em C++, também possuimos destrutores, ou seja, um tipo de função especial que é atividade quando um objeto da nossa classe está prestes a ser destruído (liberamos da memória ou o objeto saiu de escopo. Para mais detalhes, não deixe de olhar a seção de links úteis.
+Observação importante, é que em C++, também possuímos destrutores, ou seja, um tipo de função especial, ativada quando um objeto da nossa classe está prestes a ser destruído (liberamos da memória ou o objeto saiu de escopo). Para mais detalhes, dê uma olhada na seção de links úteis.
 
-Com o construtor criado, precisamos iniciar os nossos atributos, mas perceba que tanto o nome dos argumentos da funcao, quanto o nome dos atributos da classe são os mesmos, como é que fazemos essa diferenciação? 
+Com o construtor criado, precisamos iniciar os nossos atributos, mas perceba que tanto o nome dos argumentos da função, quanto o nome dos atributos da classe são os mesmos, como concretizamos essa diferenciação? 
 
 ### Palavra chave "this"
 
-As linguagens que tem suporte a POO geralmente usam alguma palavra chave para se referir a atributos que pertencem a classe, no caso de C++ e Java, nós temos a palavra "this", usando ela, podemos diferenciar as variáveis da classe e as variáveis de um escopo local.
+As linguagens com suporte a POO geralmente usam alguma palavra-chave para se referir a atributos que pertencem à classe, no caso de C++ e Java, nós temos a palavra "this", usando ela, podemos diferenciar as variáveis da classe e as variáveis de um escopo local.
 
 ### C++
 
@@ -177,7 +177,7 @@ Obs.: Podemos usar a palavra ```this``` para se referir a uma função também.
 
 ## Criando funções
 
-Podemos criar funções dentro das nossas classes, usando a mesma sintaxe para criar funções fora da classe. Para dar exemplo, vamos criar uma função para ser chamada, que simula quando pisamos no acelerador do carro.
+Podemos criar funções dentro das nossas classes, usando a mesma sintaxe para criar funções fora da classe. Para dar exemplo, criaremos uma função para ser chamada, que simula quando pisamos no acelerador do carro.
 
 ### C++
 
@@ -233,7 +233,7 @@ class Veiculo {
 
 ## Instanciado a nossa classe
 
-Vamos voltar a main e agora vamos instanciar um objeto da nossa classe Veículo. Para instanciar um objeto nós fazemos igual uma declaração de uma estrutura de dados qualquer, primeiro colocamos o tipo, seguido do nome da variável.
+Voltaremos a main e agora vamos instanciar um objeto da nossa classe "Veiculo". Para instanciar um objeto fazemos igual uma declaração de uma estrutura de dados qualquer, primeiro colocamos o tipo, seguido do nome da variável.
 
 ```
 NomeDaClasse nomeDaVariavel
@@ -325,7 +325,7 @@ int main(void) {
 }
 ``` 
 
-Importante notar que em C++, a ordem que as coisas são declaradas no código é importante e por conta disson lembre-se de declarar a classe antes da função main.
+Importante notar que em C++, a ordem que as coisas são declaradas no código é importante e por conta disso lembre-se de declarar a classe antes da função main.
 
 ## Chamando os atributos da classe
 
