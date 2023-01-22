@@ -1,10 +1,10 @@
 # Entendendo encapsulação e escopo de classes
 
-## Você vai aprender
+## Você irá aprender
 
-- O que é Encapsulação
-- Porquê usamos encapsulação
-- Como usar Encapsulação
+- O que é Encapsulação.
+- Porque usamos encapsulação.
+- Como usar Encapsulação.
 
 ## Pré-requisitos
 
@@ -12,16 +12,16 @@
 
 ## Protegendo dados de uso indevido
 
-Durante as duas primeiras aulas de POO, você viu muito falarmos sobre escopo de classes, sendo as com maior frequência: ```public```, e ```private```. Nesta aula, nós iremos entrar em detalhe em como usar essas palavras chaves, além de explicar o padrão do encapsulamento, muito importante quando estamos falando de Programação Orientada a Objetos.
+Durante as duas primeiras aulas de POO, você viu muito falarmos sobre escopo de classes, sendo as com maior frequência: ```public```, e ```private```. Nesta aula, nós entraremos em detalhe em como usar essas palavras-chave, além de explicar o padrão do encapsulamento, muito importante quando estamos falando de Programação Orientada a Objetos.
 
-Vamos mais uma vez lembrar das nossas Structs, você devê se lembrar que lá, quando temos algum dado na mesma, podemos acessá-lo sem nenhum problema, basta criar umas instância da Struct e podemos acessar seu atributo sem problemas.
+Vou mais uma vez lembrar das nossas Structs, você devê se lembrar que lá, quando temos algum dado na mesma, podemos acessá-lo sem nenhum problema, basta criar uma instância da Struct e podemos acessar seu atributo sem problemas.
 
 ```c
 Pessoa p;
 p.idade = 18;
 ```
 
-Em muitos casos, ter esse livre acesso aos membros de uma amarração não é um problema, mas agora, vamos pensar que estamos criando uma classe ```Pessoa``` para identificar a conta bancária de um cliente qualquer, e agora temos o atributo ```saldo```.
+Em muitos casos, ter esse livre acesso aos membros de uma amarração não é um problema, mas agora, pensaremos que estamos criando uma classe ```Pessoa``` para identificar a conta bancária de um cliente qualquer, e agora temos o atributo ```saldo```.
 
 ```c
 typedef struct Pessoa {
@@ -36,23 +36,23 @@ typedef struct Pessoa {
  }
  ``` 
  
-Obviamente o saldo é algo muito importante, e por questões de segurança, precisamos proteger esse dado de manipulações indevidas, caso contrário alguém poderia facilmente aumentar o seu saldo de R$1,00 para R$1.000.000,00 apenas trocando o valor de uma variável, ou até pior, pode diminuir o seu saldo. É por conta de problemas como esse que nós criamos design de software, para implementar soluções que resolvam problemas diversos, isso inclui soluções para segurança e integridade dos dados. 
+Obviamente o saldo é algo muito importante, e por questões de segurança, precisamos proteger esse dado de manipulações indevidas, caso contrário alguém poderia facilmente aumentar o seu saldo de R$1,00 para R$1.000.000,00 apenas trocando o valor de uma variável, ou até pior, pode diminuir o seu saldo. É por conta de problemas como esse que criamos design de software, para implementar soluções que resolvam problemas diversos, isso inclui soluções para segurança e integridade dos dados. 
 
-Para o nosso caso, podemos usar um dos princípios de POO que é a Encapsulação.
+Para o nosso caso, podemos usar um dos princípios de POO ser a Encapsulação.
 
 ## O que é Encapsulação?
 
 Em resumo, encapsulação é um padrão de software, onde colocamos os dados da classe como privado e para acessar/modificar tais dados, usamos funções de escopo público. 
 
-A ideia aqui é bem simples, como o único meio de acessar os dados da classe é a partir dessa funções, nós estamos protegendo a variável de ser modificada de formas imprevisíveis. Além disso caso a lógica de recuperar ou modificar tais dados modifique durante a criação do software (Algo que acontece bem frequentemente na vida útil de qualquer aplicação), o custo para refatorar essas modificações é mais baixo, já que tudo que temos que fazer é modificar essas funções.
+A ideia aqui é bem simples, como o único meio de acessar os dados da classe é a partir dessa função, nós estamos protegendo a variável de ser modificada de formas imprevisíveis. Além disso, caso a lógica de recuperar ou modificar tais dados modifique durante a criação do software (Algo que acontece bem frequentemente na vida útil de qualquer aplicação), o custo para refatorar essas modificações é mais baixo, já que tudo que temos que fazer é modificar essas funções.
 
 ## Especificadores de acesso
 
-É aqui que as palavras chaves ```public``` e ```private``` entram em ação, pois diferente de C, C++ e Java (assim como outras linguagens que possuem suporte a POO), também introduzem esse conceito de especificadores de acesso. Também temos a palavra-chave ```protected``` mas iremos entrar em maiores detalhes quando falarmos de Herança.
+É aqui que as palavras-chave ```public``` e ```private``` entram em ação, pois diferente de C, C++ e Java (assim como outras linguagens que possuem suporte a POO), também introduzem esse conceito de especificadores de acesso. Também temos a palavra-chave ```protected``` mas entraremos em maiores detalhes quando falarmos de Herança.
 
 ### Public
 
-Quando dizemos que a variável é publica, quer dizer que tanto dentro quanto fora da classe, podemos acessar esse atributo. Esse é o mesmo comportamento das Structs em C, onde você pode acessar qualquer coisa usando o ponto "." seguido do atributo da struct. A mesma coisa acontece em classes:
+Quando dizemos que a variável é pública, quer dizer que tanto dentro quanto fora da classe, podemos acessar esse atributo. Esse é o mesmo comportamento das Structs em C, onde você pode acessar qualquer coisa usando o ponto "." seguido do atributo da struct. A mesma coisa acontece em classes:
 
 ### C++
 
@@ -104,11 +104,11 @@ public class Main {
 }
 ```
 
-Uma observação importante, quando você não coloca nenhum especificador em Java, ele não será "public" mas sim "default", nós não iremos entrar em detalhes disso, pois isso é coisa da linguagem, mas para mais informações, [acesse esse link](https://www.geeksforgeeks.org/access-modifiers-java/).
+Uma observação importante, quando você não coloca nenhum especificador em Java, ele não será "public", mas sim "default", nós não iremos entrar em detalhes disso, pois isso é coisa da linguagem, mas para mais informações, [acesse esse link](https://www.geeksforgeeks.org/access-modifiers-java/).
 
 ### Private
 
-Já o especificador de acesso private, significa que tal atributo não pode ser acessado fora do escopo da classe,e caso a gente tente, o compilador irá nos retornar um erro:
+Já o especificador de acesso private, significa que tal atributo não pode ser acessado fora do escopo da classe, e caso a gente tente, o compilador irá nos retornar um erro:
 
 #### C++
 
@@ -185,9 +185,9 @@ Main.java:18: error: cannot find symbol
 1 error
 ``` 
 
-Note que em Java o erro é um pouco diferente mas a ideia é a mesma. "Cannot find symbol" quer dizer que, ou ele não existe, ou o escopo de acesso não permite que ele seja visível, logo ele não existe.
+Note que em Java o erro é um pouco diferente, mas a ideia é a mesma. "Cannot find symbol" quer dizer que, ou ele não existe, ou o escopo de acesso não permite que ele seja visível, logo ele não existe.
 
-Agora fica a questão, se o nosso atributo é privado, como que acessamos ele fora da classe? Para isso, vamos voltar a falar de Encapsulação, mais especificamente, das funções tipo "Getters" e "Setters".
+Agora fica a questão, se o nosso atributo é privado, como que o acessamos fora da classe? Para isso, voltaremos a falar de Encapsulação, mais especificamente, das funções tipo "Getters" e "Setters".
 
 ### Getters
 
@@ -268,9 +268,9 @@ public class Main {
 }
 ```
 
-Perceba que nós colocamos as funções de getters no espaço de escopo público, dessa forma, podemos acessar essas funções fora da classe. Além disso, o padrão dessas funções é bem simples. O tipo de retorna da função é o tipo da variável, ou seja, se a variável é uma string, o nosso getter precisa retornar uma string. O nome é mais uma questão de convenção, mas geralmente é a palavra "get" acompanhado do nome da variável, então nesse caso: "get_nome". Por fim, temos a função em si, que apenas para princípios práticos, estamos apenas colocando para retornar o dado.
+Perceba que colocamos as funções de getters no espaço de escopo público, dessa forma, podemos acessar essas funções fora da classe. Além disso, o padrão dessas funções é bem simples. O tipo de retorna da função é o tipo da variável, ou seja, se a variável é uma string, o nosso getter precisa retornar uma string. O nome é mais uma questão de convenção, mas geralmente é a palavra "get" acompanhado do nome da variável, então nesse caso: "get_nome". Por fim, temos a função em si, que apenas para princípios práticos, estamos apenas colocando para retornar o dado.
 
-Note que neste caso não usamos a palavra "this" pois diferente do construtor, não temos outra variável chamada "nome" ou "cpf" ou "saldo", neste caso, quando colocarmos qualquer uma dessas variáveis, a linguagem vai entender que você quer acessar o atributo da classe e não uma variável de escopo local.
+Note que neste caso não usamos a palavra "this", pois diferente do construtor, não temos outra variável chamada "nome" ou "cpf" ou "saldo", neste caso, quando colocarmos qualquer uma dessas variáveis, a linguagem vai entender que você quer acessar o atributo da classe e não uma variável de escopo local.
 
 ### Setters
 
