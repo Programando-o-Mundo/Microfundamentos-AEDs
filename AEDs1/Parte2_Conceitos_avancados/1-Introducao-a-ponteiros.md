@@ -11,11 +11,13 @@
 
 ## Trabalhando com endereços de memória
 
-Nós já temos uma aula de ponteiros, que você pode dar uma olhada no nosso módulo da linguagem C, porém, está aula é mais para introduzir esse importante conceito que temos quando falamos de linguagens de programação de baixo nível, que é o ponteiro.
+Nós já temos uma aula de ponteiros, que você pode dar uma olhada no nosso módulo da linguagem C, porém, está aula é mais para introduzir esse importante conceito que temos quando falamos de linguagens de programação de baixo nível, o ponteiro.
 
-Você provavelmente deve se lembrar quando estavamos falando de linguagens de programação e eu expliquei em como linguagens de programação é uma forma de programar um programa de forma de alto nível, sem ter que falar a linguagem da máquina exata. 
+Você provavelmente deve se lembrar quando estávamos falando de linguagens de programação e eu expliquei em como linguagens de programação é uma forma de criar um programa de forma de alto nível, sem ter que falar a linguagem da máquina exata. 
 
-Sim está definição não deixa de ser correta, mas é importante lembrar que por mais de a linguagem C seja de certa forma "alto nível" por não ter que forçar o usuário a usar o baixo nível da linguagem, de outras formas, a linguagem também C pode ser considerada de baixo nível, por permitir um maior controle da memória, por meio de ponteiros. Mas afinal de contas, o que é um ponteiro?
+Sim, está definição é correta, tanto que podemos considerar C dependendo do ponto de vista, como uma linguagem de "alto nível" . Entretanto, a linguagem também C pode ser considerada de baixo nível, pois, diferentes de outras linguagens, ela permite um maior controle da memória, por meio de ponteiros e alocação de memória dinâmica.  
+
+Nós não entraremos no mérito de alocação memória dinâmica, e deixaremos um link da seção de utilidades para explicar isso. Por agora, explicaremos o que é um ponteiro e por que utilizar essa funcionalidade.
 
 ## O que é um ponteiro?
 
@@ -28,7 +30,7 @@ classDiagram
     }
 ``` 
 
-Quando criamos qualquer variável dentro da linguagem C, a variável, além de armazenar um valor, também possui um endereço que armazena esse valor em memória no seu computador, nós podemos imprimir esse valor utilizando o formato especial **%p** como no exemplo abaixo.
+Quando criamos qualquer variável na linguagem C, a variável, além de armazenar um valor, também possui um endereço, onde o seu computador armazena esse valor na memória, nós podemos imprimir esse valor utilizando o formatador especial **%p** como no exemplo abaixo.
 
 ```c
 #include<stdio.h>
@@ -38,7 +40,7 @@ int main(void) {
   printf("%p\n", &a);
 ```
 
-Você provavelmente deve se lembrar de quando usamos o **scanf** precisavamos usar esse "&" para poder fazer a leitura do teclado, isso porque quando colocamos esse sinal acompanhado de uma variável estamos pedindo para extrair o endereço de memória dessa variável, criando um ponteiro.
+Você provavelmente deve se lembrar de quando usamos o **scanf** precisávamos usar esse "&" para poder fazer a leitura do teclado, isso porque quando colocamos esse sinal acompanhado de uma variável estamos pedindo para extrair o endereço de memória dessa variável, criando um ponteiro.
 
 Em outras palavras, um ponteiro é nada mais que uma variável que guarda o endereço de outra variável. E assim como uma variável qualquer podemos criar uma variável ponteiro utilizando o sinal \"\*\" acompanhado do tipo da variável, como no exemplo abaixo:
 
@@ -71,7 +73,7 @@ Ok, agora temos um ponteiro, mas o que a final de contas podemos fazer com ele? 
 
 ## Desreferenciando memória
 
-Como dito anteriormente, quando trabalhamos com ponteiros, nós temos o endereço de memória de uma variável. Nós podemos acessar o valor desse endereço de memória utilizando o \"\*\", essa ação faz com que a gente desreferencie o ponteiro, e acesse o valor que está guardado no endereço.
+Como dito anteriormente, quando trabalhamos com ponteiros, nós temos o endereço de memória de uma variável. Podemos acessar o valor desse endereço de memória utilizando o \"\*\", essa ação permite "desreferenciar" o ponteiro, assim acessando o valor, que está guardado no endereço.
 
 ```c
 #include<stdio.h>
@@ -82,7 +84,7 @@ int main(void) {
   printf("%d %d\n", *p, a);
 ```
 
-Utilizando esse conhecimento nós podemos usar essa mesma sintaxe, para mudar o valor de "a" fazendo uma atribuição ao conteúdo do endereço armazenado em "p" que no nosso caso é o valor de "a".
+Utilizando esse conhecimento podemos usar essa mesma sintaxe, para mudar o valor de "a" fazendo uma atribuição ao conteúdo do endereço armazenado em "p" que no nosso caso é o valor de "a".
 
 ```c
 #include<stdio.h>
@@ -94,11 +96,11 @@ int main(void) {
   printf("%d %d\n", *p, a);
 ```
 
-Isso nos permite fazer diferentes tipos de operação que antes não era possível, como por exemplo, retornar mais de um valor em uma função.
+Isso nos permite fazer diferentes tipos de operação que antes não era possível, como, por exemplo, retornar mais de um valor em uma função.
 
 ### Retornando dois valores de uma função
 
-Tecnicamente falando, você sabe que não existe como retornar dois valores de uma função, porém, a partir de ponteiros, podemos replicar esse comportamento. Pense no seguinte caso de uso, queremos criar um programa que seja capaz de trocar o conteúdo de duas variáveis, dentro da função main isso é tranquilo e o exemplo abaixo ilustra isso.
+Tecnicamente falando, você sabe que não existe como retornar dois valores de uma função, porém, a partir de ponteiros, podemos replicar esse comportamento. Pense no seguinte caso de uso, queremos criar um programa que troque o conteúdo de duas variáveis, na função "main" isso é tranquilo e o exemplo abaixo ilustra isso.
 
 ```c
 #include<stdio.h>
@@ -114,7 +116,7 @@ int main(void) {
 }
 ``` 
 
-Apenas utilizando uma variável temporária nós conseguimos fazer a troca entre dois elementos, mas e se agora, o objetivo é exportar esse comportamento para uma função, ou seja, criar uma função que faça essa troca para gente. A primeira vista, esse problema não tem solução, pois não é possível retornar dois valores, porém usando ponteiros, isso é possível.
+Apenas utilizando uma variável temporária conseguimos fazer a troca entre dois elementos, mas e se agora, o objetivo é exportar esse comportamento para uma função, ou seja, criar uma função que faça essa troca para gente. A primeira vista, esse problema não tem solução, pois não é possível retornar dois valores, porém usando ponteiros, isso é possível.
 
 ```c
 #include<stdio.h>
@@ -142,7 +144,7 @@ Obs.: Esse processo de passar um valor para outra função usando ponteiros se c
 
 ## Conclusão
 
-É claro que isso é o mais básico de ponteiros, mas espero que dessa forma vocês tenham entendido o básico em como trabalhar com essa poderosa ferramenta da linguagem C. Caso tenham-se interessado no assunto não se esqueçam de dar uma olhada no nosso material sobre ponteiros no módulo de C.
+É claro que isso é o mais básico de ponteiros, mas espero que dessa forma vocês tenham entendido o básico em como trabalhar com essa poderosa ferramenta da linguagem C. Caso se tenham interessado no assunto, não se esqueçam de dar uma olhada no nosso material sobre ponteiros no módulo de C.
 
 ## Links úteis
 
