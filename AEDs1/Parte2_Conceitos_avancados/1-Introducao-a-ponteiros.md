@@ -1,6 +1,6 @@
 # Introdução a ponteiros
 
-## Você vai aprender
+## Você irá aprender
 
 - O que é um ponteiro.
 - Como utilizar ponteiros.
