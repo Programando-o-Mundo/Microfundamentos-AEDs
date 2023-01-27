@@ -17,6 +17,7 @@
     * [Estruturas de dados não primitivas](AEDs1/Parte2_Conceitos_avancados/2-Estruturas-de-dados-nao-Primitivas.md)
     * [Entendendo-recursão](AEDs1/Parte2_Conceitos_avancados/3-Entendendo-recursao.md)
     * [Retornando argumentos de funções recursivas](AEDs1/Parte2_Conceitos_avancados/4-Retornando-argumentos-de-funcoes-recursivas.md)
+    * [Como a máquina interpreta seus códigos](AEDs1/Parte2_Conceitos_avancados/5-Como-a-maquina-interpreta-seus-codigos.md)
   * [Parte 3 - Conhecendo POO e seus Princípios](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/README.md)
     * [O que é Programação Orientada a Objetos?](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/1-O-que-eh-POO.md)
     * [Criando nossa primeira classe](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/2-Criando-nossa-primeira-classe.md)
