@@ -85,6 +85,11 @@ printf("%d")
    sequência de caracteres
 ``` 
 
+Obs.: Você pode também colocar texto normal acompanhado dos formatadores, por exemplo:
+```c
+printf(" O valor de a é %d", a);
+``` 
+
 O segundo argumento é a variável de onde o "printf" irá ler para substituir nos formatadores.
 
 ```
@@ -102,7 +107,7 @@ int main(void) {
 
   int a = 5;
   int b = 3;
-  printf("%d",a);
+  printf("%d", a);
   return 0;
 }
 ``` 
@@ -121,7 +126,7 @@ int main(void) {
 }
 ``` 
 
-Obs.: A ordem que colocamos os nossos argumentos importa, como colocamos o "a" antes do "b" então primeiro será impresso "a" e depois "b", caso queira imprimir as variáveis na ordem invertida, é só inverter a ordem que coloca as variáveis.
+A ordem que colocamos os nossos argumentos importa, como colocamos o "a" antes do "b" então primeiro será impresso "a" e depois "b", caso queira imprimir as variáveis na ordem invertida, é só inverter a ordem que coloca as variáveis.
 
 ```c
 #include<stdio.h>
@@ -177,7 +182,7 @@ int main(void) {
 
   int a,b;
   scanf("%d %d", &a, %b);
-  printf("%d\t%d\n",a);
+  printf("%d\t%d\n",a, b);
   return 0;
 }
 ``` 
