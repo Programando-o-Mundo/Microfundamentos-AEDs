@@ -171,7 +171,9 @@ int main(void) {
   return 0;
 }
 ``` 
-Essa sintaxe parece meio maluca, mas vamos destrinchar ela. A primeira parte vocês já devem estar familiarizados, nome da função, parênteses, sequência de caracteres com os formatadores, e por fim a variável, mas e esse sinal "&"? Bem, novamente não entraremos em detalhes nisso agora, apenas entenda que esse sinal está nos dizendo que estamos passando o endereço da variável "a", pois como queremos atualizar o valor de "a" precisamos passar o endereço de memória, para que o valor dentro de "a" seja sobrescrito.
+Essa sintaxe parece meio maluca, mas vamos destrinchar ela. A primeira parte vocês já devem estar familiarizados, nome da função, parênteses, sequência de caracteres com os formatadores, e por fim a variável, mas e esse sinal "&"? 
+
+Novamente não entraremos em detalhes nisso agora, apenas entenda que o ampersand, também chamado de "e comercial" está pegando o endereço da variável "a". Como queremos atualizar o valor de "a" precisamos passar o endereço de memória, para que o valor dentro de "a" seja sobrescrito. Falaremos mais sobre endereço de memória eo ampersand quando falarmos de ponteiros.
 
 Além disso, podemos usar o "scanf" para fazer leituras de forma customizada, por exemplo, podemos ler mais de uma variável na mesma linha:
 
