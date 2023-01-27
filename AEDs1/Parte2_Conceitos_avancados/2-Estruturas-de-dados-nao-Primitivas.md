@@ -272,7 +272,7 @@ int main(void) {
 }
 ``` 
 
-Existe mais exemplos de Estruturas não primitivas, mas por enquanto acredito que essas sejam as mais importantes aprender.
+Existe mais exemplos de estruturas não primitivas, mas por enquanto acredito que, por enquanto, essas sejam as mais importantes aprender.
 
 ## Línks úteis
 
