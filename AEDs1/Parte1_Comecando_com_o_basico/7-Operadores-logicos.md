@@ -11,7 +11,7 @@
 
 ## Definição
 
-Operações lógicas são aquelas que trabalham sobre valores boolianos, ou seja, operadores lógicos são operadores que servem para efetuar operações em expressões boolianas. Para deixar isso mais claro, lembremos das operações que fizemos quando estávamos calculando o troco da padaria:
+Operações lógicas são aquelas que efetuam operações em expressões boolianas. Para deixar isso mais claro, lembremos das operações que fizemos quando estávamos calculando o troco da padaria:
 
 ```c
 #include<stdio.h>
@@ -38,7 +38,7 @@ int main(void) {
 }
 ```
 
-Quando fazemos as operações ```dinheiro_cliente == total_compras``` e ```dinheiro_cliente > total_compras```, essas operações implicitamente implicam que uma expressão booliana é gerada, e, ao trabalhar com operadores lógicos, nós utilizamos essas expressões ou até mesmo variáveis boolianas, para criar as operações lógicas. Operadores lógicos podem ser usadas em estruturas condicionais ou até mesmo em estruturas de repetições (que ainda chegaremos lá).
+Quando fazemos as operações ```dinheiro_cliente == total_compras``` e ```dinheiro_cliente > total_compras```, essas operações implicam que uma expressão booliana é gerada, e, ao trabalhar com operadores lógicos, nós utilizamos essas expressões ou até mesmo variáveis boolianas, para criar as operações lógicas. Operadores lógicos podem ser usadas em estruturas condicionais ou até mesmo em estruturas de repetições (que ainda chegaremos lá).
 
 Por agora, veremos quais são os operadores lógicos, além de ver alguns exemplos.
 
@@ -75,12 +75,14 @@ O operador "NOT" pega um único operando booliano e retorna o valor oposto. Por 
 ```c
 bool eh_verdadeiro = false;
 if (!eh_verdadeiro) {
-    // O operador NOT irá inverter o valor false, o inverso de false é verdadeiro
+    // O operador NOT irá inverter o valor falso, o inverso de falso é verdadeiro
     // este bloco será executado
 }
 ```
 
 Vale ressaltar que, assim como nos operadores aritméticos, os operadores lógicos costumam ter uma ordem de precedência e uma sequência lógica de avaliação das operações. O operador "NOT "tem a precedência mais alta, seguido pelo operador "AND" e pelo operador "OR". Porém, em algumas situações, também é possível agrupar as operações utilizando parênteses para indicar a ordem de avaliação.
+
+Uma sugestão para vocês, não esqueçam de pegar esses trechos de códigos e rodar na máquina de vocês, talvez colocando essas frases comentadas dentro de um **print** para ver o funcionamento dos operadores lógicos.
 
 ## Línks uteis
 
