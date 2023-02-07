@@ -12,19 +12,21 @@
 
 ## Linguagem C
 
-Agora que temos uma noção básica no quê é um algoritmo e como um funciona, vamos criar o nosso primeiro algoritmo junto. Para isso, eu irei usar uma linguagem de programação muito famosa e muito importante para a história da programação chamada C.
-
-Uma importante observação antes de continuar: eu irei ensinar a utilizar a linguagem C no contexto para aprender os conceitos básicos da programação, então teoricamente, você pode usar esses conceitos para aprender toda e qualquer linguagem, já que a grande maioria segue as mesmas ideias. Por mais que esta seja uma linguagem consideravelmente avançada em alguns pontos, acredito que esta ainda seja a mais ideal para começar a ter uma maior familiaridade com os conceitos da Ciência da Computação.
-
-Se você quiser depois dar uma olhada em algumas aulas mais avançadas de C, dê uma olhada no nosso módulo feito especialmente para a linguagem C. O link ficará na seção de links úteis.
+Agora que temos uma noção básica no quê é um algoritmo e como um funciona, criaremos o nosso primeiro algoritmo, juntos. Para isso, eu irei usar uma linguagem de programação muito famosa e muito importante para a história da programação chamada C.
 
 C é uma linguagem de programação de alto nível que foi desenvolvida no início dos anos 1970 por Dennis Ritchie na empresa Bell Labs. Essa linguagem foi projetada para ser de uso geral, portátil e expressiva que pudesse ser usada para uma ampla gama de aplicações.
 
-Uma das principais características do C é por ser uma linguagem muito poderosa, com grande ênfase no controle e na eficiência de baixo nível. Ele fornece vários recursos que permitem aos programadores escrever código próximo ao hardware.
+Hoje, C ainda é amplamente utilizado e influenciou o desenvolvimento de muitas outras linguagens de programação. Ele continua sendo uma escolha popular para programação de sistemas e além de aplicações para uso em computação científica, finanças e desenvolvimento de jogos.
 
-Hoje, C ainda é amplamente utilizado e influenciou o desenvolvimento de muitas outras linguagens de programação. Ele continua sendo uma escolha popular para programação de sistemas e também tem sido usado para uma ampla gama de outras aplicações, incluindo computação científica, finanças e desenvolvimento de jogos.
+Por mais que esta seja uma linguagem consideravelmente mais avançada do que outras, acredito que C ainda é uma linguagem ideal para iniciar no mundo da computação, pois:
 
-Vamos então começar a programar em C.
+- Sua sintaxe principal é simples e intuitiva de aprender;
+- Possuiu funcionalidades mais avançadas que outras linguagens não têm, permitindo manejamento mais avançado de memória e desempenho.
+- C é uma linguagem que ditou muitos dos padrões visto em futuras linguagens, e isso inclui a sua sintaxe. Por conta disso, aprender C permitirá o programador a migrar para outras linguagens com maior facilidade.
+
+Se você quiser depois dar uma olhada em algumas aulas mais avançadas de C, dê uma olhada no nosso módulo feito especialmente para a linguagem C. O link ficará na seção de links úteis.
+
+De qualquer forma, vamos então começar a programar em C.
 
 ## Nosso primeiro programa
 
@@ -72,7 +74,9 @@ printf("Hello World!\n");
 return 0;
 ```
 
-Dessa forma chegamos ao nosso programa final que deve ter ficado algo parecido com isso.
+Observe uma coisa importante que será observado, mas muitas instruções necessitam terminar com um ponto-e-vírgula.
+
+Enfim, dessa forma chegamos ao nosso programa final que deve ter ficado algo parecido com isso.
 
 ```c
 #include<stdio.h>
@@ -82,7 +86,7 @@ int main(void) {
   return 0;
 }
 ```
-Perfeito, nosso programa está completo, mas como executamos o nosso programa? Para isso iremos precisar do GCC ou o [Gnu C Compiler](https://gcc.gnu.org/), este programa é o que chamamos de um Compilador, e é responsável em transformar o nosso código escrito em C, para uma linguagem que a máquina possa intender. 
+Perfeito, nosso programa está completo, mas como executamos ele? Para isso iremos precisar do GCC ou o [Gnu C Compiler](https://gcc.gnu.org/), este programa é o que chamamos de um Compilador, e é responsável em transformar o nosso código escrito em C, para uma linguagem que a máquina possa intender. 
 
 Para invocarmos o GCC, iremos digitar no console ```gcc main.c```, o resultado será um arquivo chamado "a.out", como pode ser visto na imagem abaixo:
 
