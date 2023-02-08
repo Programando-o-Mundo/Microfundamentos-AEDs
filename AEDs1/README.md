@@ -47,7 +47,7 @@ Perfeito, então queremos trabalhar com Pathfinding, mas ainda assim, isto não 
 
 Por fim temos o último passo, codificar o nosso algoritmo utilizando um programa computacional, no nosso caso, uma linguagem de programação, ferramentas que utilizamos para comunicar instruções para a máquina, sem ter que comunicar diretamente com a máquina. Abaixo temos um exemplo de um programa feito na linguagem de programação Python, para codificar a nossa solução.
 
-**Obs.:** Não se preocupe, vocês não tem a obrigação de entender o que está acontecendo no código, apenas entender que isso é uma solução 
+**Obs.:** Não se preocupe, vocês não têm a obrigação de entender o que está acontecendo no código, apenas entender que isso é uma solução 
 para o nosso problema e também para exemplificar o processo de codificação.
 
 ```python
@@ -86,9 +86,9 @@ def aStarSearch(problem: SearchProblem, heuristic=nullHeuristic):
 
 ![ai2](https://user-images.githubusercontent.com/9157977/210409079-0edfb743-7b8d-4c23-a054-176ef118cacc.jpg)
 
-Inimigo fez o trajeto até o jogador, que é representando com a linha vermelha.
+Inimigo fez o trajeto até o jogador, representando com a linha vermelha.
 
-Vocês provavelmente deve ter notado que a nossa solução foi feita de cima para baixo ou "Top-down", essa é uma forma de aproximação muito comum para resolução de problemas do mundo real, onde escrevemos uma sequência de instruções para serem executadas usando uma aproximação descendente.
+Vocês provavelmente deve ter notado que a nossa solução foi feita de cima para baixo ou "Top-down", essa é uma forma de aproximação muito comum para resolução de problemas reais, onde escrevemos uma sequência de instruções para serem executadas usando uma aproximação descendente.
 
 ## Estruturas de Dados
 
@@ -100,7 +100,7 @@ Um exemplo mais simples ainda, estamos programando o interruptor de uma lâmpada
 
 # Por enquanto é so...
 
-É claro que tem muito mais a ser explorado na disciplina, mas acredito que por enquanto seja o suficiente. Com os conhecimentos aqui vocês tiveram uma pequena amostra em o quê a disciplina irá trabalhar. Recomendo fortemente também dar uma olhada para o material complementar dessa aula, pois contém outras fontes de recursos na qual você pode aprender a disciplina, além do material que foi usado para fazer essa aula.
+É claro que tem muito mais a ser explorado na disciplina, mas acredito que por enquanto seja o suficiente. Com os conhecimentos aqui vocês tiveram uma pequena amostra no quê a disciplina irá trabalhar. Recomendo fortemente também dar uma olhada para o material complementar dessa aula, pois contém outras fontes de recursos na qual você pode aprender a disciplina, além do material usado para fazer essa aula.
 
 Muito obrigado e até a próxima! 
 
