@@ -9,7 +9,7 @@ Começaremos do mais simples, que no nosso caso é os algoritmos.
 ## O que é um Algoritmo?
 
 A cada vez mais que os dias se passam, o mundo vai se tornando cada vez mais adepto a tecnologia, até que a mesma faça parte do nosso dia-a-dia. 
-Uma palavra que tem sido jogada dela para cá é esta: "Algoritmo, mas o que no final das contas é um Algoritmo?
+Uma palavra que tem sido jogada dela para cá é esta: "Algoritmo", mas o que no final das contas é um Algoritmo?
 
 Na ciência da computação, um algoritmo é uma sequência de etapas que define um conjunto de instruções para resolver um determinado problema ou executar uma tarefa específica. Os algoritmos são fundamentais e desempenham um papel crucial em muitos aspectos como processamento de dados, recuperação de informações e ciência computacional.
 
