@@ -23,7 +23,7 @@ São uma sequência finita de instruções que a máquina deve processar. Mas co
 
 Nos primórdios da computação, a programação era feita usando linguagens de montagem (também conhecido como linguagem Assembly), 
 o que exigia que os programadores escrevessem um código que correspondesse diretamente ao conjunto de instruções da máquina (mais especificamente
-a arquitetura da CPU). Estes conjuntos de instruções eram então traduzidos para binário e então entregues para a máquina. Até hoje linguagens Assembly ainda são utilizadas, porém, é de maneira geral evitada, por ser um processo tedioso e de baixo nível, tornando o desenvolvimento de software uma.
+a arquitetura da CPU). Estes conjuntos de instruções eram então traduzidos para binário e então entregues para a máquina. Até hoje linguagens Assembly ainda são utilizadas, porém, é de maneira geral evitada, por ser um processo tedioso e de baixo nível, tornando o desenvolvimento de software uma
 tarefa lenta e sujeita a vários erros.
 
 A título de comparação, dê uma olhada nos exemplos abaixo de como escrever um programa que imprima na tela "Hello World!" escrito em C e em Assembly x86_64.
