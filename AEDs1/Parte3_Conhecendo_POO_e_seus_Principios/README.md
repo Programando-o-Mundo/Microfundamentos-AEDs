@@ -12,6 +12,6 @@ Com isso dito, vamos para a primeira aula.
 
 ## Línks úteis
 
-- [Curso C++ iniciante](https://youtu.be/PoNIFpc7eAE) Aqui eu recomendo vocês começaram na aula 05 onde ele já começa com o primeiro programa. Caso vocês queiram configurar o ambiente de execução de vocês, voltem para a aula 01, mas acredito que vocês não teriam nenhum problema em apenas ir direto programar no [Replit](https://replit.com/~) (ou melhor ainda, você já tem o seu ambiente de desenvolvimento já pronto no Linux/WSL).
+- [Curso C++ iniciante](https://youtu.be/PoNIFpc7eAE) Aqui eu recomendo vocês começaram na aula 05 onde ele já começa com o primeiro programa. Caso vocês queiram configurar o ambiente de execução de vocês, voltem para a aula 01, mas acredito que vocês não teriam nenhum problema em apenas ir direto programar no [Replit](https://replit.com/~) (ou melhor ainda, você já tem o seu ambiente de desenvolvimento pronto no Linux/WSL).
 - [Curso Java iniciante](https://youtu.be/mRryrODqQcw) Aqui diferente do curso de iniciante C++ eu prefiro que vocês começem na primeira aula, porquê ele explica também um pouco do conceito que a linguagem teve para ser criada que é muito bacana.
 - [Módulo de Java](https://github.com/Programando-o-Mundo/Microfundamentos-AEDs/tree/main/Java) Este é o nosso próprio módulo de Java, aqui você irá ver o básico para entender a linguagem além de aprender alguns conceitos mais avançados.
