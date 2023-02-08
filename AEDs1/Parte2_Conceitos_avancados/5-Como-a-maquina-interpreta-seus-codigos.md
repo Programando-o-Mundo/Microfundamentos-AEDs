@@ -119,7 +119,7 @@ De maneira geral, quatro partes são importantes entender, a CPU, a RAM o disco 
 A CPU, ou Central Processing Unit (Unidade Central de Processamento), é o "cérebro" de um computador. É responsável por executar instruções e 
 realizar cálculos.
 
-A CPU é um circuito eletrônico que contém milhões de transistores que podem ser ligados ou desligados para realizar operações (pense que estado de um transistor, ligado e desligado, corresponde a 0 ou 1 em binário). Ele lê instruções da memória, executa cálculos e operações lógicas e armazena os resultados de volta na memória. Ele também se comunica com as outras partes do computador, como memória e armazenamento, para obter dados e enviar resultados.
+A CPU é um circuito eletrônico que contém milhões de transistores que podem ser ligados ou desligados para realizar operações (pense que estado de um transistor, ligado e desligado, corresponde a 0 ou 1 em binário). Ele lê instruções da memória, executa cálculos e operações lógicas e armazena os resultados de volta na memória. Ele também se comunica com as outras partes do computador.
 
 ![2015-04-17-2-copy](https://user-images.githubusercontent.com/9157977/215118380-26e53a5e-bb5e-4751-9fca-e04a3da92e96.jpg)
 
@@ -128,7 +128,7 @@ Fonte: https://www.techtudo.com.br/noticias/2015/04/o-que-e-cpu-entenda-qual-e-o
 Do ponto de vista da programação, a CPU é importante porque é o dispositivo que executa as instruções que compõem um programa. Quando 
 um programa é executado em um computador, a CPU lê as instruções da memória e as executa, realizando cálculos e operações lógicas conforme 
 especificado pelo código. A CPU também é responsável pelo gerenciamento da memória e armazenamento além da comunicação com outros dispositivos, 
-como dispositivos de entrada/saída.
+como dispositivos de entrada/saída (teclado, mouse, controles de videogame e mais).
 
 ### RAM
 
