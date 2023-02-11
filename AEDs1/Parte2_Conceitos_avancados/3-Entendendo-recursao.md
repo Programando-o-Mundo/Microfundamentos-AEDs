@@ -126,7 +126,7 @@ Imagino que muitos de vocês ainda devem estar com dúvidas em como utilizar ess
 
 ## Porquê recursão
 
-De certa forma, você viu que existe um trabalho a mais ao criar uma recursão do que um laço de repetição. Olha a diferença a solução desse nosso problema acima, só que com iteração.
+De certa forma, você viu que existe um trabalho a mais ao criar uma recursão do que um laço de repetição. Olha a diferença na solução desse nosso problema acima, só que com iteração.
 
 ```c
 #include<stdio.h>
