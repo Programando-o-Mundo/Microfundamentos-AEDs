@@ -15,6 +15,42 @@
 
 Nesta aula trabalharemos com estruturas de repetição ou loops, que, assim como o nome sugere, permite que seja possível realizar um grupo de instruções de maneira repetida.
 
+Por exemplo, vamos supor que queremos imprimir a frase "Hello world!" dez vezes. Se não fossemos usar estruturas de repetição, o nosso código seria assim:
+
+```c
+#include<stdio.h>
+
+int main(void) {
+    printf("Hello world!\n");
+    printf("Hello world!\n");
+    printf("Hello world!\n");
+    printf("Hello world!\n");
+    printf("Hello world!\n");
+    printf("Hello world!\n");
+    printf("Hello world!\n");
+    printf("Hello world!\n");
+    printf("Hello world!\n");
+    printf("Hello world!\n");
+    
+    return 0;
+}
+``` 
+
+E claro que só olhando esse código você percebe que isso é excesivo de mais, e que provavelmente deve ter uma solução melhor do que isso. Pois bem, com estruturas repetitivas, podemos transformar esse bloco de instruções repetitivas, em isso:
+
+```c
+#include<stdio.h>
+
+int main(void) {
+    for(int i = 0;i < 10; i++) {
+        printf("Hello World!\n");
+    }
+    return 0;
+}
+```
+
+Execute ambos os códigos, e perceba que chegamos no mesmo resultado, porém de forma mais simples e elegante.
+
 Existem várias maneiras de fazer uma estrutura de repetição, cada uma com seus próprios casos de uso específicos. Aqui estão algumas das maneiras mais comuns de fazer um loop em C:
 
 ## For
