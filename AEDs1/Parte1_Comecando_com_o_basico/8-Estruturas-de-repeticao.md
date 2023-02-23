@@ -13,13 +13,13 @@
 
 ## Tratando problemas repetitivos
 
-Nesta aula trabalharemos com estruturas de repetição ou loops, que, assim como o nome sugere, permite que seja possível fazer loop em um bloco de instruções.
+Nesta aula trabalharemos com estruturas de repetição ou loops, que, assim como o nome sugere, permite que seja possível realizar um grupo de instruções de maneira repetida.
 
-Existem várias maneiras de fazer um loop, cada uma com seus próprios casos de uso específicos. Aqui estão algumas das maneiras mais comuns de fazer um loop em C:
+Existem várias maneiras de fazer uma estrutura de repetição, cada uma com seus próprios casos de uso específicos. Aqui estão algumas das maneiras mais comuns de fazer um loop em C:
 
 ## For
 
-O loop "for" é uma maneira popular criar um loop de repetição, geralmente usada para iterar por um número específico de vezes. A sintaxe básica de um loop "for" em C é a seguinte:
+A estrutura "for" é uma maneira popular criar um loop de repetição, geralmente usada para iterar por um número específico de vezes. A sintaxe básica de um loop "for" em C é a seguinte:
 
 ```c
 
@@ -68,7 +68,7 @@ for (int i = 0, j = 0; i < 10; i++) {
 
 ### Condição de parada
 
-Assim como as estruturas condicionais, loops também utiliza uma condição, chamada "Condição de Parada". Utilizando a mesma lógica, ele entra e continua a fazer a repetição (loop), se a condição for verdadeira. Lembrando obviamente que a nossa condição pode ser também uma expressão.
+Assim como as estruturas condicionais, loops também utiliza uma condição, chamada "Condição de Parada". Em outras palavras só entraremos no loop de repetição e iremos continuar no mesmo, se tal condição for verdadeira. Lembrando obviamente que a nossa condição pode ser também uma expressão (ou seja várias condições aninhadas uma com as outras).
 
 ```
 for (int i = 0; i < 10; i++) {
@@ -101,6 +101,14 @@ for (int i = 0; i < 10; i++) {
                     incremento
 ``` 
 Obs.: a seção de incremento não é acionada quando entramos no laço "for", quando entramos na seção de loop, as instruções de inicialização de condição são acionadas, mas a de incremento é apenas acionadas depois da primeira iteração.
+
+Obs2.: Podemos fazer atribuições ou incrementos em mais de uma variável dentro dessa seção, desde que os mesmos sejam separados por vírgula, observe o exemplo abaixo:
+
+```c
+for (int i = 0, j = 0; i < 10; i++, j++) {
+    printf("%d\n", i);
+}
+``` 
 
 ## While
 
