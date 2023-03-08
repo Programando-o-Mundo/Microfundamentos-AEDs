@@ -1,4 +1,4 @@
-# Sejam bem vindos a Algoritmos e Estruras de Dados I
+# Sejam bem vindos a Algoritmos e Estruturas de Dados I
 
 Aqui é onde tudo começa, neste módulo, você irá desde o começo para entender como podemos combinar Algoritmos e Estruturas de Dados
 para resolver os mais diversificados problemas que o mundo da Computação já viu. Essa é uma clássica disciplina de resolução de problemas,
