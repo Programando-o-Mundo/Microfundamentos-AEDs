@@ -107,4 +107,4 @@ Muito obrigado e até a próxima!
 ## Links úteis
 
 - [Aula completa de AEDs1 - UNIVERSIDADE FERNANDO PESSOA](http://www3.dsi.uminho.pt/iiee/repos/AEDados.pdf)
-- [CS50 - Uma das melhores aulas introdutórias de Computação do Mundo!](http://www3.dsi.uminho.pt/iiee/repos/AEDados.pdf)
+- [CS50 - Uma das melhores aulas introdutórias de Computação do Mundo!](https://youtu.be/8mAITcNt710)
