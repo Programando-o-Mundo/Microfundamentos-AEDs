@@ -1,5 +1,7 @@
 # Microfundamentos-AEDs
 
+![algorithms](https://user-images.githubusercontent.com/9157977/224499700-a576c9d3-e59e-4e6e-be66-d7bc92dfbabd.jpg)
+
 Seja bem vindo ao repositório de Microfundamentos das disciplinas de Algoritmos e Estruturas de Dados. Aqui você irá encontrar mini aulas 
 sobre os mais diversos assuntos, além de módulos com aulas para te auxiliar no entendimento mais profundo de algumas linguagens de programação (Até então temos aulas de C e Java).
 
