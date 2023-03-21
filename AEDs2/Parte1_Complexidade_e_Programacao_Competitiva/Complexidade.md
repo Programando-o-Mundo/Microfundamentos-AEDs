@@ -1,5 +1,15 @@
 # Complexidade de Tempo e Espaço
 
+## O que você irá aprender
+
+- O que é Complexidade e sua importância
+- O que é Complexidade de Tempo
+- O que é Complexidade de Espaço
+- Notação Big O
+
+## Pré-requisitos
+
+- Nenhuma
 
 ## Complexidade
 
@@ -37,5 +47,77 @@ em relação a n. Algumas notações comuns de complexidade são:
  - O(n^2): complexidade quadrática, o algoritmo leva um tempo ou espaço proporcional ao quadrado do tamanho da entrada.
  - O(2^n): complexidade exponencial, o algoritmo leva um tempo ou espaço proporcional a uma potência exponencial do tamanho da entrada.
 
+![bigO](https://danielmiessler.com/images/big-o-chart-tutorial-bazar-aymptotic-notations-1.png)
+
 Ao utilizar a notação Big O, é possível comparar a eficiência de diferentes algoritmos em termos de tempo e espaço, ajudando a 
 escolher a solução mais adequada para um problema específico.
+
+## Exemplo prático de cálculo de complexidade
+
+Suponha que temos uma função que recebe uma lista de números e retorna o maior número da lista:
+
+```c
+#include <stdio.h>
+
+int find_max(int numbers[], int size) {
+    int max_number = numbers[0]; // linha 1
+    for (int i = 1; i < size; i++) { // linha 2
+        if (numbers[i] > max_number) { // linha 3
+            max_number = numbers[i]; // linha 4
+        }
+    }
+    return max_number; // linha 5
+}
+
+int main(void) {
+    int numbers[] = {1, 5, 3, 9, 4};
+    int size = sizeof(numbers) / sizeof(int);
+    int max_number = find_max(numbers, size);
+    printf("O número máximo é: %d\n", max_number);
+    return 0;
+}
+```
+
+### Calculando complexidade de tempo
+
+Para calcular a complexidade de tempo dessa função, começamos analisando cada linha de código para determinar quantas vezes ela será executada para diferentes tamanhos de entrada.
+
+ - A primeira linha cria uma variável max_number e acessa o primeiro elemento da lista, tudo isso é executada uma vez.
+ - A segunda linha inicia um loop que será executado n-1 vezes, onde n é o tamanho da lista e -1 pois ignoramos a primeira posição.
+ - A terceira linha compara o elemento atual com o número máximo encontrado até agora e é executada n-1 vezes.
+ - A quarta linha atualiza a variável max_number se o elemento atual for maior e é executada k vezes, onde k é o número de elementos que são maiores do que o número máximo atual.
+ - A quinta linha retorna o número máximo e é executada uma vez.
+Podemos somar o número de vezes que cada linha é executada para obter a complexidade de tempo total da função:
+
+```
+1 + 1 + (n-1) + k + 1
+```
+
+Aqui, n representa o tamanho da lista e k é o número de elementos que são maiores do que o número máximo atual. Em geral, ignoramos termos menores e constantes, então a complexidade de tempo é O(n).
+
+Isso significa que, para entradas maiores, o tempo de execução da função aumenta proporcionalmente ao tamanho da entrada. Por exemplo, se a lista tiver 1000 elementos, a função será executada aproximadamente 1000 vezes, enquanto se a lista tiver 10000 elementos, a função será executada aproximadamente 10000 vezes.
+
+### Cálculo de complexidade de espaço
+
+Para calcular a complexidade de espaço, precisamos determinar quantos bytes serão usados em diferentes tamanhos de entrada. Aqui, estamos assumindo que cada número na lista ocupa um byte de memória.
+
+- A primeira linha cria uma variável max_number, que ocupa 1 byte.
+- A segunda linha acessa o primeiro elemento da lista, que também ocupa 1 byte.
+- O loop na terceira linha não usa nenhum espaço adicional.
+- A quarta linha também não usa espaço adicional.
+- A quinta linha atualiza a variável max_number, que ocupa 1 byte.
+- A sexta linha retorna o número máximo, que também ocupa 1 byte.
+
+Portanto, o espaço total utilizado pela função é de 3 bytes: um byte para a variável max_number e um byte para cada um dos dois números retornados.
+
+Em geral, ignoramos termos menores e constantes, então a complexidade de espaço é O(1).
+
+Isso significa que a quantidade de memória utilizada pela função permanece constante, independentemente do tamanho da entrada. O espaço necessário para executar essa função não aumentará à medida que a entrada se tornar maior.
+
+## Links úteis
+
+- [Big O Notation: A Few Examples](https://www.bigocheatsheet.com/) - Um guia interativo que explica como calcular a complexidade de tempo e espaço de algoritmos usando a notação big O.
+- [Algorithm Analysis and Big O Notation](https://runestone.academy/runestone/books/published/pythonds/AlgorithmAnalysis/toctree.html) - Um livro online que cobre a análise de algoritmos, incluindo complexidade de tempo e espaço e notação big O, usando a linguagem de programação Python.
+- [Asymptotic Notation](https://cp-algorithms.com/complexity/asymptotic-notation.html) - Uma introdução em profundidade à notação assintótica, incluindo big O, big Omega e big Theta, e como calcular a complexidade de tempo e espaço usando essas notações.
+- [Big O Cheatsheet](https://www.bigocheatsheet.com/) - Uma folha de referência útil que lista a complexidade de tempo e espaço de vários algoritmos comuns, juntamente com exemplos e gráficos para ajudar a visualizar a complexidade.
+- [Analysis of Algorithms](https://en.wikipedia.org/wiki/Analysis_of_algorithms) - Um artigo da Wikipedia que fornece uma visão geral da análise de algoritmos, incluindo a notação big O e outras notações assintóticas.
