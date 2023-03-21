@@ -26,10 +26,10 @@
     * [Entendendo Polimorfismo](AEDs1/Parte3_Conhecendo_POO_e_seus_Principios/5-Entendendo-Polimorfismo.md)
 
 * [Algoritmos e Estruturas de Dados 2](AEDs2/README.md)
-  * [Parte 1 - Complexidade e Programação Competitiva](AEDs2/Parte1_Complexidade_e_Programacao_Competitiva/README.md)    
-  * [Parte 2 - Ordenação Interna](AEDs2/Parte2_Ordenacao_Interna/README.md)   
+  * [Parte 1 - Complexidade e Programação Competitiva](AEDs2/Parte1_Complexidade_e_Programacao_Competitiva/README.md)    ]
     * [Complexidade e notação Big O](AEDs2/Parte1_Complexidade_e_Programacao_Competitiva/Complexidade-notacao-big-O.md)
     * [Crescimento de funções - Notação Theta e Omega](AEDs2/Parte1_Complexidade_e_Programacao_Competitiva/Crescimento-de-funcoes.md)
+  * [Parte 2 - Ordenação Interna](AEDs2/Parte2_Ordenacao_Interna/README.md)   
   * [Parte 3 - Tipos Abstratos de Dados (TAD)](AEDs2/Parte3_Tipos_Abstratos_de_Dados(TAD)/README.md)    
   * [Parte 4 - Estruturas Flexíveis e Estáticas](AEDs2/Parte4_Estruturas_Flexiveis_e_Estaticas/README.md)   
   * [Parte 5 - Árvores e Tabela Hash](AEDs2/Parte5_Arvores_e_Tabela_hash/README.md)  
