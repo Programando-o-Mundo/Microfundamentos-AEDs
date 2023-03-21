@@ -52,3 +52,15 @@ A função fatorial faz uma única chamada recursiva com um argumento n - 1.
 Note que em funções recursivas mais complexas, o processo de análise pode ser mais complicado e pode ser necessário usar 
 técnicas avançadas, como a substituição, o método mestre ou a árvore de recursão para calcular a complexidade de tempo e 
 espaço de forma precisa.
+
+## Links úteis
+
+- **Algoritmos: Teoria e Prática** de Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest e Clifford Stein - este livro é um clássico na área de algoritmos e é usado em muitos cursos de graduação e pós-graduação em ciência da computação. O capítulo 4, ["Divide and Conquer"](https://mitpress.mit.edu/books/introduction-algorithms-third-edition), discute em detalhes como calcular a complexidade de funções recursivas.
+
+- **Coursera - Algoritmos, Parte I e Parte II** - Estes cursos online gratuitos, ministrados pelos professores Robert Sedgewick e Kevin Wayne, cobrem vários tópicos em algoritmos, incluindo análise de algoritmos recursivos. Os cursos incluem vídeo-aulas, leituras recomendadas e exercícios para prática. ([Parte I](https://www.coursera.org/learn/algorithms-part1), [Parte II](https://www.coursera.org/learn/algorithms-part2))
+
+- **Khan Academy - Algoritmos** - A Khan Academy oferece um curso online gratuito sobre algoritmos que inclui uma seção sobre análise de algoritmos. Este curso inclui tutoriais em vídeo, exercícios e exemplos práticos de como calcular a complexidade de funções recursivas. ([Link](https://www.khanacademy.org/computing/computer-science/algorithms))
+
+- **MIT OpenCourseWare - Introduction to Algorithms** - Este curso online gratuito do MIT é baseado no livro de Cormen et al. mencionado acima e inclui palestras em vídeo, leituras recomendadas e exercícios práticos. O curso cobre em detalhes como calcular a complexidade de funções recursivas. ([Link](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/))
+
+- **GeeksforGeeks - Complexity Analysis of Algorithms** - O site GeeksforGeeks é um recurso popular para estudantes de ciência da computação e desenvolvedores de software. Ele inclui vários artigos e tutoriais sobre análise de algoritmos e cálculo de complexidade de funções recursivas. ([Link](https://www.geeksforgeeks.org/analysis-of-algorithms-set-4-analysis-of-loops/))
