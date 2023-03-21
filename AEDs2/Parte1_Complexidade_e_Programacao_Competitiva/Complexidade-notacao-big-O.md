@@ -90,7 +90,7 @@ Para calcular a complexidade de tempo dessa função, começamos analisando cada
 Podemos somar o número de vezes que cada linha é executada para obter a complexidade de tempo total da função:
 
 ```
-1 + 1 + (n-1) + k + 1
+1 + 1 + ((n-1)*(1 + k)) + 1
 ```
 
 Aqui, n representa o tamanho da lista e k é o número de elementos que são maiores do que o número máximo atual. Em geral, ignoramos termos menores e constantes, então a complexidade de tempo é O(n).
