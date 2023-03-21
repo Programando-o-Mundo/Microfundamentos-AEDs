@@ -8,7 +8,7 @@
 
 ## Pré-requisitos
 
-- Conhecimento de cálculo de complexidade de tempoo e espaço
+- Conhecimento de cálculo de complexidade de tempo e espaço
 
 ## Definição
 
