@@ -28,7 +28,9 @@
 * [Algoritmos e Estruturas de Dados 2](AEDs2/README.md)
   * [Parte 1 - Complexidade e Programação Competitiva](AEDs2/Parte1_Complexidade_e_Programacao_Competitiva/README.md)    ]
     * [Complexidade e notação Big O](AEDs2/Parte1_Complexidade_e_Programacao_Competitiva/Complexidade-notacao-big-O.md)
+    * [Complexidade em funções recursivas](AEDs2/Parte1_Complexidade_e_Programacao_Competitiva/Complexidade-recursiva.md)
     * [Crescimento de funções - Notação Theta e Omega](AEDs2/Parte1_Complexidade_e_Programacao_Competitiva/Crescimento-de-funcoes.md)
+    * [Programação competitiva](AEDs2/Parte1_Complexidade_e_Programacao_Competitiva/Programacao-competitiva.md)
   * [Parte 2 - Ordenação Interna](AEDs2/Parte2_Ordenacao_Interna/README.md)   
   * [Parte 3 - Tipos Abstratos de Dados (TAD)](AEDs2/Parte3_Tipos_Abstratos_de_Dados(TAD)/README.md)    
   * [Parte 4 - Estruturas Flexíveis e Estáticas](AEDs2/Parte4_Estruturas_Flexiveis_e_Estaticas/README.md)   
