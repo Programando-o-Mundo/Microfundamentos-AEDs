@@ -7,7 +7,7 @@
 - Qual sua complexidade
 - Implementação do algoritmo em C e Java
 
-# Pré-requisitos
+## Pré-requisitos
 
 - Entendimento do tópico de complexidade
 
