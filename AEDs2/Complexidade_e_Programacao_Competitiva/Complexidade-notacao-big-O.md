@@ -52,6 +52,17 @@ em relação a n. Algumas notações comuns de complexidade são:
 Ao utilizar a notação Big O, é possível comparar a eficiência de diferentes algoritmos em termos de tempo e espaço, ajudando a 
 escolher a solução mais adequada para um problema específico.
 
+## Melhor, médio e pior caso
+
+Além de saber calcular a complexidade, é importante saber também que a complexidade do algoritmo pode variar dependendo das circunstâncias,
+e por isso, quando calculamos a complexidade, precisamos calcular o pior, médio e melhor caso. Saber calcular a complexidade desta forma é importante para avaliar o desempenho de um algoritmo em diferentes situações e para escolher o algoritmo mais adequado para uma determinada tarefa.
+
+O pior caso é importante porque indica o tempo máximo que o algoritmo pode levar para concluir uma tarefa, o que é fundamental para garantir que o algoritmo seja viável em todas as situações. É importante escolher um algoritmo que tenha uma complexidade de tempo no pior caso que seja aceitável para a aplicação em questão.
+
+O melhor caso, embora menos crítico, também é importante, pois indica a eficiência máxima do algoritmo em uma situação ideal. Isso pode ser útil para avaliar a qualidade do algoritmo em relação a outras soluções ou para estabelecer um limite superior para a complexidade de tempo.
+
+Já a complexidade de tempo no caso médio é importante porque reflete o desempenho do algoritmo em situações típicas. Embora o pior caso seja geralmente o mais importante, o caso médio pode ser relevante em muitas aplicações, especialmente quando se trata de grandes volumes de dados ou de problemas que exigem muitas iterações.
+
 ## Exemplo prático de cálculo de complexidade
 
 Suponha que temos uma função que recebe uma lista de números e retorna o maior número da lista:
@@ -97,16 +108,17 @@ Aqui, n representa o tamanho da lista e k é o número de elementos que são mai
 
 Isso significa que, para entradas maiores, o tempo de execução da função aumenta proporcionalmente ao tamanho da entrada. Por exemplo, se a lista tiver 1000 elementos, a função será executada aproximadamente 1000 vezes, enquanto se a lista tiver 10000 elementos, a função será executada aproximadamente 10000 vezes.
 
+Uma coisa importante a ser notada, é que para este caso, a complexidade no pior, médio e melhor caso serão iguais, pois em todos os casos, o algoritmo terá que percorrer a lista por inteiro até achar o elemento.
+
 ### Cálculo de complexidade de espaço
 
 Para calcular a complexidade de espaço, precisamos determinar quantos bytes serão usados em diferentes tamanhos de entrada. Aqui, estamos assumindo que cada número na lista ocupa um byte de memória.
 
-- A primeira linha cria uma variável max_number, que ocupa 1 byte.
-- A segunda linha acessa o primeiro elemento da lista, que também ocupa 1 byte.
-- O loop na terceira linha não usa nenhum espaço adicional.
-- A quarta linha também não usa espaço adicional.
-- A quinta linha atualiza a variável max_number, que ocupa 1 byte.
-- A sexta linha retorna o número máximo, que também ocupa 1 byte.
+- A primeira linha cria uma variável max_number, que ocupa 1 byte e acessa o primeiro elemento da lista.
+- O loop na segunda linha não usa nenhum espaço adicional.
+- A terceira linha também não usa espaço adicional.
+- A quarta linha atualiza a variável max_number, que ocupa 1 byte.
+- A quinta linha retorna o número máximo, que também ocupa 1 byte.
 
 Portanto, o espaço total utilizado pela função é de 3 bytes: um byte para a variável max_number e um byte para cada um dos dois números retornados.
 
