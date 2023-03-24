@@ -1,5 +1,16 @@
 # Algoritmo de Busca Linear
 
+## Você vai aprender
+
+- O que é o algoritmo de busca linear
+- Como o algoritmo funciona
+- Qual sua complexidade
+- Implementação do algoritmo em C e Java
+
+# Pré-requisitos
+
+- Entendimento do tópico de complexidade
+
 ## Definição
 
 O algoritmo de busca (ou pesquisa) linear, também conhecido como busca sequencial, é um método simples e direto de pesquisar um elemento em uma coleção 
