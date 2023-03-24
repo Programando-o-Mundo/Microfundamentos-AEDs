@@ -1,4 +1,4 @@
-# Algoritmo de Pesquisa Linear
+# Algoritmo de Busca Linear
 
 ## Definição
 
