@@ -34,6 +34,7 @@
   * [Parte 3 - Algoritmos de pesquisa](AEDs2/Algoritmos_de_Pesquisa/README.md)  
     * [Busca linear](AEDs2/Algoritmos_de_Pesquisa/Busca_linear.md)
   * [Parte 4 - Ordenação Interna](AEDs2/Ordenacao_Interna/README.md)   
+    * [Quicksort](AEDs2/Ordenacao_Interna/Quicksort.md)
   * [Parte 5 - Tipos Abstratos de Dados (TAD)](AEDs2/Tipos_Abstratos_de_Dados(TAD)/README.md)    
   * [Parte 6 - Estruturas Flexíveis e Estáticas](AEDs2/Estruturas_Flexiveis_e_Estaticas/README.md)   
   * [Parte 7 - Árvores e Tabela Hash](AEDs2/Arvores_e_Tabela_hash/README.md)  
