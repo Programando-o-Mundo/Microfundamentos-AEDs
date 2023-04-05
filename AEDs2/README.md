@@ -18,7 +18,7 @@ Obrigado pela atenção e bons estudos.
   - [Algorithms and Data Structures for Beginners](https://youtu.be/8hly31xKli0)
   - [Data Structures - Easy to Advance](https://www.youtube.com/watch?v=RBSGKlAvoiM)
   
-### Cursoos
+### Cursos
   
 - **MIT OpenCourseWare - Introduction to Algorithms** - Este curso online gratuito do MIT é baseado no livro de Cormen et al. mencionado acima e inclui palestras em vídeo, leituras recomendadas e exercícios práticos. O curso cobre em detalhes como calcular a complexidade de funções recursivas. ([Link](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/))
   
