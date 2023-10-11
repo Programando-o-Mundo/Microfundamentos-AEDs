@@ -9,17 +9,17 @@ Começaremos do mais simples, que no nosso caso é os algoritmos.
 ## O que é um Algoritmo?
 
 A cada vez mais que os dias se passam, o mundo vai se tornando cada vez mais adepto a tecnologia, até que a mesma faça parte do nosso dia-a-dia. 
-Uma palavra que tem sido jogada dela para cá é esta: "Algoritmo", mas o que no final das contas é um Algoritmo?
+Existe três importantes palavras que circulam no mundo da tecnologia e as três são importantes de uma forma ou outra para essa a disciplina em questão. A primeira é hardware que é o meio físico na qual usamos a tecnologia, como é o caso dos celulares e os computadores por exemplo. O segundo termo é o software, que são aplicações construídas para rodar "em cima" do hardware e cumprem nossas tarefas do dia-a-dia (ex: Whatsapp, Google Maps, Google Chrome, entre outros). Por fim, nós temos os algoritmos, mas o que são eles?
 
-Na ciência da computação, um algoritmo é uma sequência de etapas que define um conjunto de instruções para resolver um determinado problema ou executar uma tarefa específica. Os algoritmos são fundamentais e desempenham um papel crucial em muitos aspectos como processamento de dados, recuperação de informações e ciência computacional.
+Na ciência da computação, um algoritmo é uma sequência de etapas que define um conjunto de instruções de maneira precisa para resolver um determinado problema ou executar uma tarefa específica. Esse conjunto bem definido de instruções pode ser implementado a partir de uma "linguagem de programação", uma poderosa ferramenta computacional padronizada, formada do seu próprio conjuntos de regras sintáticas e semânticas que permitem desenvolvedores colocarem algoritmos para funcionarem na prática. Pense que assim como eu estou utilizando da lingua portuguesa para explicar este tópico para vocês, nós desenvolvedores usamos das linguagens de programação para "explicar" para a máquina como a nossa aplicação será executada.
 
-Os algoritmos são normalmente projetados para serem executados por um computador, embora também possam ser implementados manualmente ou com outras ferramentas. Um algoritmo é geralmente descrito de maneira precisa, passo a passo, usando um conjunto claro e bem definido de instruções.
+Mantenha em mente que, quando falamos de Algoritmo nós estamos falando mais do abstrato, da ideia do passo-a-passo que possa resolver um problema específico. Principalmente porquê podemos implementar o mesmo algoritmo de diferentes formas, usando diferentes linguagens de programação. Por outro lado, o Software é a ideia concreta, ou seja, é o algoritmo (ou até um conjunto de algoritmos) implementado de forma unificada, com o objetivo de realizar uma determinada tarefa.
 
 Existem muitos tipos de algoritmos e eles podem ser usados para uma ampla variedade de propósitos. Alguns algoritmos são projetados para resolver tipos específicos de problemas, como classificar uma lista de números ou encontrar o caminho mais curto entre dois pontos. Outros são de uso mais geral e podem ser usados para resolver uma ampla variedade de problemas.
 
 ## Resolvendo problemas com algoritmos
 
-Na computação, utilizamos algoritmos para resolver um problema real eficientemente, aqui podemos dividir esse processo em quatro fases:
+Na computação, utilizamos algoritmos para resolver um problema real eficientemente, aqui podemos dividir esse processo, de maneira geral, em quatro fases:
 
 ### 1 - Identificação e compreensão do problema e seus objetivos.
 
@@ -88,19 +88,21 @@ def aStarSearch(problem: SearchProblem, heuristic=nullHeuristic):
 
 Inimigo fez o trajeto até o jogador, representando com a linha vermelha.
 
-Vocês provavelmente deve ter notado que a nossa solução foi feita de cima para baixo ou "Top-down", essa é uma forma de aproximação muito comum para resolução de problemas reais, onde escrevemos uma sequência de instruções para serem executadas usando uma aproximação descendente.
+Vocês provavelmente deve ter notado que a nossa solução foi feita de cima para baixo ou "Top-down", essa é uma forma de aproximação muito comum para resolução de problemas reais, onde escrevemos uma sequência de instruções para serem executadas usando uma aproximação descendente. De uma maneira simplificada, pense como se a construção de um algoritmo é como se estivessemos cozinhando uma receita, onde temos os ingredientes e um conjunto de instruções a serem seguidos, geralmente de cima para baixo.
+
+Sobre a parte técnica dos algoritmos acredito que por agora seja o suficiente. Existe mais detalhes que deveriam ser levados em conta quanto a produção de algoritmos, mas por agora, acredito que seja o suficiente. O que devemos realmente focar no momento é como começar a construir os nossos primeiros algoritmos, e para isso nós temos que aprender a usar uma linguagem de programação. Antes disso, voltando a nossa analogia da receita de comida, nós temos que apresentar os ingredientes, que nesse caso, seriam as Estruturas de Dados.
 
 ## Estruturas de Dados
 
-Do outro lado da moeda, nós temos Estruturas de dados, formas de representar itens de dados logicamente relacionados ao dados
-que queremos representar. Isso parece muito confuso, mas pense o seguinte: Suponhamos que estamos produzindo um algoritmo para 
-calcular o troco em uma padaria. Aqui, você provavelmente deve saber que trabalharemos com números com casas decimais, por exemplo, R$3.32. Essa representação numérica é chamada de ponto flutuante ou apenas "float", e um "float" é uma estrutura de dado que está logicamente relacionado com o problema que queremos resolver.
+Estruturas de dados são formas de representar itens de dados logicamente relacionados ao dados que queremos representar. Isso parece muito confuso, mas pense o seguinte: Suponhamos que estamos trabalhando em uma padaria, e que estamos trabalhando no caixa. Neste cenário, imagine que você esteja contabilizando o valor total da compra do cliente, para isso você precisa de um número, mais precisamente, números com casas decimais. Essa representação numérica pertence a um grupo matemático chamado de "números reais" e na computação chamamos essa representação de números de ponto flutuante ou apenas "float". Observe como que a forma como representamos os dados do nosso problema precisa ser escolhida com cuidado, pois se escolhermos um número inteiro por exemplo, parte dos dados da compra poderiam ser perdidos e logo, nosso algoritmo não representa fielmente os dados que queremos armazenar.
 
-Um exemplo mais simples ainda, estamos programando o interruptor de uma lâmpada, sabemos aqui que temos dois estados: ligado (ON) e desligado (OFF), para isso temos uma estrutura de dado chamado boolean (ou simplesmente bool) que representa um dígito (0 ou 1) onde 0 representa falso "False" e pode ser a nossa lâmpada desligada, e 1 representa verdadeiro "True" e pode ser a nossa lâmpada ligada.
+Além disso, é desejável que a estrutura de dado, também seja eficiente, ou seja, não use recursos a mais do que precisa, por exemplo, estamos programando o interruptor de uma lâmpada, sabemos aqui que temos dois estados: ligado (ON) e desligado (OFF), para isso temos uma estrutura de dado chamado boolean (ou simplesmente bool) que representa um dígito (0 ou 1) onde 0 representa falso "False" e pode ser a nossa lâmpada desligada, e 1 representa verdadeiro "True" e pode ser a nossa lâmpada ligada. Veja que neste exemplo, tanto um número real, quanto um número inteiro poderiam resolver o nosso problema, porém estariamos usando um canhão para matar uma formiga, já que precisamos apenas de dois números.
+
+Quando estamos escrevendo o nosso algoritmo, nós declaramos essas estruturas da mesma forma que escrevemos números ou palavras em um pedaço de papel, e junto aos conjuntos de instruções fornecido pelas linguagens de programação, nós conseguimos dar luz aos programas que conseguem tornar as nossas vidas diárias mais simples e confortáveis.
 
 # Por enquanto é so...
 
-É claro que tem muito mais a ser explorado na disciplina, mas acredito que por enquanto seja o suficiente. Com os conhecimentos aqui vocês tiveram uma pequena amostra no quê a disciplina irá trabalhar. Recomendo fortemente também dar uma olhada para o material complementar dessa aula, pois contém outras fontes de recursos na qual você pode aprender a disciplina, além do material usado para fazer essa aula.
+É claro que tem muito mais a ser explorado na disciplina, como por exemplo, você sabia que existem dois tipos de estruturas de dados? As chamadas estruturas de dados primitivas e não primitivas? Quais são as suas diferenças, bem, acredito que por enquanto seja o suficiente, e em aulas futuras iremos voltar para este tópico. Com os conhecimentos aqui vocês tiveram uma pequena amostra no quê a disciplina irá trabalhar. Recomendo fortemente também dar uma olhada para o material complementar dessa aula, pois contém outras fontes de recursos na qual você pode aprender a disciplina.
 
 Muito obrigado e até a próxima! 
 
