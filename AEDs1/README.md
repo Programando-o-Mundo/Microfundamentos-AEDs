@@ -19,9 +19,7 @@ Existem muitos tipos de algoritmos e eles podem ser usados para uma ampla varied
 
 ## Características dos algoritmos
 
-Com o conceito compreendido, vamos falar sobre alguma das características iniciais que devemos saber sobre Algoritmos:
-
-Claro, aqui estão os pseudocódigos para cada seção, completando o texto conforme a solicitação:
+Com o conceito compreendido, vamos falar sobre alguma das características iniciais que devemos saber sobre Algoritmos. Entenda que para esta parte inicial, não se preocupe em entender os códigos de exemplo, apenas os conceitos
 
 ### Finitude: 
 
