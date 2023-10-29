@@ -13,82 +13,135 @@ Existe três importantes palavras que circulam no mundo da tecnologia e as três
 
 Na ciência da computação, um algoritmo é uma sequência de etapas que define um conjunto de instruções de maneira precisa para resolver um determinado problema ou executar uma tarefa específica. Esse conjunto bem definido de instruções pode ser implementado a partir de uma "linguagem de programação", uma poderosa ferramenta computacional padronizada, formada do seu próprio conjuntos de regras sintáticas e semânticas que permitem desenvolvedores colocarem algoritmos para funcionarem na prática. Pense que assim como eu estou utilizando da lingua portuguesa para explicar este tópico para vocês, nós desenvolvedores usamos das linguagens de programação para "explicar" para a máquina como a nossa aplicação será executada.
 
-Mantenha em mente que, quando falamos de Algoritmo nós estamos falando mais do abstrato, da ideia do passo-a-passo que possa resolver um problema específico. Principalmente porquê podemos implementar o mesmo algoritmo de diferentes formas, usando diferentes linguagens de programação. Por outro lado, o Software é a ideia concreta, ou seja, é o algoritmo (ou até um conjunto de algoritmos) implementado de forma unificada, com o objetivo de realizar uma determinada tarefa.
+Mantenha em mente que, quando falamos de Algoritmo nós estamos falando mais do abstrato, da ideia do passo-a-passo que possa resolver um problema específico. Principalmente porquê podemos implementar o mesmo algoritmo de diferentes formas, ilustrar as ideias contidas no algoritmo de forma diferente e usando diferentes linguagens de programação. Por outro lado, o Software é a ideia concreta, ou seja, é o algoritmo (ou até um conjunto de algoritmos) implementado de forma unificada, com o objetivo de realizar uma determinada tarefa.
 
 Existem muitos tipos de algoritmos e eles podem ser usados para uma ampla variedade de propósitos. Alguns algoritmos são projetados para resolver tipos específicos de problemas, como classificar uma lista de números ou encontrar o caminho mais curto entre dois pontos. Outros são de uso mais geral e podem ser usados para resolver uma ampla variedade de problemas.
 
-## Resolvendo problemas com algoritmos
+## Características dos algoritmos
 
-Na computação, utilizamos algoritmos para resolver um problema real eficientemente, aqui podemos dividir esse processo, de maneira geral, em quatro fases:
+Com o conceito compreendido, vamos falar sobre alguma das características iniciais que devemos saber sobre Algoritmos:
 
-### 1 - Identificação e compreensão do problema e seus objetivos.
+Claro, aqui estão os pseudocódigos para cada seção, completando o texto conforme a solicitação:
 
-O primeiro passo e mais simples seria identificar o problema que queremos resolver, por exemplo, suponhamos que estamos fazendo um jogo, e o nosso problema atual é que queremos criar um sistema que persiga o jogador, apenas passando por cima do caminho e não das paredes. Este é o nosso problema, nossos objetivos então seriam:
+### Finitude: 
 
-- Fazer o inimigo mover;
-- Fazer o inimigo não poder se mover pela diagonal, apenas para cima, baixo, esquerda e direita;
-- Fazer o inimigo calcular a trajetória até jogador;
-- Fazer o inimigo chegar até o jogador, evitando colidir com a parede;
-- Fazer o inimigo chegar até o jogador da forma mais eficiente possível;
+Um algoritmo precisa ter um fim, ou seja, ele deve terminar após um número finito de passos. Isso implica que o algoritmo tem um número definido de etapas que levarão à conclusão de uma tarefa ou solução de um problema. Por exemplo, se temos um algoritmo para encontrar o maior número em uma lista, ele continuará comparando os números até que todos sejam verificados e, por fim, fornecerá o maior número presente.
 
-![ai](https://user-images.githubusercontent.com/9157977/210408979-2d6b6827-8842-4003-8508-79a2d47bd90d.jpg)
+```plaintext
+Início
+Contador = 0
 
-O quadrado verde é o jogador, os quadrados cinzas representa as paredes e o quadrado vermelho é o inimigo.
+Enquanto Contador < 10 Faça
+    Escrever("Iteração ", Contador)
+    Contador = Contador + 1
+Fim Enquanto
 
-### 2 - Conceptualização da solução.
+Escrever("Algoritmo concluído.")
+Fim
+```
+Este pseudocódigo ilustra a finitude ao realizar uma contagem até 10, encerrando após um número finito de passos.
 
-O segundo passo seria fazer o conceito da nossa solução, isso acontece, pois de maneira geral, podemos resolver o mesmo problema só que de formas diferentes. Neste caso, nós estamos trabalhando com o campo da produção de um algoritmo de "Pathfinding", em outras palavras, algoritmos exclusivamente feitos para calcular a rota mais curta entre dois pontos. 
+### Definição: 
 
-### 3 - Definição do algoritmo para resolução do problema.
+Cada etapa do algoritmo deve ser clara e bem definida, sem margem para ambiguidades ou interpretações duplas. Isso significa que as instruções devem ser precisas o suficiente para que qualquer pessoa que siga o algoritmo possa entender e executar as ações necessárias. Por exemplo, um algoritmo para ordenar uma lista de números deve indicar claramente os passos a serem seguidos, como comparar elementos, trocar posições, etc.
 
-Perfeito, então queremos trabalhar com Pathfinding, mas ainda assim, isto não é a solução, pois o campo de Pathfinding possui um número incontável de algoritmos. Por isso precisamos ser mais precisos ainda e dizer: "Qual algoritmo de Pathfinding eu irei usar para resolver o meu problema?". Para exemplo prático, usaremos o algoritmo [A*](https://www.inf.ufsc.br/~alexandre.goncalves.silva/courses/14s2/ine5633/trabalhos/t1/A%20%20%20Pathfinding%20para%20Iniciantes.pdf), muito utilizado no campo dos jogos para calcular a rota mais eficiente utilizando inteligência artificial.
+```plaintext
+Início
+ListaNumeros = [5, 2, 9, 1, 8]
 
-### 4 - Codificação da solução através de um programa computacional.
+Para i de 0 até tamanho(ListaNumeros) - 1 Faça
+    Para j de i+1 até tamanho(ListaNumeros) Faça
+        Se ListaNumeros[i] > ListaNumeros[j] Então
+            Trocar(ListaNumeros[i], ListaNumeros[j])
+        Fim Se
+    Fim Para
+Fim Para
 
-Por fim temos o último passo, codificar o nosso algoritmo utilizando um programa computacional, no nosso caso, uma linguagem de programação, ferramentas que utilizamos para comunicar instruções para a máquina, sem ter que comunicar diretamente com a máquina. Abaixo temos um exemplo de um programa feito na linguagem de programação Python, para codificar a nossa solução.
-
-**Obs.:** Não se preocupe, vocês não têm a obrigação de entender o que está acontecendo no código, apenas entender que isso é uma solução 
-para o nosso problema e também para exemplificar o processo de codificação.
-
-```python
-def aStarSearch(problem: SearchProblem, heuristic=nullHeuristic):
-
-    priority_queue    = util.PriorityQueue()
-    path              = []
-
-    visited = set()
-
-    start_node = problem.getStartState()
-
-    if problem.isGoalState(start_node):
-        return ["Stop"]
-
-    priority_queue.push((start_node,path), 0)
-
-    while not priority_queue.isEmpty():
-        
-        curr_node, path = priority_queue.pop()
-
-        if problem.isGoalState(curr_node):
-            return path
-
-        neighbors = problem.getSuccessors(curr_node)
-
-        for node in neighbors:
-
-            if node[POSITION] not in visited:
-
-                cost=problem.getCostOfActions(path + [node[DIRECTION]]) + heuristic(node[POSITION],problem)
-                
-                priority_queue.push((node[POSITION], path + [node[DIRECTION]]), cost)
-                visited.add(node[POSITION])
+Escrever("Lista ordenada:", ListaNumeros)
+Fim
 ```
 
-![ai2](https://user-images.githubusercontent.com/9157977/210409079-0edfb743-7b8d-4c23-a054-176ef118cacc.jpg)
+Neste exemplo, o pseudocódigo ilustra a definição ao ordenar uma lista de números sem ambiguidades, seguindo instruções precisas e definidas.
 
-Inimigo fez o trajeto até o jogador, representando com a linha vermelha.
+### Entradas: 
 
-Vocês provavelmente deve ter notado que a nossa solução foi feita de cima para baixo ou "Top-down", essa é uma forma de aproximação muito comum para resolução de problemas reais, onde escrevemos uma sequência de instruções para serem executadas usando uma aproximação descendente. De uma maneira simplificada, pense como se a construção de um algoritmo é como se estivessemos cozinhando uma receita, onde temos os ingredientes e um conjunto de instruções a serem seguidos, geralmente de cima para baixo.
+Um algoritmo pode ter zero ou mais entradas, que são as informações necessárias para executar o algoritmo. Essas entradas são os dados iniciais com os quais o algoritmo trabalha. Por exemplo, em um algoritmo de adição de dois números, as entradas seriam os próprios números a serem somados.
+```plaintext
+Início
+Número1 = Ler("Digite o primeiro número: ")
+Número2 = Ler("Digite o segundo número: ")
+
+Soma = Número1 + Número2
+
+Escrever("A soma dos números é", Soma)
+Fim
+```
+Esse pseudocódigo exemplifica um algoritmo que recebe dois números como entrada e calcula a soma.
+
+### Saídas: 
+
+Assim como as entradas, um algoritmo deve produzir uma ou mais saídas, que são os resultados ou soluções derivados das operações realizadas pelo algoritmo com as entradas fornecidas. Por exemplo, um algoritmo para multiplicar dois números fornecerá a resposta, que é o produto desses números.
+```plaintext
+Início
+Número1 = 5
+Número2 = 8
+
+Produto = Número1 * Número2
+
+Escrever("O produto dos números é", Produto)
+Fim
+```
+Neste exemplo, o pseudocódigo calcula o produto de dois números e fornece a saída, que é o valor do produto.
+
+### Efetividade: 
+
+Por fim, cada passo do algoritmo deve ser composto por operações básicas e claras, que podem ser executadas de forma precisa em um tempo finito por qualquer pessoa. Isso significa que as instruções do algoritmo devem ser realizáveis e não deixar margem para interpretações subjetivas. Por exemplo, um algoritmo para calcular a média de uma lista de números deve incluir instruções específicas, como adicionar todos os números e dividir pelo total de elementos, em vez de usar termos vagos como "some os números de sua preferência"."
+```plaintext
+Início
+ListaNumeros = [4, 7, 2, 9, 5]
+Soma = 0
+
+Para cada número na ListaNumeros Faça
+    Soma = Soma + número
+Fim Para
+
+Média = Soma / tamanho(ListaNumeros)
+
+Escrever("A média dos números é", Média)
+Fim
+```
+Este pseudocódigo ilustra a efetividade ao calcular a média de uma lista de números com instruções claras e precisas, sem margem para interpretações subjetivas.
+
+### Implementação
+
+Como dito anteriormente, os algoritmos são representações abstratas de como podemos resolver um problema computacional, já que podemos implementar o mesmo algoritmo de formas diferentes e em diferentes linguagens/representações. Alguns exemplos, inclui, representar o código usando "pseudocódigo" como os exemplos anteriores:
+
+```
+Inicio
+
+Escrever("Olá mundo")
+
+Fim
+```
+
+Outra forma, é utilizando fluxogramas, onde cada passo do fluxograma é um passo da execução:
+
+```mermaid
+graph TB
+A[Início] --> B("Imprimir 'Olá, mundo'")
+B --> C[Fim]
+```
+
+Por fim, podemos implementar na prática, usando uma linguagem de programação. Não é necessário entender como o código abaixo funciona, mas apenas saiba que o mesmo é escrito em C:
+
+```c
+#include<stdio.h>
+
+int main() {
+    printf("Olá, mundo");
+    return 0;
+}
+```
 
 Sobre a parte técnica dos algoritmos acredito que por agora seja o suficiente. Existe mais detalhes que deveriam ser levados em conta quanto a produção de algoritmos, mas por agora, acredito que seja o suficiente. O que devemos realmente focar no momento é como começar a construir os nossos primeiros algoritmos, e para isso nós temos que aprender a usar uma linguagem de programação. Antes disso, voltando a nossa analogia da receita de comida, nós temos que apresentar os ingredientes, que nesse caso, seriam as Estruturas de Dados.
 
