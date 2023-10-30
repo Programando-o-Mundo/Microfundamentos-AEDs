@@ -11,11 +11,9 @@
 
 ## Trabalhando com endereços de memória
 
-Nós já temos uma aula de ponteiros, que você pode dar uma olhada no nosso módulo da linguagem C, porém, está aula é mais para introduzir esse importante conceito que temos quando falamos de linguagens de programação de baixo nível, o ponteiro.
+Você provavelmente deve se lembrar quando estávamos falando de linguagens de programação, eu explico que uma importante característica das linguagens de programação é que as mesmas são, uma forma de criar um programa de forma de alto nível, sem ter que usar uma "linguagem da máquina exata". 
 
-Você provavelmente deve se lembrar quando estávamos falando de linguagens de programação e eu expliquei em como linguagens de programação é uma forma de criar um programa de forma de alto nível, sem ter que falar a linguagem da máquina exata. 
-
-Sim, está definição é correta, tanto que podemos considerar C dependendo do ponto de vista, como uma linguagem de "alto nível" . Entretanto, a linguagem também C pode ser considerada de baixo nível, pois, diferentes de outras linguagens, ela permite um maior controle da memória, por meio de ponteiros e alocação de memória dinâmica.  
+Sim, está definição continua correta, tanto que podemos considerar C dependendo do ponto de vista, como uma linguagem de "alto nível" . Entretanto, a linguagem também C pode ser considerada de baixo nível, pois, diferentes de outras linguagens, ela permite um maior controle da memória, por meio de ponteiros e alocação de memória dinâmica.  
 
 Nós não entraremos no mérito de alocação memória dinâmica, e deixaremos um link da seção de utilidades para explicar isso. Por agora, explicaremos o que é um ponteiro e por que utilizar essa funcionalidade.
 
