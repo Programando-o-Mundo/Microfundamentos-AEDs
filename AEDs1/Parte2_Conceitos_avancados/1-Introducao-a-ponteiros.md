@@ -28,7 +28,7 @@ classDiagram
     }
 ``` 
 
-Quando criamos qualquer variável na linguagem C, a variável, além de armazenar um valor, também possui um endereço, onde o seu computador armazena esse valor na memória, nós podemos imprimir esse valor utilizando o formatador especial **%p** como no exemplo abaixo.
+Quando criamos qualquer variável na linguagem C, a variável, além de armazenar um valor, também possui um endereço, onde o seu computador armazena esse valor na memória. Podemos imprimir esse valor utilizando o formatador especial **%p** como no exemplo abaixo.
 
 ```c
 #include<stdio.h>
@@ -37,6 +37,14 @@ int main(void) {
   int a = 5;
   printf("%p\n", &a);
 ```
+Toda variável alocada (seja de forma dinâmica ou estática) possui um valor, e um endereço onde a mesma está armazenada na memória. Perceba que, neste exemplo, o endereço da variável é "0x7ffdee2c0f94". Duas coisas são importantes notar aqui:
+
+- Todo endereço é armazenado em hexadecimal, pois além de ser mais fácil de ler do que binário, é o mais simples de armazenar do que em decimal.
+- Este endereço de memória corresponde ao local da memória onde a variável "começa". Isso acontece pois toda variável pode ter um tamanho diferente. Neste caso, como temos apenas um número inteiro (int), e na maioria dos casos, o que é alocado é um inteiro de 32 bits, logo, o nosso endereço ocupa 4 bytes na memória.
+
+Na prática, o que esse segundo ponto significa é que, a alocação da variável "a" ocupa a posição "0x7ffdee2c0f94" em adição de três posições a mais, totalizando em 4 bytes. 
+
+## Passando um ponteiro
 
 Você provavelmente deve se lembrar de quando usamos o **scanf** precisávamos usar esse "&" para poder fazer a leitura do teclado, isso porque quando colocamos esse sinal acompanhado de uma variável estamos pedindo para extrair o endereço de memória dessa variável, criando um ponteiro.
 
