@@ -1,10 +1,8 @@
 # Sejam bem vindos a Algoritmos e Estruturas de Dados I
 
-Aqui é onde tudo começa, neste módulo, você irá desde o começo para entender como podemos combinar Algoritmos e Estruturas de Dados
+Aqui é onde tudo começa, neste módulo, você irá dar seus primeiros passos para entender como podemos combinar Algoritmos e as Estruturas de Dados
 para resolver os mais diversificados problemas que o mundo da Computação já viu. Essa é uma clássica disciplina de resolução de problemas,
 e para resolver tais problemas, primeiro é preciso conhecer as ferramentas que temos em nossa disposição e as noções básicas de como utilizar as mesmas.
-
-Começaremos do mais simples, que no nosso caso é os algoritmos.
 
 ## Mundo tecnológico
 
@@ -19,11 +17,43 @@ Por fim, por trás de todo software, nós temos **Algoritmos**, mas como podemos
 
 ## Algoritmos
 
-Na ciência da computação, um algoritmo é uma sequência de etapas que define um conjunto de instruções de maneira precisa para resolver um determinado problema ou executar uma tarefa específica. Parece meio complicado, mas vamos tentar enxergar isso a partir de outras palavras. Imagine uma receita para uma comida, um bolo por exemplo. Agora, quando vamos cozinhar qualquer coisa, obviamente precisamos dos ingredientes, e da receita, para que dessa forma conseguimos seguir um passo-a-passo, certo? Pois então, agora lembre-se desse passo-a-passo, já que este é um processo muito similar que algoritmos realizam para resolver problemas, onde uma tarefa é divida em pequenas tarefas.
+Na ciência da computação, um algoritmo é uma sequência de etapas que define um conjunto de instruções de maneira precisa para resolver um determinado problema ou executar uma tarefa específica. Parece meio complicado, mas vamos tentar enxergar isso a partir de outras palavras. Imagine uma receita para uma comida, um bolo por exemplo. Agora, quando vamos cozinhar qualquer coisa, precisamos de uma receita, para que dessa forma conseguimos seguir um passo-a-passo, certo? Pois então, agora lembre-se desse passo-a-passo, já que este é um processo muito similar que algoritmos realizam para resolver problemas, onde uma tarefa é divida em pequenas tarefas.
 
-Muitos de vocês até conseguem visualizar as instruções de uma receite de uma comida, mas e em um computador? Como que fornecemos instruções para as máquinas? Bem, esse conjunto bem definido de instruções pode ser implementado a partir de uma "linguagem de programação", poderosas ferramentas computacionais padronizadas, formada do seu próprio conjuntos de regras sintáticas e semânticas que permitem desenvolvedores colocarem algoritmos para funcionarem na prática. Pense que assim como eu estou utilizando da lingua portuguesa para explicar este tópico para vocês, nós desenvolvedores usamos das linguagens de programação para "explicar" para a máquina como a nossa aplicação será executada.
+Muitos de vocês até conseguem visualizar as instruções de uma receita de comida, mas e em um computador? Como que fornecemos instruções para as máquinas? Bem, essas instruções pode ser fornecidas ao computador com o auxílio das chamadas "linguagens de programação", poderosas ferramentas computacionais padronizadas, formada do seu próprio conjuntos de regras sintáticas e semânticas que permitem desenvolvedores colocarem algoritmos para funcionarem na prática. Pense que assim como eu estou utilizando da lingua portuguesa para explicar este tópico para vocês, nós desenvolvedores usamos das linguagens de programação para "explicar" para a máquina como a nossa aplicação será executada.
 
-Mantenha em mente que, quando falamos de um algoritmo qualquer, podemos falar tanto da ideia abstrata, quanto da implementação prática da mesma. Isso acontece principalmente porquê podemos implementar ou ilustrar o mesmo algoritmo de diferentes formas e usando diferentes linguagens de programação. Por fim, assim como os Softwares, os algoritmos podem ser usado para os mais diferentes propósitos em milhares de contextos diferentes.
+Mantenha em mente que, quando falamos de um algoritmo qualquer, podemos falar tanto da ideia abstrata, quanto da implementação prática da mesma. Isso acontece principalmente porquê podemos implementar ou ilustrar o mesmo algoritmo de diferentes formas e usando diferentes linguagens de programação.
+
+Eis por exemplo, um algoritmo implementando em algo chamado "pseudocódigo":
+
+```
+Inicio
+
+EscreverNaTela("Olá mundo")
+
+Fim
+```
+
+Outra forma, é utilizando fluxogramas, onde cada passo do fluxograma é um passo da execução:
+
+```mermaid
+graph TB
+A[Início] --> B("Imprimir 'Olá, mundo'")
+B --> C[Fim]
+```
+
+Por fim, podemos implementar na prática, usando uma linguagem de programação. Não é necessário entender como o código abaixo funciona, mas apenas saiba que o mesmo é escrito em C:
+
+```c
+#include<stdio.h>
+
+int main() {
+    printf("Olá, mundo");
+    return 0;
+}
+```
+
+
+Note que nos exemplos acima, estamos apenas "imprimindo" na tela as palavras "Olá, mundo" mas saiba ,que, assim como softwares, os algoritmos podem ser usado para os mais diferentes propósitos em milhares de contextos diferentes.
 
 ## Características dos algoritmos
 
@@ -32,20 +62,6 @@ Com o conceito compreendido, vamos falar sobre alguma das características inici
 ### Finitude: 
 
 Um algoritmo precisa ter um fim, ou seja, ele deve terminar após um número finito de passos. Isso implica que o algoritmo tem um número definido de etapas que levarão à conclusão de uma tarefa ou solução de um problema. Por exemplo, se temos um algoritmo para encontrar o maior número em uma lista, ele continuará comparando os números até que todos sejam verificados e, por fim, fornecerá o maior número presente.
-
-```plaintext
-Início
-Contador = 0
-
-Enquanto Contador < 10 Faça
-    Escrever("Iteração ", Contador)
-    Contador = Contador + 1
-Fim Enquanto
-
-Escrever("Algoritmo concluído.")
-Fim
-```
-Este pseudocódigo ilustra a finitude ao realizar uma contagem até 10, encerrando após um número finito de passos.
 
 ### Definição: 
 
@@ -101,61 +117,15 @@ Neste exemplo, o pseudocódigo calcula o produto de dois números e fornece a sa
 
 ### Efetividade: 
 
-Por fim, cada passo do algoritmo deve ser composto por operações básicas e claras, que podem ser executadas de forma precisa em um tempo finito por qualquer pessoa. Isso significa que as instruções do algoritmo devem ser realizáveis e não deixar margem para interpretações subjetivas. Por exemplo, um algoritmo para calcular a média de uma lista de números deve incluir instruções específicas, como adicionar todos os números e dividir pelo total de elementos, em vez de usar termos vagos como "some os números de sua preferência"."
-```plaintext
-Início
-ListaNumeros = [4, 7, 2, 9, 5]
-Soma = 0
-
-Para cada número na ListaNumeros Faça
-    Soma = Soma + número
-Fim Para
-
-Média = Soma / tamanho(ListaNumeros)
-
-Escrever("A média dos números é", Média)
-Fim
-```
-Este pseudocódigo ilustra a efetividade ao calcular a média de uma lista de números com instruções claras e precisas, sem margem para interpretações subjetivas.
-
-### Implementação
-
-Como dito anteriormente, os algoritmos são representações abstratas de como podemos resolver um problema computacional, já que podemos implementar o mesmo algoritmo de formas diferentes e em diferentes linguagens/representações. Alguns exemplos, inclui, representar o código usando "pseudocódigo" como os exemplos anteriores:
-
-```
-Inicio
-
-Escrever("Olá mundo")
-
-Fim
-```
-
-Outra forma, é utilizando fluxogramas, onde cada passo do fluxograma é um passo da execução:
-
-```mermaid
-graph TB
-A[Início] --> B("Imprimir 'Olá, mundo'")
-B --> C[Fim]
-```
-
-Por fim, podemos implementar na prática, usando uma linguagem de programação. Não é necessário entender como o código abaixo funciona, mas apenas saiba que o mesmo é escrito em C:
-
-```c
-#include<stdio.h>
-
-int main() {
-    printf("Olá, mundo");
-    return 0;
-}
-```
+Por fim, cada passo do algoritmo deve ser composto por operações básicas e claras, que podem ser executadas de forma precisa em um tempo finito por qualquer pessoa. Isso significa que as instruções do algoritmo devem ser realizáveis e não deixar margem para interpretações subjetivas. 
 
 Sobre a parte técnica dos algoritmos acredito que por agora seja o suficiente. Existe mais detalhes que deveriam ser levados em conta quanto a produção de algoritmos, mas por agora, acredito que seja o suficiente. O que devemos realmente focar no momento é como começar a construir os nossos primeiros algoritmos, e para isso nós temos que aprender a usar uma linguagem de programação. Antes disso, para que possamos criar os nossos algoritmos, precisamos de um segundo importante componente, que seriam as Estruturas de Dados.
 
 ## Estruturas de Dados
 
-Lembre-se, quando estavamos falando de cozinhar, e falamos que para poder cozinhar qualquer alimento, precisamos de duas coisas: uma receita e os ingredientes da mesma. Nós sabemos que a receita seria o nosso Algoritmo, e agora vamos conhecer um pouco sobre os ingredientes, que neste caso é a as Estruturas de dados.
+Vamos voltar brevemente ao nosso exemplo sobre o ato de cozinhar. A essa altura, você então deve saber que, para cozinhar, precisamos do nosso passo-a-passo, ou o nosso "algoritmo". Porém, você deve ter percebido que uma coisa foi omitida desse exemplo, e essa coisa seria os nossos ingredientes. Para nós, vamos chamar esses ingredientes de as nossas Estruturas de dados.
 
-Estruturas de dados são formas de representar itens de dados logicamente relacionados ao dados que queremos retratar. Novamente, vamos tentar ilustrar este contexto, para que o mesmo fique mais claro: Suponhamos que estamos trabalhando em uma padaria, e que estamos no caixa. Neste cenário, imagine que você esteja contabilizando o valor total da compra de um cliente qualquer. Para isso você precisa reservar um número, mais precisamente, números que guardem as casas decimais. Essa representação numérica você provavelmente conhece como "números reais", já na computação temos duas representações, uma sendo os numeros de ponto flutuante ou apenas "float" e os "double". Observe como que a forma como representamos os dados do nosso problema precisa ser escolhida com cuidado, pois se escolhermos um número inteiro por exemplo, parte dos dados da compra poderiam ser perdidos e logo, nosso algoritmo não representa fielmente os dados que queremos armazenar.
+Estruturas de dados são formas de representar itens de dados logicamente relacionados as informações que queremos retratar na resolução do nosso problema. Novamente, vamos tentar ilustrar este contexto, para que o mesmo fique mais claro: Suponhamos que estamos trabalhando em uma padaria, e que estamos no caixa. Neste cenário, imagine que você esteja contabilizando o valor total da compra de um cliente qualquer. Para isso você precisa reservar um número, mais precisamente, números que guardem as casas decimais. Essa representação numérica você provavelmente conhece como "números reais", já na computação temos duas representações, uma sendo os numeros de ponto flutuante ou apenas "float" e os "double". Observe como que a forma como representamos os dados do nosso problema precisa ser escolhida com cuidado, pois se escolhermos um número inteiro por exemplo, parte dos dados da compra poderiam ser perdidos e logo, nosso algoritmo não representa fielmente os dados que queremos armazenar.
 
 Além disso, é desejável que a estrutura de dado, também seja eficiente, ou seja, não use recursos a mais do que precisa, por exemplo, estamos programando o interruptor de uma lâmpada, sabemos aqui que temos dois estados: ligado (ON) e desligado (OFF), para isso temos uma estrutura de dado chamado boolean (ou simplesmente bool) que representa um dígito (0 ou 1) onde 0 representa falso "False" e pode ser a nossa lâmpada desligada, e 1 representa verdadeiro "True" e pode ser a nossa lâmpada ligada. Veja que neste exemplo, tanto um número real, quanto um número inteiro poderiam resolver o nosso problema, porém estariamos usando um canhão para matar uma formiga, já que precisamos apenas de dois números.
 
