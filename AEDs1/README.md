@@ -8,20 +8,22 @@ Começaremos do mais simples, que no nosso caso é os algoritmos.
 
 ## Mundo tecnológico
 
-Atualmente, vivemos em um mundo que está se tornando cada vez mais adepto a tecnologia, onde utilizamos dela em grande parte das atividades do nosso dia-a-dia. 
-Existe três importantes palavras que circulam no mundo da tecnologia e que são importantes de uma forma ou outra para a disciplina que estamos trabalhando com. 
+Atualmente, vivemos em um mundo que está se tornando cada vez mais adepto a tecnologia, onde a partir dela, realizamos grande parte das atividades do nosso dia-a-dia. 
+Neste contexto, existe três importantes palavras que circulam no mundo da tecnologia e que são importantes de uma forma ou outra para a disciplina que estamos trabalhando. 
 
-A primeira é hardware que são os componentes físicos que fazem os nossos celulares e computadores funcionarem. 
+A primeira palavra é **Hardware** que são os componentes físicos que fazem os nossos celulares e computadores funcionarem. Alguns nomes aqui são familiares, como por exemplo: CPU, GPU, RAM, Placa mãe, e entre vários outros. 
 
-O segundo termo é o software, que são aplicações construídas para rodar "em cima" do hardware dos nossos aparelhos. Os softwares são as ferramentas que auxiliam na realização de tarefas do dia-a-dia , como por exemplo: Whatsapp, Google Maps, Google Chrome, Steam, e etc. 
+O segundo termo é: **Software**, que são os programas construídos para rodar "em cima" do hardware dos nossos aparelhos. Existe uma gama absurda de Softwares no mundo atual, que realizam tarefas completamente diferentes, desde o Whatsapp para mandar mensagens, até o Google Maps para geolocalização.
 
-Por fim, por trás de todo software, nós temos algoritmos.
+Por fim, por trás de todo software, nós temos algoritmos, mas o que são algoritmos.
 
 ## Algoritmos
 
-Na ciência da computação, um algoritmo é uma sequência de etapas que define um conjunto de instruções de maneira precisa para resolver um determinado problema ou executar uma tarefa específica. Esse conjunto bem definido de instruções pode ser implementado a partir de uma "linguagem de programação", poderosas ferramentas computacionais padronizadas, formada do seu próprio conjuntos de regras sintáticas e semânticas que permitem desenvolvedores colocarem algoritmos para funcionarem na prática. Pense que assim como eu estou utilizando da lingua portuguesa para explicar este tópico para vocês, nós desenvolvedores usamos das linguagens de programação para "explicar" para a máquina como a nossa aplicação será executada.
+Na ciência da computação, um algoritmo é uma sequência de etapas que define um conjunto de instruções de maneira precisa para resolver um determinado problema ou executar uma tarefa específica. Parece meio complicado o que estamos tentando definir, mas vamos tentar enxergar isso a partir de outras palavras. Imagine uma receita para uma comida, um bolo por exemplo. Agora, quando vamos cozinhar qualquer coisa, obviamente precisamos da receita, e precisamos seguir um passo, certo? Pois então, agora lembre-se desse passo-a-passo, já que este é um processo muito similar que algoritmos realizam para resolver problemas, onde uma tarefa é divida em pequenas tarefas.
 
-Mantenha em mente que, quando falamos de um algoritmo qualquer, na maioria dos casos estamos falando mais do abstrato, da ideia do passo-a-passo que possa resolver um problema específico. Principalmente porquê podemos implementar/ilustrar o mesmo algoritmo de diferentes formas e usando diferentes linguagens de programação. Existem muitos tipos de algoritmos e eles podem ser usados para uma ampla variedade de propósitos.
+Muitos de vocês até conseguem visualizar as instruções de uma receite de uma comida, mas e em um computador? Como que fornecemos instruções para as máquinas? Bem, esse conjunto bem definido de instruções pode ser implementado a partir de uma "linguagem de programação", poderosas ferramentas computacionais padronizadas, formada do seu próprio conjuntos de regras sintáticas e semânticas que permitem desenvolvedores colocarem algoritmos para funcionarem na prática. Pense que assim como eu estou utilizando da lingua portuguesa para explicar este tópico para vocês, nós desenvolvedores usamos das linguagens de programação para "explicar" para a máquina como a nossa aplicação será executada.
+
+Mantenha em mente que, quando falamos de um algoritmo qualquer, podemos falar tanto da ideia abstrata, quanto da implementação prática da mesma. Isso acontece principalmente porquê podemos implementar ou ilustrar o mesmo algoritmo de diferentes formas e usando diferentes linguagens de programação. Por fim, assim como os Softwares, os algoritmos podem ser usado para os mais diferentes propósitos em milhares de contextos diferentes.
 
 ## Características dos algoritmos
 
