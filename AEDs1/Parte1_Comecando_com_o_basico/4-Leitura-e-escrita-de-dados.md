@@ -10,7 +10,7 @@
 
 - [Atributos e declaração](3-Atribuicao-e-declaracao.md)
 
-## Usando Estruturas Condicionais
+## Entrada e saida de dados na prática
 
 Até então temos feito apenas declaração e leitura de variáveis, mas e que tal se agora a gente fizesse escrita desses valores na tela para vermos? Ou melhor ainda, e se a gente fizesse um programa que leia a entrada do teclado realizada pelo usuário? Nesta seção trabalharemos com leitura e escrita de dados, usando como contexto a Linguagem C.
 
